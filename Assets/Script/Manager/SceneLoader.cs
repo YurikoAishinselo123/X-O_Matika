@@ -20,38 +20,36 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
+        PlayerPrefs.SetString("PreviousScene", SceneManager.GetActiveScene().name);
+        PlayerPrefs.Save();
         SceneManager.LoadScene(sceneName);
     }
 
-    public void LoadMainMenu()
-    {
-        SceneManager.LoadScene("MainMenu");
-    }
+    public void LoadMainMenu() => LoadScene("MainMenu");
+    public void LoadLoadingScreen() => LoadScene("LoadingScreen");
+    public void LoadSelectLevel() => LoadScene("SelectLevel");
+    public void LoadHowToPlay() => LoadScene("HowToPlay");
+    // public void LoadGameplay() => LoadScene("Gameplay");
+    public void LoadGameplay() => LoadScene("TicTaoToe");
 
-    public void LoadLoadingScreen()
-    {
-        SceneManager.LoadScene("LoadingScreen");
-    }
-
-    public void LoadSelectLevel()
-    {
-        SceneManager.LoadScene("SelectLevel");
-    }
-
-    public void LoadHowToPlay()
-    {
-        SceneManager.LoadScene("HowToPlay");
-    }
-
-    public void LoadGameplay()
-    {
-        Debug.Log("tes");
-        SceneManager.LoadScene("Gameplay");
-    }
 
     public void ReloadCurrentScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void LoadPreviousScene()
+    {
+        string previousScene = PlayerPrefs.GetString("PreviousScene", "MainMenu");
+
+        if (!string.IsNullOrEmpty(previousScene))
+        {
+            SceneManager.LoadScene(previousScene);
+        }
+        else
+        {
+            Debug.LogWarning("No previous scene stored!");
+        }
     }
 
     public void QuitGame()

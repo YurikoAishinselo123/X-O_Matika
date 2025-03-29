@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3286f25f796324dcf92eefdaead71d5c
+guid: 93474f74fd5bb490393480700c33e664
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 693462037694113642
-    second: ButtonPill_0
+      213: 2456654998995992411
+    second: Rectangle 17_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ButtonPill_0
+      name: Rectangle 17_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 365
-        height: 157
+        width: 364
+        height: 156
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a67e9f59c0caf9900800000000000000
-      internalID: 693462037694113642
+      spriteID: b5ff7d6a4bac71220800000000000000
+      internalID: 2456654998995992411
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ButtonPill_0: 693462037694113642
+      Rectangle 17_0: 2456654998995992411
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

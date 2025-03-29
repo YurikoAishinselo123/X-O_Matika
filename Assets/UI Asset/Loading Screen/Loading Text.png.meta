@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 953a65ca2b4ea42939d24f0fbed407cd
+guid: 0f23741025d9a4084ab20a9433de49d2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4296898490628504593
-    second: Memuat..._0
+      213: -5244296552245701124
+    second: Memuat...-2_0
   - first:
-      213: 1675568544206539230
-    second: Memuat..._1
+      213: 5919297778501639689
+    second: Memuat...-2_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Memuat..._0
+      name: Memuat...-2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -144,14 +144,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 11cf2d94966a1ab30800000000000000
-      internalID: 4296898490628504593
+      spriteID: cf5d69a32148837b0800000000000000
+      internalID: -5244296552245701124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Memuat..._1
+      name: Memuat...-2_1
       rect:
         serializedVersion: 2
         x: 289
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed9cf32a6b0d04710800000000000000
-      internalID: 1675568544206539230
+      spriteID: 90e595fb7f1952250800000000000000
+      internalID: 5919297778501639689
       vertices: []
       indices: 
       edges: []
@@ -186,8 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Memuat..._0: 4296898490628504593
-      Memuat..._1: 1675568544206539230
+      Memuat...-2_0: -5244296552245701124
+      Memuat...-2_1: 5919297778501639689
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
