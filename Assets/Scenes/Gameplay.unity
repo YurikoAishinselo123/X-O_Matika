@@ -119,37 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &311781708
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 311781710}
-  m_Layer: 0
-  m_Name: Quiz Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &311781710
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311781708}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 390.65762, y: 1316.0146, z: -8.8924}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &359178215
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,7 +642,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 974839988}
-  - component: {fileID: 974839990}
   - component: {fileID: 974839989}
   m_Layer: 0
   m_Name: Game Manager
@@ -709,25 +677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915195d5546ab4ec79b11d75d819e844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameplayUI: {fileID: 974839990}
---- !u!114 &974839990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 974839985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6fc6fc869090413ba54d84574a0519b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questionText: {fileID: 614839892}
-  questionImage: {fileID: 0}
-  optionButtons:
-  - {fileID: 1074283453}
-  - {fileID: 881309358}
-  - {fileID: 955104009}
+  gameplayUI: {fileID: 8292206791851388815}
 --- !u!1 &1074283449
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,37 +935,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330450732}
   m_CullTransparentMesh: 1
---- !u!1 &1486266240
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1486266242}
-  m_Layer: 0
-  m_Name: DifficultyManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1486266242
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1486266240}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 638.1152, y: 998.95496, z: -12.774349}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1655926003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1360,6 +1279,7 @@ GameObject:
   - component: {fileID: 5097269149266680715}
   - component: {fileID: 6467193022316390335}
   - component: {fileID: 7539749593622968407}
+  - component: {fileID: 8292206791851388815}
   m_Layer: 5
   m_Name: Mainmenu Canvas
   m_TagString: Untagged
@@ -1468,6 +1388,24 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &8292206791851388815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3988139901664198187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6fc6fc869090413ba54d84574a0519b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionText: {fileID: 614839892}
+  questionImage: {fileID: 0}
+  optionButtons:
+  - {fileID: 1074283453}
+  - {fileID: 881309358}
+  - {fileID: 955104009}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1476,5 +1414,3 @@ SceneRoots:
   - {fileID: 1655926006}
   - {fileID: 222285241113313136}
   - {fileID: 974839988}
-  - {fileID: 1486266242}
-  - {fileID: 311781710}

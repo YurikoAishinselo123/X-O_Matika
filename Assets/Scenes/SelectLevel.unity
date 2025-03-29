@@ -290,50 +290,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1475883149
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1475883150}
-  - component: {fileID: 1475883151}
-  m_Layer: 0
-  m_Name: Difficulty Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1475883150
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1475883149}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 638.1152, y: 998.95496, z: -12.774349}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1475883151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1475883149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 668fb5df81cda471ca7e902b3ae81edd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &23978067350468362
 RectTransform:
   m_ObjectHideFlags: 0
@@ -721,7 +677,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8321554573800113086}
+      - m_Target: {fileID: 8640016980425192557}
         m_TargetAssemblyTypeName: SelectLevelUI, Assembly-CSharp
         m_MethodName: SelectHard
         m_Mode: 1
@@ -747,6 +703,7 @@ GameObject:
   - component: {fileID: 7941434755757267557}
   - component: {fileID: 3182352266975972116}
   - component: {fileID: 637993299768466096}
+  - component: {fileID: 8640016980425192557}
   m_Layer: 5
   m_Name: Select Level canvas
   m_TagString: Untagged
@@ -1207,7 +1164,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8321554573800113086}
+      - m_Target: {fileID: 8640016980425192557}
         m_TargetAssemblyTypeName: SelectLevelUI, Assembly-CSharp
         m_MethodName: SelectMedium
         m_Mode: 1
@@ -1229,7 +1186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8321554573800113085}
   - component: {fileID: 6260592649956625759}
-  - component: {fileID: 8321554573800113086}
+  - component: {fileID: 8321554573800113087}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -1407,7 +1364,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8321554573800113086
+--- !u!114 &8321554573800113087
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1416,7 +1373,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7021356676072982453}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8800d8b7fce0240429d87b35ed842009, type: 3}
+  m_Script: {fileID: 11500000, guid: 668fb5df81cda471ca7e902b3ae81edd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &8581532957187585932
@@ -1473,6 +1430,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &8640016980425192557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4106185968928561532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8800d8b7fce0240429d87b35ed842009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8764651494921327189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,7 +1653,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8321554573800113086}
+      - m_Target: {fileID: 8640016980425192557}
         m_TargetAssemblyTypeName: SelectLevelUI, Assembly-CSharp
         m_MethodName: SelectEasy
         m_Mode: 1
@@ -1705,4 +1674,3 @@ SceneRoots:
   - {fileID: 8640016980425192556}
   - {fileID: 8321554573800113085}
   - {fileID: 386073144}
-  - {fileID: 1475883150}

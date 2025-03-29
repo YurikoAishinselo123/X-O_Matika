@@ -1,25 +1,24 @@
 using UnityEngine;
 
+public enum DifficultyLevel
+{
+    Easy,
+    Medium,
+    Hard
+}
+
 public class DifficultyManager : MonoBehaviour
 {
-    public static DifficultyManager Instance { get; private set; }
-    public DifficultyLevel SelectedDifficulty { get; private set; } = DifficultyLevel.Easy;
+    private const string DifficultyKey = "SelectedDifficulty";
 
-    private void Awake()
+    public static void SetDifficulty(DifficultyLevel difficulty)
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        PlayerPrefs.SetInt(DifficultyKey, (int)difficulty);
+        PlayerPrefs.Save();
     }
 
-    public void SetDifficulty(DifficultyLevel difficulty)
+    public static DifficultyLevel GetDifficulty()
     {
-        SelectedDifficulty = difficulty;
+        return (DifficultyLevel)PlayerPrefs.GetInt(DifficultyKey, (int)DifficultyLevel.Easy);
     }
 }

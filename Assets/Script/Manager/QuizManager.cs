@@ -15,11 +15,11 @@ public class Question
 {
     public string question;
     public QuestionType questionType;
-    public string questionImagePath; // Store image path instead of Sprite
-    public List<string> answers; // Match JSON key "answers" instead of "options"
+    public string questionImagePath;
+    public List<string> answers;
     public int correctAnswerIndex;
 
-    public Sprite questionImage; // Load dynamically
+    public Sprite questionImage;
 }
 
 [System.Serializable]
@@ -56,15 +56,18 @@ public class QuizManager : MonoBehaviour
     void Start()
     {
         LoadQuestionsFromJson();
-        StartQuiz("Easy");
+        StartQuiz();
     }
 
-    public void StartQuiz(string difficulty)
+    public void StartQuiz()
     {
-        selectedDifficulty = difficulty;
-        if (allQuestions.ContainsKey(difficulty))
+        selectedDifficulty = ((DifficultyLevel)PlayerPrefs.GetInt("SelectedDifficulty", (int)DifficultyLevel.Easy)).ToString();
+
+        Debug.Log($"Starting Quiz with difficulty: {selectedDifficulty}");
+
+        if (allQuestions.ContainsKey(selectedDifficulty) && allQuestions[selectedDifficulty].Count > 0)
         {
-            currentQuestions = ShuffleList.ShuffleListItems(allQuestions[difficulty]);
+            currentQuestions = ShuffleList.ShuffleListItems(new List<Question>(allQuestions[selectedDifficulty]));
             currentQuestions = currentQuestions.GetRange(0, Mathf.Min(5, currentQuestions.Count));
 
             questionIndex = 0;
@@ -73,7 +76,7 @@ public class QuizManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Difficulty level not found!");
+            Debug.LogError($"No questions found for difficulty: {selectedDifficulty}");
         }
     }
 
