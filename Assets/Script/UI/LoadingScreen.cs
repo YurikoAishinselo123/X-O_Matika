@@ -1,12 +1,13 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class LoadingScreen : MonoBehaviour
 {
     public Slider loadingSlider;
     public float loadingTime = 2f;
+    [SerializeField] float startValue = 0f;
+
 
     private void Start()
     {
@@ -16,14 +17,18 @@ public class LoadingScreen : MonoBehaviour
     private IEnumerator LoadSceneWithProgress()
     {
         float elapsedTime = 0f;
+        startValue = 0.2f;
+        float endValue = 1f;
 
         while (elapsedTime < loadingTime)
         {
             elapsedTime += Time.deltaTime;
-            loadingSlider.value = Mathf.Clamp01(elapsedTime / loadingTime);
+            float progress = Mathf.Lerp(startValue, endValue, elapsedTime / loadingTime);
+            loadingSlider.value = progress;
             yield return null;
         }
 
+        loadingSlider.value = 1f;
         SceneLoader.Instance.LoadSelectLevel();
     }
 }

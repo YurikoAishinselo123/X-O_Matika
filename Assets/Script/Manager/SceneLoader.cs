@@ -1,16 +1,16 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneManager : MonoBehaviour
+public class SceneLoader : MonoBehaviour
 {
-    public static SceneManager Instance;
+    public static SceneLoader Instance;
+    public static string SelectedDifficulty;
 
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); 
         }
         else
         {
@@ -36,6 +36,17 @@ public class SceneManager : MonoBehaviour
     public void LoadSelectLevel()
     {
         SceneManager.LoadScene("SelectLevel");
+    }
+
+    public void LoadHowToPlay()
+    {
+        SceneManager.LoadScene("HowToPlay");
+    }
+
+    public void LoadGameplay()
+    {
+        Debug.Log("tes");
+        SceneManager.LoadScene("Gameplay");
     }
 
     public void ReloadCurrentScene()
