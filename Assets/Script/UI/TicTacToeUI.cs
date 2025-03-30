@@ -9,7 +9,16 @@ public class TicTacToeUI : MonoBehaviour
     [SerializeField] private TMP_Text xScoreText;
     [SerializeField] private TMP_Text oScoreText;
     [SerializeField] private TextMeshProUGUI turnText;
-    [SerializeField] private Button[] buttons; // Array for all 9 buttons
+    [SerializeField] private Button[] buttons;
+
+
+    [Header("Pause System")]
+    [SerializeField] private GameObject ticTacToeCanvas;
+    [SerializeField] private GameObject pauseCanvas;
+    [SerializeField] private Button pauseButton;
+    [SerializeField] private Button resumeButton;
+    [SerializeField] private Button quitButton;
+
 
     private void Awake()
     {
@@ -23,14 +32,33 @@ public class TicTacToeUI : MonoBehaviour
         }
 
         AssignButtonClickEvents();
+        pauseButton.onClick.AddListener(PauseGame);
+        resumeButton.onClick.AddListener(ResumeGame);
+        quitButton.onClick.AddListener(QuitGame);
+    }
+
+    private void PauseGame()
+    {
+        ticTacToeCanvas.SetActive(false);
+        pauseCanvas.SetActive(true);
+    }
+
+    private void ResumeGame()
+    {
+        ticTacToeCanvas.SetActive(true);
+        pauseCanvas.SetActive(false);
+    }
+
+    private void QuitGame()
+    {
+        SceneLoader.Instance.LoadMainMenu();
     }
 
     private void AssignButtonClickEvents()
     {
-        // Loop through all buttons and assign a click event
         for (int i = 0; i < buttons.Length; i++)
         {
-            int index = i; // Fixes closure issue in loops
+            int index = i;
             buttons[i].onClick.AddListener(() => TicTacToeManager.Instance.SetButtonSprite(index));
         }
     }
