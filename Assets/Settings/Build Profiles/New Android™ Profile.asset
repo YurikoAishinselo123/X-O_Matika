@@ -17,16 +17,28 @@ MonoBehaviour:
   m_Subtarget: 0
   m_PlatformId: b9b35072a6f44c2e863f17467ea3dc13
   m_PlatformBuildProfile:
-    rid: 8917948154341752939
+    rid: 8917948188747890806
   m_OverrideGlobalSceneList: 0
-  m_Scenes: []
+  m_Scenes:
+  - m_enabled: 1
+    m_path: Assets/Scenes/Mainmenu.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/TicTaoToe.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/HowToPlay.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/LoadingScreen.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/SelectLevel.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Gameplay.unity
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
     m_Settings: []
   references:
     version: 2
     RefIds:
-    - rid: 8917948154341752939
+    - rid: 8917948188747890806
       type: {class: AndroidPlatformBuildSettings, ns: UnityEditor.Android, asm: UnityEditor.Android.Extensions}
       data:
         m_Development: 0
