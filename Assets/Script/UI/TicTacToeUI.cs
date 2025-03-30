@@ -31,13 +31,13 @@ public class TicTacToeUI : MonoBehaviour
         for (int i = 0; i < buttons.Length; i++)
         {
             int index = i; // Fixes closure issue in loops
-            buttons[i].onClick.AddListener(() => HandleButtonPress(buttons[index].image, index));
+            buttons[i].onClick.AddListener(() => TicTacToeManager.Instance.SetButtonSprite(index));
         }
     }
 
-    private void HandleButtonPress(Image buttonImage, int index)
+    public void UpdateBoard(int index, Sprite sprite)
     {
-        TicTacToeManager.Instance.SetButtonSprite(buttonImage, index);
+        buttons[index].image.sprite = sprite;
     }
 
     public void UpdateScore(bool isXWinner)
@@ -57,8 +57,7 @@ public class TicTacToeUI : MonoBehaviour
     private int GetScore(string scoreText)
     {
         string[] parts = scoreText.Split(':');
-        if (parts.Length < 2) return 0; // Prevents out-of-range error
-        return int.TryParse(parts[1].Trim(), out int score) ? score : 0;
+        return parts.Length < 2 ? 0 : int.TryParse(parts[1].Trim(), out int score) ? score : 0;
     }
 
     public void UpdateTurn(bool isXTurn)
@@ -66,9 +65,11 @@ public class TicTacToeUI : MonoBehaviour
         turnText.text = isXTurn ? "GILIRAN X" : "GILIRAN O";
     }
 
-
-    public void RestartGame()
+    public void ResetBoard()
     {
-        TicTacToeManager.Instance.ResetBoard();
+        foreach (var button in buttons)
+        {
+            button.image.sprite = null;
+        }
     }
 }

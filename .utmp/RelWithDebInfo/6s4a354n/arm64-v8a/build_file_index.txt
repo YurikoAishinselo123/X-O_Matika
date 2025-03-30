@@ -1,0 +1,3 @@
+/Users/yurikoaishinselo/Documents/GitHub/X-O matika/X-O_Matika/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/CMakeLists.txt
+/Users/yurikoaishinselo/Documents/GitHub/X-O matika/X-O_Matika/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/FramePacing/CMakeLists.txt
+/Users/yurikoaishinselo/Documents/GitHub/X-O matika/X-O_Matika/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/CMakeLists.txt

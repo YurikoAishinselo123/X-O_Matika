@@ -8,8 +8,8 @@ public class TicTacToeManager : MonoBehaviour
 
     [SerializeField] private Sprite xSprite;
     [SerializeField] private Sprite oSprite;
-    [SerializeField] private Button[] buttons;
 
+    private bool gameOver = false;
     private bool isXTurn = true;
     private Sprite[] boardState = new Sprite[9];
 
@@ -25,30 +25,45 @@ public class TicTacToeManager : MonoBehaviour
         }
     }
 
-    public void SetButtonSprite(Image buttonImage, int index)
-    {
-        if (boardState[index] != null) return; // Prevent overwriting
 
-        StartCoroutine(DelayedSetSprite(buttonImage, index));
+    public void SetButtonSprite(int index)
+    {
+        if (gameOver || boardState[index] != null) return;
+
+        StartCoroutine(DelayedSetSprite(index));
     }
 
-    private IEnumerator DelayedSetSprite(Image buttonImage, int index)
+    private IEnumerator DelayedSetSprite(int index)
     {
-        yield return new WaitForSeconds(0f); // 1-second delay before placing X or O
+        yield return new WaitForSeconds(0f);
 
         Sprite currentSprite = isXTurn ? xSprite : oSprite;
-        buttonImage.sprite = currentSprite;
         boardState[index] = currentSprite;
+
+        TicTacToeUI.Instance.UpdateBoard(index, currentSprite);
 
         if (CheckWin())
         {
             TicTacToeUI.Instance.UpdateScore(isXTurn);
-            ResetBoard();
+        }
+        if (IsBoardFull())
+        {
+            Debug.Log("Game finished");
+            // TicTacToeUI.Instance.ShowGameOverMessage();
             yield break;
         }
 
         isXTurn = !isXTurn;
         TicTacToeUI.Instance.UpdateTurn(isXTurn);
+    }
+
+    private bool IsBoardFull()
+    {
+        foreach (var cell in boardState)
+        {
+            if (cell == null) return false;
+        }
+        return true; // No empty spaces left
     }
 
     private bool CheckWin()
@@ -73,11 +88,13 @@ public class TicTacToeManager : MonoBehaviour
 
     public void ResetBoard()
     {
-        for (int i = 0; i < buttons.Length; i++)
+        for (int i = 0; i < boardState.Length; i++)
         {
-            buttons[i].image.sprite = null;
             boardState[i] = null;
         }
         isXTurn = true;
+
+        // Tell UI to reset buttons
+        TicTacToeUI.Instance.ResetBoard();
     }
 }
