@@ -11,6 +11,8 @@ public class TicTacToeUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI turnText;
     [SerializeField] private Button[] buttons;
 
+    private int xScore = 0;
+    private int oScore = 0;
 
     [Header("Pause System")]
     [SerializeField] private GameObject ticTacToeCanvas;
@@ -19,6 +21,10 @@ public class TicTacToeUI : MonoBehaviour
     [SerializeField] private Button resumeButton;
     [SerializeField] private Button quitButton;
 
+    [Header("Winner System")]
+    [SerializeField] private GameObject winnerCanvas;
+    [SerializeField] private Button restartButton;
+    [SerializeField] private TMP_Text winnerText;
 
     private void Awake()
     {
@@ -34,7 +40,16 @@ public class TicTacToeUI : MonoBehaviour
         AssignButtonClickEvents();
         pauseButton.onClick.AddListener(PauseGame);
         resumeButton.onClick.AddListener(ResumeGame);
+        restartButton.onClick.AddListener(RestartGame);
         quitButton.onClick.AddListener(QuitGame);
+        ticTacToeCanvas.SetActive(true);
+        pauseCanvas.SetActive(false);
+        winnerCanvas.SetActive(false);
+    }
+
+    void Start()
+    {
+
     }
 
     private void PauseGame()
@@ -49,7 +64,12 @@ public class TicTacToeUI : MonoBehaviour
         pauseCanvas.SetActive(false);
     }
 
-    private void QuitGame()
+    private void RestartGame()
+    {
+        SceneLoader.Instance.LoadGameplay();
+    }
+
+    public void QuitGame()
     {
         SceneLoader.Instance.LoadMainMenu();
     }
@@ -70,8 +90,8 @@ public class TicTacToeUI : MonoBehaviour
 
     public void UpdateScore(bool isXWinner)
     {
-        int xScore = GetScore(xScoreText.text);
-        int oScore = GetScore(oScoreText.text);
+        xScore = GetScore(xScoreText.text);
+        oScore = GetScore(oScoreText.text);
 
         if (isXWinner)
             xScore++;
@@ -99,5 +119,18 @@ public class TicTacToeUI : MonoBehaviour
         {
             button.image.sprite = null;
         }
+    }
+
+    public void GameFinish()
+    {
+        ticTacToeCanvas.SetActive(false);
+        pauseCanvas.SetActive(false);
+        winnerCanvas.SetActive(true);
+        if (xScore > oScore)
+            winnerText.text = "SIMBOL X";
+        else if (oScore > xScore)
+            winnerText.text = "SIMBOL Y";
+        else
+            winnerText.text = "SERI";
     }
 }

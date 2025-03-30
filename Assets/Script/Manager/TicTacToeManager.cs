@@ -48,8 +48,7 @@ public class TicTacToeManager : MonoBehaviour
         }
         if (IsBoardFull())
         {
-            Debug.Log("Game finished");
-            // TicTacToeUI.Instance.ShowGameOverMessage();
+            TicTacToeUI.Instance.GameFinish();
             yield break;
         }
 
@@ -63,7 +62,7 @@ public class TicTacToeManager : MonoBehaviour
         {
             if (cell == null) return false;
         }
-        return true; // No empty spaces left
+        return true;
     }
 
     private bool CheckWin()
