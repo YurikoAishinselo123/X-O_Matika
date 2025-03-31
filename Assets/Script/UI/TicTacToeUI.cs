@@ -6,8 +6,7 @@ public class TicTacToeUI : MonoBehaviour
 {
     public static TicTacToeUI Instance { get; private set; }
 
-    [SerializeField] private TMP_Text xScoreText;
-    [SerializeField] private TMP_Text oScoreText;
+    [SerializeField] private TMP_Text timerText;
     [SerializeField] private TextMeshProUGUI turnText;
     [SerializeField] private Button[] buttons;
 
@@ -47,11 +46,6 @@ public class TicTacToeUI : MonoBehaviour
         winnerCanvas.SetActive(false);
     }
 
-    void Start()
-    {
-
-    }
-
     private void PauseGame()
     {
         ticTacToeCanvas.SetActive(false);
@@ -88,26 +82,6 @@ public class TicTacToeUI : MonoBehaviour
         buttons[index].image.sprite = sprite;
     }
 
-    public void UpdateScore(bool isXWinner)
-    {
-        xScore = GetScore(xScoreText.text);
-        oScore = GetScore(oScoreText.text);
-
-        if (isXWinner)
-            xScore++;
-        else
-            oScore++;
-
-        xScoreText.text = $"X: {xScore}";
-        oScoreText.text = $"O: {oScore}";
-    }
-
-    private int GetScore(string scoreText)
-    {
-        string[] parts = scoreText.Split(':');
-        return parts.Length < 2 ? 0 : int.TryParse(parts[1].Trim(), out int score) ? score : 0;
-    }
-
     public void UpdateTurn(bool isXTurn)
     {
         turnText.text = isXTurn ? "GILIRAN X" : "GILIRAN O";
@@ -121,16 +95,31 @@ public class TicTacToeUI : MonoBehaviour
         }
     }
 
-    public void GameFinish()
+    public void UpdateTimer(int timeLeft)
+    {
+        timerText.text = timeLeft.ToString();
+
+        if (timeLeft <= 10)
+        {
+            timerText.color = Color.red;
+        }
+        else
+        {
+            timerText.color = Color.black;
+        }
+    }
+
+    public void GameFinish(string winner)
     {
         ticTacToeCanvas.SetActive(false);
         pauseCanvas.SetActive(false);
         winnerCanvas.SetActive(true);
-        if (xScore > oScore)
+
+        if (winner == "X")
             winnerText.text = "SIMBOL X";
-        else if (oScore > xScore)
+        else if (winner == "Y")
             winnerText.text = "SIMBOL Y";
         else
-            winnerText.text = "SERI";
+            winnerText.text = "Invalid";
     }
 }

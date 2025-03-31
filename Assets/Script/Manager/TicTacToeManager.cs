@@ -9,8 +9,13 @@ public class TicTacToeManager : MonoBehaviour
     [SerializeField] private Sprite xSprite;
     [SerializeField] private Sprite oSprite;
 
+    private int totalXCount = 0;
+    private int totalOCount = 0;
     private bool gameOver = false;
     private bool isXTurn = true;
+    private int turnTimer = 2;
+    private Coroutine turnTimerCoroutine;
+
     private Sprite[] boardState = new Sprite[9];
 
     private void Awake()
@@ -24,7 +29,10 @@ public class TicTacToeManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+    void Start()
+    {
+        StartTurnTimer();
+    }
 
     public void SetButtonSprite(int index)
     {
@@ -35,25 +43,32 @@ public class TicTacToeManager : MonoBehaviour
 
     private IEnumerator DelayedSetSprite(int index)
     {
-        yield return new WaitForSeconds(0f);
-
         Sprite currentSprite = isXTurn ? xSprite : oSprite;
         boardState[index] = currentSprite;
+
+        if (isXTurn)
+            totalXCount++;
+        else
+            totalOCount++;
 
         TicTacToeUI.Instance.UpdateBoard(index, currentSprite);
 
         if (CheckWin())
         {
-            TicTacToeUI.Instance.UpdateScore(isXTurn);
+            gameOver = true;
+            TicTacToeUI.Instance.GameFinish(isXTurn ? "X" : "O");
+            yield break;
         }
         if (IsBoardFull())
         {
-            TicTacToeUI.Instance.GameFinish();
+            gameOver = true;
+            DetermineWinnerByCount();
             yield break;
         }
 
         isXTurn = !isXTurn;
         TicTacToeUI.Instance.UpdateTurn(isXTurn);
+        StartTurnTimer();
     }
 
     private bool IsBoardFull()
@@ -85,6 +100,43 @@ public class TicTacToeManager : MonoBehaviour
         return false;
     }
 
+    private void StartTurnTimer()
+    {
+        StopTurnTimer();
+        turnTimerCoroutine = StartCoroutine(TurnTimerRoutine());
+    }
+
+    private void StopTurnTimer()
+    {
+        if (turnTimerCoroutine != null)
+        {
+            StopCoroutine(turnTimerCoroutine);
+        }
+    }
+
+    private IEnumerator TurnTimerRoutine()
+    {
+        int timer = turnTimer;
+        while (timer >= 0)
+        {
+            TicTacToeUI.Instance.UpdateTimer(timer);
+            yield return new WaitForSeconds(1);
+            timer--;
+        }
+
+        isXTurn = !isXTurn;
+        TicTacToeUI.Instance.UpdateTurn(isXTurn);
+        StartTurnTimer();
+    }
+
+    private void DetermineWinnerByCount()
+    {
+        if (totalXCount > totalOCount)
+            TicTacToeUI.Instance.GameFinish("X");
+        else if (totalOCount > totalXCount)
+            TicTacToeUI.Instance.GameFinish("O");
+    }
+
     public void ResetBoard()
     {
         for (int i = 0; i < boardState.Length; i++)
@@ -93,7 +145,6 @@ public class TicTacToeManager : MonoBehaviour
         }
         isXTurn = true;
 
-        // Tell UI to reset buttons
         TicTacToeUI.Instance.ResetBoard();
     }
 }
