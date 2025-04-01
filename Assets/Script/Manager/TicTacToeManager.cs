@@ -29,6 +29,7 @@ public class TicTacToeManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
     void Start()
     {
         StartTurnTimer();
@@ -100,10 +101,11 @@ public class TicTacToeManager : MonoBehaviour
         return false;
     }
 
-    private void StartTurnTimer()
+    public void StartTurnTimer()
     {
         StopTurnTimer();
         turnTimerCoroutine = StartCoroutine(TurnTimerRoutine());
+        TicTacToeUI.Instance.UpdateTimer(turnTimer);
     }
 
     private void StopTurnTimer()

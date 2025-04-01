@@ -43,6 +43,11 @@ public class TicTacToeUI : MonoBehaviour
         winnerCanvas.SetActive(false);
     }
 
+    void Start()
+    {
+        TicTacToeManager.Instance.StartTurnTimer();
+    }
+
     private void PauseGame()
     {
         ticTacToeCanvas.SetActive(false);
@@ -114,8 +119,8 @@ public class TicTacToeUI : MonoBehaviour
 
         if (winner == "X")
             winnerText.text = "SIMBOL X";
-        else if (winner == "Y")
-            winnerText.text = "SIMBOL Y";
+        else if (winner == "O")
+            winnerText.text = "SIMBOL O";
         else
             winnerText.text = "Invalid";
     }
