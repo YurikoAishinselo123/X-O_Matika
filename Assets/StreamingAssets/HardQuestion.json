@@ -1,0 +1,29 @@
+{
+  "Hard": [
+    {
+      "question": "Model matematika untuk kandungan gula 250 ml Teh Asri adalah ...",
+      "questionImagePath": "Hard/1",
+      "answers": ["250/200 X 17", "200/250 X 17", "250/17 X 200"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Kandungan gula dari 250 ml Teh Asri adalah ... gr. ",
+      "questionImagePath": "Easy/5",
+      "answers": ["25,23", "21,25", "18,85"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Pempek yang bisa dibeli dengan uang Rp. 50.000 adalah ...",
+      "questionImagePath": "Easy/7",
+      "answers": ["2 kapal selam besar dan 1 lenjer udang", "2 pempek ebi besar dan 1 lenjer ikan ", "1 kapal selam besar dan 5 kapal selam kecil "],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Jika ada yang membeli 3 kapal selam kecil dan 5 lenjer udang, maka model matematika yang sesuai untuk harga keseluruhan adalah ...",
+      "questionImagePath": "Easy/8",
+      "answers": ["(8.000 X 3) + (7.000 X 5)", "(3 X 8.000) + (5 X 7.000)", "(3 X 7.000) + (5 X 8.000)"],
+      "correctAnswerIndex": 2
+    }
+  
+  ]
+}

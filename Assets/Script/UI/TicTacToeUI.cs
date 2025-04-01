@@ -10,9 +10,6 @@ public class TicTacToeUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI turnText;
     [SerializeField] private Button[] buttons;
 
-    private int xScore = 0;
-    private int oScore = 0;
-
     [Header("Pause System")]
     [SerializeField] private GameObject ticTacToeCanvas;
     [SerializeField] private GameObject pauseCanvas;
