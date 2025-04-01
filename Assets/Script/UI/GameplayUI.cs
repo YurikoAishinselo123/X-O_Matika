@@ -26,23 +26,18 @@ public class GameplayUI : MonoBehaviour
         currentQuestion = question;
         answered = false;
         Debug.Log($"Setting Question: {question.question}");
-        Debug.Log($"Question Type: {question.questionType}");
         Debug.Log($"Options: {string.Join(", ", question.answers)}");
 
-
-        if (question.questionType == QuestionType.TEXT)
-        {
-            Debug.Log("This is a TEXT question.");
-            // questionImage.transform.parent.gameObject.SetActive(false);
-        }
-        else if (question.questionType == QuestionType.IMAGE)
-        {
-            ImageHolder();
-            questionImage.transform.parent.gameObject.SetActive(true);
-            questionImage.sprite = question.questionImage;
-        }
-
         questionText.text = question.question;
+        if (question.questionImage != null)
+        {
+            questionImage.sprite = question.questionImage;
+            questionImage.gameObject.SetActive(true);
+        }
+        else
+        {
+            questionImage.gameObject.SetActive(false);
+        }
 
         // Shuffle and assign answer options
         for (int i = 0; i < optionButtons.Count; i++)

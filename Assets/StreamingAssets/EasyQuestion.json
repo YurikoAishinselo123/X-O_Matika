@@ -1,0 +1,29 @@
+{
+  "Easy": [
+    {
+      "question": "Jika magnet apel ingin disamakan jumlahnya dengan magnet eskrim, maka banyak magnet apel yang harus ditambahkan adalah ... buah. ",
+      "questionImagePath": "Hard/1",
+      "answers": ["1", "2", "3"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Jika stiker ditempel sampai baris terakhir, maka jumlah stiker bintang adalah ... buah.  ",
+      "questionImagePath": "Hard/2",
+      "answers": ["2", "10", "12"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Jika jumlah pembatas buku berwarna biru sama dengan yang berwarna merah, maka yang harus dilakukan adalah …",
+      "questionImagePath": "Hard/3",
+      "answers": ["Membuat 2 buah pembatas buku biru ", "Membuat 2 buah pembatas buku merah muda", "Membuat 3 buah pembatas buku kuning "],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Jika jumlah pembatas buku berwarna biru sama dengan berwarna kuning, maka pembatas buku berwarna kuning yang harus dibuat adalah ... buah.",
+      "questionImagePath": "Hard/4",
+      "answers": ["1", "2", "3"],
+      "correctAnswerIndex": 1
+    }
+  
+  ]
+}

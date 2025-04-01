@@ -10,9 +10,6 @@ public class TicTacToeUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI turnText;
     [SerializeField] private Button[] buttons;
 
-    private int xScore = 0;
-    private int oScore = 0;
-
     [Header("Pause System")]
     [SerializeField] private GameObject ticTacToeCanvas;
     [SerializeField] private GameObject pauseCanvas;
@@ -44,6 +41,11 @@ public class TicTacToeUI : MonoBehaviour
         ticTacToeCanvas.SetActive(true);
         pauseCanvas.SetActive(false);
         winnerCanvas.SetActive(false);
+    }
+
+    void Start()
+    {
+        TicTacToeManager.Instance.StartTurnTimer();
     }
 
     private void PauseGame()
@@ -117,8 +119,8 @@ public class TicTacToeUI : MonoBehaviour
 
         if (winner == "X")
             winnerText.text = "SIMBOL X";
-        else if (winner == "Y")
-            winnerText.text = "SIMBOL Y";
+        else if (winner == "O")
+            winnerText.text = "SIMBOL O";
         else
             winnerText.text = "Invalid";
     }
