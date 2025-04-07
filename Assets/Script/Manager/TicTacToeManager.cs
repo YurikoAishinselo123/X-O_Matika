@@ -149,4 +149,10 @@ public class TicTacToeManager : MonoBehaviour
 
         TicTacToeUI.Instance.ResetBoard();
     }
+
+    public void EnableTicTacToe(bool turn)
+    {
+        isXTurn = turn;
+        TicTacToeUI.Instance.ResumeGame();
+    }
 }

@@ -48,16 +48,24 @@ public class TicTacToeUI : MonoBehaviour
         TicTacToeManager.Instance.StartTurnTimer();
     }
 
+    public void HideTicTacToeUI()
+    {
+        ticTacToeCanvas.SetActive(false);
+        pauseCanvas.SetActive(false);
+        winnerCanvas.SetActive(false);
+    }
+
     private void PauseGame()
     {
         ticTacToeCanvas.SetActive(false);
         pauseCanvas.SetActive(true);
     }
 
-    private void ResumeGame()
+    public void ResumeGame()
     {
         ticTacToeCanvas.SetActive(true);
         pauseCanvas.SetActive(false);
+        winnerCanvas.SetActive(false);
     }
 
     private void RestartGame()
