@@ -281,6 +281,7 @@ MonoBehaviour:
   - {fileID: 1926993570}
   - {fileID: 1356913125}
   - {fileID: 1950475291}
+  QuizCanvas: {fileID: 0}
 --- !u!1 &88563494
 GameObject:
   m_ObjectHideFlags: 0
@@ -4274,6 +4275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameplayUI: {fileID: 63927528}
+  maxQuestions: 20
 --- !u!1 &1721532894
 GameObject:
   m_ObjectHideFlags: 0
