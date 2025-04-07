@@ -8,6 +8,7 @@ public class GameplayUI : MonoBehaviour
     [SerializeField] private TMP_Text questionText;
     [SerializeField] private Image questionImage;
     [SerializeField] private List<Button> optionButtons;
+    [SerializeField] private GameObject QuizCanvas;
     private Question currentQuestion;
     private bool answered;
     private QuizManager quizManager;
@@ -71,9 +72,11 @@ public class GameplayUI : MonoBehaviour
         }
     }
 
-    void ImageHolder()
+    public void ShowQuestion()
     {
-        questionImage.transform.parent.gameObject.SetActive(true);
-        questionImage.gameObject.SetActive(false);
+        QuizCanvas.SetActive(true);
+        currentQuestion = quizManager.GetNextQuestion();
+        SetQuestion(currentQuestion);
     }
+
 }

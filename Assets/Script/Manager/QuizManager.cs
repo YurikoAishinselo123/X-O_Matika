@@ -32,6 +32,7 @@ public class QuizManager : MonoBehaviour
     private Question currentQuestion;
     private int questionIndex;
     private int score;
+    [SerializeField] private int maxQuestions = 20;
     private string selectedDifficulty;
 
     void Awake()
@@ -39,10 +40,12 @@ public class QuizManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            DontDestroyOnLoad(this.gameObject);
         }
         else
         {
             Destroy(gameObject);
+            return;
         }
     }
 
@@ -55,90 +58,72 @@ public class QuizManager : MonoBehaviour
     {
         selectedDifficulty = ((DifficultyLevel)PlayerPrefs.GetInt("SelectedDifficulty", (int)DifficultyLevel.Easy)).ToString();
 
-        Debug.Log($"Starting Quiz with difficulty: {selectedDifficulty}");
-
-        if (allQuestions.ContainsKey(selectedDifficulty) && allQuestions[selectedDifficulty].Count > 0)
+        if (!allQuestions.ContainsKey(selectedDifficulty))
         {
-            currentQuestions = ShuffleList.ShuffleListItems(new List<Question>(allQuestions[selectedDifficulty]));
-            currentQuestions = currentQuestions.GetRange(0, Mathf.Min(5, currentQuestions.Count));
+            Debug.LogError($"Difficulty {selectedDifficulty} not found in question list.");
+            return;
+        }
 
-            questionIndex = 0;
-            score = 0;
-            LoadNextQuestion();
-        }
-        else
+        if (allQuestions[selectedDifficulty].Count == 0)
         {
-            Debug.LogError($"No questions found for difficulty: {selectedDifficulty}");
+            Debug.LogError($"No questions available for {selectedDifficulty}.");
+            return;
         }
+
+        currentQuestions = ShuffleList.ShuffleListItems(new List<Question>(allQuestions[selectedDifficulty]));
+        currentQuestions = currentQuestions.GetRange(0, Mathf.Min(maxQuestions, currentQuestions.Count));
+
+        questionIndex = 0;
+        score = 0;
+        LoadNextQuestion();
     }
+
     IEnumerator LoadQuestionsFromJson()
     {
-        string difficulty = ((DifficultyLevel)PlayerPrefs.GetInt("SelectedDifficulty", (int)DifficultyLevel.Easy)).ToString();
-        string fileName = difficulty + "Question.json"; // Example: EasyQuestion.json
+        string fileName = selectedDifficulty + "Question.json";
         string path = Path.Combine(Application.streamingAssetsPath, fileName);
-
-        Debug.Log($"Loading JSON from path: {path}");
-        Debug.Log("Detected Platform: " + Application.platform);
 
         if (Application.platform == RuntimePlatform.Android)
         {
-            if (path.Contains("://"))  // Android requires UnityWebRequest
+            using (UnityWebRequest request = UnityWebRequest.Get(path))
             {
-                using (UnityWebRequest request = UnityWebRequest.Get(path))
+                yield return request.SendWebRequest();
+                if (request.result == UnityWebRequest.Result.Success)
                 {
-                    yield return request.SendWebRequest();
-
-                    if (request.result == UnityWebRequest.Result.Success)
-                    {
-                        ProcessJsonData(request.downloadHandler.text);
-                    }
-                    else
-                    {
-                        Debug.LogError($"Failed to load JSON: {request.error}");
-                    }
+                    ProcessJsonData(request.downloadHandler.text);
                 }
-            }
-            else
-            {
-                Debug.LogError("Invalid Android path: " + path);
+                else
+                {
+                    Debug.LogError("Failed to load JSON: " + request.error);
+                }
             }
         }
         else
         {
-            // Unity Editor & PC/Mac use normal file access
             if (File.Exists(path))
             {
-                string jsonData = File.ReadAllText(path);
-                ProcessJsonData(jsonData);
-                Debug.Log($"Successfully loaded JSON from: {path}");
+                ProcessJsonData(File.ReadAllText(path));
             }
             else
             {
-                Debug.LogError($"File not found at: {path}");
+                Debug.LogError("File not found: " + path);
             }
         }
     }
 
     void ProcessJsonData(string jsonData)
     {
-        Debug.Log($"Loaded JSON: {jsonData}");
-
         QuestionList loadedQuestions = JsonUtility.FromJson<QuestionList>(jsonData);
 
-        if (loadedQuestions != null)
-        {
-            allQuestions["Easy"] = FixQuestionData(loadedQuestions.Easy);
-            allQuestions["Medium"] = FixQuestionData(loadedQuestions.Medium);
-            allQuestions["Hard"] = FixQuestionData(loadedQuestions.Hard);
-
-            Debug.Log($"Questions Loaded: Easy({allQuestions["Easy"].Count}), Medium({allQuestions["Medium"].Count}), Hard({allQuestions["Hard"].Count})");
-
-            StartQuiz();
-        }
-        else
+        if (loadedQuestions == null)
         {
             Debug.LogError("Failed to parse questions from JSON.");
+            return;
         }
+
+        allQuestions["Easy"] = FixQuestionData(loadedQuestions.Easy);
+        allQuestions["Medium"] = FixQuestionData(loadedQuestions.Medium);
+        allQuestions["Hard"] = FixQuestionData(loadedQuestions.Hard);
     }
 
     private List<Question> FixQuestionData(List<Question> questions)
@@ -148,95 +133,18 @@ public class QuizManager : MonoBehaviour
         foreach (var q in questions)
         {
             q.questionImage = LoadImage(q.questionImagePath);
-
-            if (q.questionImage == null)
-            {
-                Debug.LogWarning($"Failed to load image for question: {q.question} (Path: {q.questionImagePath})");
-            }
-            else
-            {
-                Debug.Log($"Successfully loaded image for question: {q.question}");
-            }
         }
-
         return questions;
     }
 
-
-
-    // private IEnumerator LoadImageCoroutine(string imagePath, System.Action<Sprite> callback)
-    // {
-    //     if (string.IsNullOrEmpty(imagePath))
-    //     {
-    //         callback?.Invoke(null);
-    //         yield break;
-    //     }
-    //     string fullPath = Path.Combine(Application.streamingAssetsPath, imagePath, ".png");
-    //     // string fullPath = Path.Combine(Application.streamingAssetsPath, "Question Image", imagePath);
-
-    //     Debug.Log($"Attempting to load image from: {fullPath}");
-
-    //     if (Application.platform == RuntimePlatform.Android)
-    //     {
-    //         using (UnityWebRequest request = UnityWebRequestTexture.GetTexture(fullPath))
-    //         {
-    //             yield return request.SendWebRequest();
-
-    //             if (request.result == UnityWebRequest.Result.Success)
-    //             {
-    //                 Texture2D texture = ((DownloadHandlerTexture)request.downloadHandler).texture;
-    //                 Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.one * 0.5f);
-    //                 callback?.Invoke(sprite);
-    //                 yield break;
-    //             }
-    //             else
-    //             {
-    //                 Debug.LogError($"Failed to load image: {request.error}");
-    //             }
-    //         }
-    //     }
-    //     else
-    //     {
-    //         if (File.Exists(fullPath))
-    //         {
-    //             byte[] imageData = File.ReadAllBytes(fullPath);
-    //             Texture2D texture = new Texture2D(2, 2);
-    //             if (texture.LoadImage(imageData))
-    //             {
-    //                 callback?.Invoke(Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.one * 0.5f));
-    //                 yield break;
-    //             }
-    //         }
-    //         Debug.LogWarning($"Image not found at {fullPath}");
-    //     }
-
-    //     callback?.Invoke(null);
-    // }
     private Sprite LoadImage(string imagePath)
     {
         if (string.IsNullOrEmpty(imagePath)) return null;
-
-        // Convert path to a format compatible with Resources.Load
         string resourcePath = Path.Combine("Question Image", imagePath).Replace("\\", "/");
-
-        // Remove .png extension (Resources.Load does NOT use file extensions)
         if (resourcePath.EndsWith(".png"))
             resourcePath = resourcePath.Substring(0, resourcePath.Length - 4);
-
-        Debug.Log($"🔍 Loading image from Resources: {resourcePath}");
-
-        // Load the sprite from the Resources folder
-        Sprite sprite = Resources.Load<Sprite>(resourcePath);
-        if (sprite != null)
-        {
-            Debug.Log($"Successfully loaded image from Resources: {resourcePath}");
-            return sprite;
-        }
-
-        Debug.LogWarning($"Image not found in Resources: {resourcePath}");
-        return null;
+        return Resources.Load<Sprite>(resourcePath);
     }
-
 
     public void LoadNextQuestion()
     {
@@ -256,9 +164,20 @@ public class QuizManager : MonoBehaviour
     {
         bool isCorrect = selectedAnswer == currentQuestion.answers[currentQuestion.correctAnswerIndex];
         if (isCorrect) score++;
-
         LoadNextQuestion();
         return isCorrect;
+    }
+
+    public Question GetNextQuestion()
+    {
+        if (questionIndex < currentQuestions.Count)
+        {
+            return currentQuestions[questionIndex++];
+        }
+        else
+        {
+            return null;
+        }
     }
 
     void EndQuiz()
