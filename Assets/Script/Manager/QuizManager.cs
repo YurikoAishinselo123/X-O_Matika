@@ -32,6 +32,7 @@ public class QuizManager : MonoBehaviour
     private Question currentQuestion;
     private int questionIndex;
     private int score;
+    [SerializeField] private int maxQuestions = 20;
     private string selectedDifficulty;
 
     void Awake()
@@ -70,7 +71,7 @@ public class QuizManager : MonoBehaviour
         }
 
         currentQuestions = ShuffleList.ShuffleListItems(new List<Question>(allQuestions[selectedDifficulty]));
-        currentQuestions = currentQuestions.GetRange(0, Mathf.Min(5, currentQuestions.Count));
+        currentQuestions = currentQuestions.GetRange(0, Mathf.Min(maxQuestions, currentQuestions.Count));
 
         questionIndex = 0;
         score = 0;
