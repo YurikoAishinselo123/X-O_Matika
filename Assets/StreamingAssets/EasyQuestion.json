@@ -1,29 +1,202 @@
 {
   "Easy": [
     {
-      "question": "Jika magnet apel ingin disamakan jumlahnya dengan magnet eskrim, maka banyak magnet apel yang harus ditambahkan adalah ... buah. ",
-      "questionImagePath": "Hard/1",
-      "answers": ["1", "2", "3"],
-      "correctAnswerIndex": 1
-    },
-    {
-      "question": "Jika stiker ditempel sampai baris terakhir, maka jumlah stiker bintang adalah ... buah.  ",
-      "questionImagePath": "Hard/2",
+      "question": "Jika stiker ditempel sampai baris terakhir, maka jumlah stiker bintang adalah ... buah.",
+      "questionImagePath": "Easy/5",
       "answers": ["2", "10", "12"],
       "correctAnswerIndex": 1
     },
     {
-      "question": "Jika jumlah pembatas buku berwarna biru sama dengan yang berwarna merah, maka yang harus dilakukan adalah …",
-      "questionImagePath": "Hard/3",
-      "answers": ["Membuat 2 buah pembatas buku biru ", "Membuat 2 buah pembatas buku merah muda", "Membuat 3 buah pembatas buku kuning "],
-      "correctAnswerIndex": 0
+      "question": "Jika poin yang dimiliki bersisa 50, maka benda yang bisa ditukarkan adalah ...",
+      "questionImagePath": "Easy/9",
+      "answers": ["Penggaris", "Penghapus", "Pensil Warna"],
+      "correctAnswerIndex": 1
     },
     {
-      "question": "Jika jumlah pembatas buku berwarna biru sama dengan berwarna kuning, maka pembatas buku berwarna kuning yang harus dibuat adalah ... buah.",
-      "questionImagePath": "Hard/4",
+      "question": "Jika sekarang giliran Mita, maka yang harus disebutkan adalah ...",
+      "questionImagePath": "Easy/12",
+      "answers": ["Dor!", "10", "11"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Dibawah ini angka yang harus diganti “Dor!“ adalah ...",
+      "questionImagePath": "Easy/13",
+      "answers": ["12, 15, 18", "10, 12, 14", "9, 10, 11"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Jika 2 balon merah muda dan 1 balon biru meletus, maka jumlah seluruh balon adalah ... balon.",
+      "questionImagePath": "Easy/14",
+      "answers": ["25", "23", "21"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Jika balon kuning akan diberikan kepada 2 orang, maka pembagian balon dalam bentuk pengulangan berulang yang benar adalah ...",
+      "questionImagePath": "Easy/14",
+      "answers": ["6 – 2 – 2 – 2 = 0", "6 – 3 – 3 = 0", "6 – 1 – 1 – 1 – 1 – 1 – 1 = 0"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Jika 1 lego merah diambil, jumlah lego hijau adalah ...",
+      "questionImagePath": "Easy/16",
+      "answers": ["2 kali jumlah lego merah", "Sama dengan lego biru ", "Lebih banyak dari lego biru "],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Banyak lego merah dapat ditulis sebagai ... bagian.",
+      "questionImagePath": "Easy/16",
+      "answers": ["5/18", "7/12", "11/15"],
+      "correctAnswerIndex": 1
+    }, 
+    {
+      "question": "Berdasasarkan gambar di atas, maka les renang adalah ...",
+      "questionImagePath": "Easy/18",
+      "answers": ["Lebih cepat dari les vokal", "Lebih lama dari les vokal", "Les yang paling lama"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Setiap minggu, Putri harus mengikuti les selama ... jam.",
+      "questionImagePath": "Easy/18",
+      "answers": ["5", "5,5", "6"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Berdasasarkan gambar di atas, maka buah pisang adalah ...",
+      "questionImagePath": "Easy/20",
+      "answers": ["Buah yang paling berat", "Lebih ringan dari buah pir", "Sama berat dengan buah pir"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Berat total dari buah di atas adalah ... gr.",
+      "questionImagePath": "Easy/20",
+      "answers": ["2.550", "3.400", "4.400"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Agar timbangan sebelah kanan seimbang, maka mainan kotak warna-warni harus ditambahkan sebanyak ... buah.",
+      "questionImagePath": "Easy/22",
       "answers": ["1", "2", "3"],
       "correctAnswerIndex": 1
-    }
-  
+    },
+    {
+      "question": "Benda yang berbentuk balok adalah ...",
+      "questionImagePath": "Easy/24",
+      "answers": ["Tempat Sampah", "Kulkas", "Bola"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Benda yang berbentuk bola adalah ...",
+      "questionImagePath": "Easy/24",
+      "answers": ["Tempat Sampah", "Kulkas", "Bola"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Banyak ember yang dibutuhkan untuk memindahkan 18 sekrup tanah adalah ... ember.",
+      "questionImagePath": "Easy/25",
+      "answers": ["2", "3", "4"],
+      "correctAnswerIndex": 1
+    }, 
+    {
+      "question": "Jika ingin mengisi penuh 3 ember, maka ember yang dihitung dari banyak sekrup dapat ditulis sebagai ...",
+      "questionImagePath": "Easy/25",
+      "answers": ["3 X 9", "9 X 3", "3 X 8"],
+      "correctAnswerIndex": 1
+    }, 
+  {
+    "question": "Bilangan yang tepat untuk diisikan pada kotak tersebut adalah ...",
+    "questionImagePath": "Easy/29",
+    "answers": ["20", "10", "35"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "question": "Jika sekarang giliran Mita, maka yang harus disebutkan adalah ...",
+    "questionImagePath": "Easy/12",
+    "answers": ["Dor!", "10", "11"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "question": "Dibawah ini angka yang harus diganti “Dor!“ adalah ...",
+    "questionImagePath": "Easy/13",
+    "answers": ["12, 15, 18", "10, 12, 14", "9, 10, 11"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "question": "Jika 2 balon merah muda dan 1 balon biru meletus, maka jumlah seluruh balon adalah ... balon.",
+    "questionImagePath": "Easy/14",
+    "answers": ["25", "23", "21"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "question": "Jika balon kuning akan diberikan kepada 2 orang, maka pembagian balon dalam bentuk pengulangan berulang yang benar adalah ...",
+    "questionImagePath": "Easy/14",
+    "answers": ["6 – 2 – 2 – 2 = 0", "6 – 3 – 3 = 0", "6 – 1 – 1 – 1 – 1 – 1 – 1 = 0"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "question": "Jika 1 lego merah diambil, jumlah lego hijau adalah ...",
+    "questionImagePath": "Easy/16",
+    "answers": ["2 kali jumlah lego merah", "Sama dengan lego biru ", "Lebih banyak dari lego biru "],
+    "correctAnswerIndex": 1
+  },
+  {
+    "question": "Banyak lego merah dapat ditulis sebagai ... bagian.",
+    "questionImagePath": "Easy/16",
+    "answers": ["5/18", "7/12", "11/15"],
+    "correctAnswerIndex": 1
+  }, 
+  {
+    "question": "Berdasasarkan gambar di atas, maka les renang adalah ...",
+    "questionImagePath": "Easy/18",
+    "answers": ["Lebih cepat dari les vokal", "Lebih lama dari les vokal", "Les yang paling lama"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "question": "Setiap minggu, Putri harus mengikuti les selama ... jam.",
+    "questionImagePath": "Easy/18",
+    "answers": ["5", "5,5", "6"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "question": "Berdasasarkan gambar di atas, maka buah pisang adalah ...",
+    "questionImagePath": "Easy/20",
+    "answers": ["Buah yang paling berat", "Lebih ringan dari buah pir", "Sama berat dengan buah pir"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "question": "Berat total dari buah di atas adalah ... gr.",
+    "questionImagePath": "Easy/20",
+    "answers": ["2.550", "3.400", "4.400"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "question": "Agar timbangan sebelah kanan seimbang, maka mainan kotak warna-warni harus ditambahkan sebanyak ... buah.",
+    "questionImagePath": "Easy/22",
+    "answers": ["1", "2", "3"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "question": "Benda yang berbentuk balok adalah ...",
+    "questionImagePath": "Easy/24",
+    "answers": ["Tempat Sampah", "Kulkas", "Bola"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "question": "Benda yang berbentuk bola adalah ...",
+    "questionImagePath": "Easy/24",
+    "answers": ["Tempat Sampah", "Kulkas", "Bola"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "question": "Banyak ember yang dibutuhkan untuk memindahkan 18 sekrup tanah adalah ... ember.",
+    "questionImagePath": "Easy/25",
+    "answers": ["2", "3", "4"],
+    "correctAnswerIndex": 1
+  }, 
+  {
+    "question": "Jika ingin mengisi penuh 3 ember, maka ember yang dihitung dari banyak sekrup dapat ditulis sebagai ...",
+    "questionImagePath": "Easy/25",
+    "answers": ["3 X 9", "9 X 3", "3 X 8"],
+    "correctAnswerIndex": 1
+  } 
   ]
 }
