@@ -69,7 +69,7 @@
     {
       "question": "Jika 1 lego merah diambil, jumlah lego hijau adalah ...",
       "questionImagePath": "Easy/16",
-      "answers": ["2 kali jumlah lego merah", "Sama dengan lego biru ", "Lebih banyak dari lego biru "],
+      "answers": ["2 kali jumlah lego merah", "Sama dengan lego biru", "Lebih banyak dari lego biru"],
       "correctAnswerIndex": 1
     },
     {
@@ -337,25 +337,25 @@
     "correctAnswerIndex": 1
   },
   {
-    "question": "Berat dari buah apel adalah ... kg",
+    "question": "Berat dari buah apel adalah ... kg.",
     "questionImagePath": "Easy/45",
     "answers": ["0,95", "9,5", "9.500"],
     "correctAnswerIndex": 1
   },
   {
-    "question": "Berat dari buah anggur adalah ... gr",
+    "question": "Berat dari buah anggur adalah ... gr.",
     "questionImagePath": "Easy/45",
     "answers": ["0,1", "1,1", "1.000"],
     "correctAnswerIndex": 1
   },
 {
-  "question": "Berat dari buah jeruk adalah ... kg",
+  "question": "Berat dari buah jeruk adalah ... kg.",
   "questionImagePath": "Easy/45",
   "answers": ["0,7", "7,7", "7.000"],
   "correctAnswerIndex": 1
 },
 {
-  "question": "Berat dari buah semangka adalah ... gr",
+  "question": "Berat dari buah semangka adalah ... gr.",
   "questionImagePath": "Easy/45",
   "answers": ["0,2", "2,2", "2.000"],
   "correctAnswerIndex": 1
