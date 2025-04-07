@@ -4275,7 +4275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameplayUI: {fileID: 63927528}
-  maxQuestions: 20
+  maxQuestions: 100
 --- !u!1 &1721532894
 GameObject:
   m_ObjectHideFlags: 0

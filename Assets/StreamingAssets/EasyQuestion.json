@@ -229,36 +229,6 @@
     "correctAnswerIndex": 1
   },
   {
-    "question": "Jika ada 75 tiket, maka barang yang bisa ditukarkan adalah ...",
-    "questionImagePath": "Easy/34",
-    "answers": ["Pensil Warna", "Rautan", "Buku Tulis"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Jika ada 150 tiket, maka barang yang bisa ditukarkan adalah ...",
-    "questionImagePath": "Easy/34",
-    "answers": ["Pensil Warna", "Rautan", "Buku Tulis"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Jika ada 170 tiket, maka barang yang bisa ditukarkan adalah ...",
-    "questionImagePath": "Easy/34",
-    "answers": ["Pensil Warna", "Rautan", "Buku Tulis"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Jika ada 225 tiket, maka barang yang bisa ditukarkan adalah ...",
-    "questionImagePath": "Easy/34",
-    "answers": ["Tempat Pensil", "Penghapus", "Buku Tulis"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Jika ada 50 tiket, maka barang yang bisa ditukarkan adalah ...",
-    "questionImagePath": "Easy/34",
-    "answers": ["Tempat Pensil", "Penghapus", "Buku Tulis"],
-    "correctAnswerIndex": 1
-  },
-  {
     "question": "Bilangan yang tepat untuk mengisi titik-titik berikut adalah ...",
     "questionImagePath": "Easy/35",
     "answers": ["255", "480", "308"],
