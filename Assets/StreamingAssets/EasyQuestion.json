@@ -75,7 +75,7 @@
     {
       "question": "Berdasasarkan gambar di atas, maka les renang adalah ...",
       "questionImagePath": "Easy/18",
-      "answers": ["Lebih cepat dari les vokal", "Lebih lama dari les vokal", "Les yang paling lama"],
+      "answers": ["Lebih cepat dari les vokal", "Lebih lama dari les vokal", "Tidak ada jawaban"],
       "correctAnswerIndex": 2
     },
     {
@@ -109,9 +109,9 @@
       "correctAnswerIndex": 1
     },
     {
-      "question": "Berdasasarkan gambar di atas, maka buah pisang adalah ...",
+      "question": "Berdasarkan gambar di atas, maka buah pisang adalah ...",
       "questionImagePath": "Easy/20",
-      "answers": ["Buah yang paling berat", "Lebih ringan dari buah pir", "Sama berat dengan buah pir"],
+      "answers": ["Buah yang paling berat", "Lebih ringan dari buah pir", "Sama berat dari buah apel"],
       "correctAnswerIndex": 1
     },
     {
@@ -139,7 +139,7 @@
       "correctAnswerIndex": 1
     },
     {
-      "question": "Berat dari buah jeruk adalah ... gr.",
+      "question": "Berat dari buah pir adalah ... gr.",
       "questionImagePath": "Easy/20",
       "answers": ["0,1", "1,1", "1.000"],
       "correctAnswerIndex": 3
