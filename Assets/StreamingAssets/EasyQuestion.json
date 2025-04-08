@@ -61,7 +61,7 @@
       "correctAnswerIndex": 1
     },
     {
-      "question": "Jika 1 lego merah diambil, jumlah lego hijau adalah ...",
+      "question": "Jika 1 lego merah diambil, maka jumlah lego hijau adalah ...",
       "questionImagePath": "Easy/16",
       "answers": ["2 kali jumlah lego merah", "Sama dengan lego biru", "Lebih banyak dari lego biru"],
       "correctAnswerIndex": 1
@@ -111,7 +111,7 @@
     {
       "question": "Berdasarkan gambar di atas, maka buah pisang adalah ...",
       "questionImagePath": "Easy/20",
-      "answers": ["Buah yang paling berat", "Lebih ringan dari buah pir", "Sama berat dari buah apel"],
+      "answers": ["Buah yang paling berat", "Sama berat dari buah pir", "Sama berat dari buah apel"],
       "correctAnswerIndex": 1
     },
     {
@@ -195,238 +195,244 @@
     {
       "question": "Jika ingin mengisi penuh 1 ember, maka ember yang dihitung dari banyak sekrup dapat ditulis sebagai ...",
       "questionImagePath": "Easy/25",
-      "answers": ["1 X 9", "1 X 2", "1 X 8"],
+      "answers": ["1 X 9", "9 X 1", "1 X 8"],
       "correctAnswerIndex": 1
     },  
-  {
-    "question": "Bilangan yang tepat untuk diisikan pada kotak tersebut adalah ...",
-    "questionImagePath": "Easy/29",
-    "answers": ["20", "10", "35"],
-    "correctAnswerIndex": 2
-  },
-  {
-    "question": "Jika diurutkan berdasarkan nilai terbesar berada di depan, maka yang berdiri paling depan adalah ...",
-    "questionImagePath": "Easy/30",
-    "answers": ["Ady", "Dian", "Tika"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Jika diurutkan berdasarkan nilai terbesar berada di depan, maka yang berdiri paling belakang adalah ...",
-    "questionImagePath": "Easy/30",
-    "answers": ["Ady", "Dian", "Titin"],
-    "correctAnswerIndex": 3
-  },
-  {
-    "question": "Jika diurutkan berdasarkan nilai terbesar berada di depan, maka yang berdiri di depan Tika adalah ...",
-    "questionImagePath": "Easy/30",
-    "answers": ["Ady", "Wira", "Titin"],
-    "correctAnswerIndex": 2
-  },
-  {
-    "question": "Bilangan yang tepat untuk mengisi titik-titik berikut adalah ...",
-    "questionImagePath": "Easy/35",
-    "answers": ["255", "480", "308"],
-    "correctAnswerIndex": 3
-  },
-  {
-    "question": "Bilangan pada kotak berturut-turut dari kiri ke kanan adalah ...",
-    "questionImagePath": "Easy/36",
-    "answers": ["20 dan 30", "100 dan 50", "65 dan 90"],
-    "correctAnswerIndex": 3
-  },
-  {
-    "question": "Banyak potongan segiempat pada hasil tempelan ini adalah ... buah.",
-    "questionImagePath": "Easy/37",
-    "answers": ["16", "12", "10"],
-    "correctAnswerIndex": 3
-  }, 
-  {
-    "question": "Berdasasarkan gambar di atas, maka bangun segitiga ditunjuk oleh nomor ...",
-    "questionImagePath": "Easy/38",
-    "answers": ["1, 7, 9", "6, 10, 5", "2, 3, 4"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Berdasasarkan gambar di atas, maka bangun persegi panjang ditunjuk oleh nomor ...",
-    "questionImagePath": "Easy/38",
-    "answers": ["2", "3", "5"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Berdasasarkan gambar di atas, maka bangun lingkaran ditunjuk oleh nomor ...",
-    "questionImagePath": "Easy/38",
-    "answers": ["1 dan 9", "3 dan 4", "6 dan 10"],
-    "correctAnswerIndex": 3
-  },
-  {
-    "question": "Benda yang ditunjuk oleh tanda panah pada gambar adalah ...",
-    "questionImagePath": "Easy/40",
-    "answers": ["Balok", "Trapesium", "Kubus"],
-    "correctAnswerIndex": 3
-  },
-  {
-    "question": "Benda yang digunakan siswa dalam kegiatan tersebut adalah ...",
-    "questionImagePath": "Easy/41",
-    "answers": ["Balok", "Trapesium", "Kubus"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Benda yang ditunjuk oleh tanda panah pada gambar adalah ...",
-    "questionImagePath": "Easy/42",
-    "answers": ["Balok", "Trapesium", "Kubus"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Jarak dari Bank Swadaya ke Pasar Gede adalah ... km.",
-    "questionImagePath": "Easy/43",
-    "answers": ["0,25", "2,5", "25"],
-    "correctAnswerIndex": 3
-  },
-  {
-    "question": "Jarak dari SDN Cemara ke Pasar Gede adalah ... m.",
-    "questionImagePath": "Easy/43",
-    "answers": ["10.000", "4.000", "1.000"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Jarak dari Bank Swadaya ke SDN Cemara adalah ... m.",
-    "questionImagePath": "Easy/43",
-    "answers": ["10.000", "15.000", "20.000"],
-    "correctAnswerIndex": 2
-  },
-  {
-    "question": "Berdasasarkan gambar di atas, maka buah apel adalah ...",
-    "questionImagePath": "Easy/45",
-    "answers": ["Lebih berat dari buah jeruk", "Lebih ringan dari buah jeruk", "Buah yang paling berat"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Berat dari buah apel adalah ... kg.",
-    "questionImagePath": "Easy/45",
-    "answers": ["0,95", "9,5", "9.500"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Berat dari buah anggur adalah ... gr.",
-    "questionImagePath": "Easy/45",
-    "answers": ["0,1", "1,1", "1.000"],
-    "correctAnswerIndex": 3
-  },
-{
-  "question": "Berat dari buah jeruk adalah ... kg.",
-  "questionImagePath": "Easy/45",
-  "answers": ["0,7", "7,7", "7.000"],
-  "correctAnswerIndex": 1
-},
-{
-  "question": "Berat dari buah semangka adalah ... gr.",
-  "questionImagePath": "Easy/45",
-  "answers": ["0,2", "2,2", "2.000"],
-  "correctAnswerIndex": 3
-},
-  {
-    "question": "Satuan yang benar untuk mengetahui banyak air di dalam adalah ...",
-    "questionImagePath": "Easy/46",
-    "answers": ["Tabung adalah kilogram", "Gelas adalah centimeter", "Tabung adalah liter "],
-    "correctAnswerIndex": 3
-  }, 
-  {
-    "question": "Jika 15 permen putih akan diberikan, maka jumlah permen merah adalah ...",
-    "questionImagePath": "Easy/48",
-    "answers": ["Sama dengan permen putih", "Sama dengan permen kuning", "Sama dengan permen hijau"],
-    "correctAnswerIndex": 1
-  }, 
-{
-  "question": "Jika 2 permen merah akan diberikan, maka jumlah permen merah adalah ...",
-  "questionImagePath": "Easy/48",
-  "answers": ["Sama dengan permen putih", "Sama dengan permen kuning", "Sama dengan permen hijau"],
-  "correctAnswerIndex": 3
-}, 
-{
-  "question": "Nomor dada perempuan berbaju biru adalah ...",
-  "questionImagePath": "Easy/55",
-  "answers": ["06", "34", "12"],
-  "correctAnswerIndex": 1
-},
-{
-  "question": "Nomor dada perempuan berbaju pink adalah ...",
-  "questionImagePath": "Easy/55",
-  "answers": ["06", "34", "12"],
-  "correctAnswerIndex": 2
-}, 
-{
-  "question": "Nomor dada perempuan berbaju kuning adalah ...",
-  "questionImagePath": "Easy/55",
-  "answers": ["06", "34", "12"],
-  "correctAnswerIndex": 3
-}, 
-{
-  "question": "Nomor dada yang memiliki nilai paling besar adalah ...",
-  "questionImagePath": "Easy/55",
-  "answers": ["Perempuan berbaju biru", "Perempuan berbaju pink", "Perempuan berbaju kuning"],
-  "correctAnswerIndex": 2
-},
-{
-  "question": "Nomor dada yang memiliki nilai paling kecil adalah ...",
-  "questionImagePath": "Easy/55",
-  "answers": ["Perempuan berbaju biru", "Perempuan berbaju pink", "Perempuan berbaju kuning"],
-  "correctAnswerIndex": 1
-},
-{
-"question": "Yang duduk di depan Andre adalah ...",
-"questionImagePath": "Easy/58",
-"answers": ["Nurul", "Siti", "Putri"],
-"correctAnswerIndex": 1
-},
-{
-  "question": "Yang duduk di depan Citra adalah ...",
-  "questionImagePath": "Easy/58",
-  "answers": ["Nurul", "Siti", "Putri"],
-  "correctAnswerIndex": 3
-  },
-{
-"question": "Yang duduk di samping kanan Riki adalah ...",
-"questionImagePath": "Easy/58",
-"answers": ["Bu Warda", "Bella", "Yusuf"],
-"correctAnswerIndex": 2
-},
-{
-  "question": "Yang duduk di samping kanan Yusuf adalah ...",
-  "questionImagePath": "Easy/58",
-  "answers": ["Bu Warda", "Bella", "Yusuf"],
-  "correctAnswerIndex": 1
-  },
-{
-"question": "Benda yang berbentuk balok adalah ...",
-"questionImagePath": "Easy/60",
-"answers": ["Jam A", "Jus", "Susu"],
-"correctAnswerIndex": 3
-},
-{
-"question": "Benda yang berbentuk kubus adalah ...",
-"questionImagePath": "Easy/60",
-"answers": ["Jam A", "Jus", "Susu"],
-"correctAnswerIndex": 2
-},
-{
-"question": "Benda yang berbentuk segitiga adalah ...",
-"questionImagePath": "Easy/60",
-"answers": ["Penggaris B", "Penggaris A", "Jam B"],
-"correctAnswerIndex": 2
-}, 
-{
-"question": "Benda yang berbentuk persegi panjang adalah ...",
-"questionImagePath": "Easy/60",
-"answers": ["Penggaris B", "Penggaris A", "Jam B"],
-"correctAnswerIndex": 1
-},
-{
-"question": "Benda yang berbentuk lingkaran adalah ...",
-"questionImagePath": "Easy/60",
-"answers": ["Penggaris B", "Penggaris A", "Jam B"],
-"correctAnswerIndex": 3
-},
-{
+    {
+      "question": "Bilangan yang tepat untuk diisikan pada kotak tersebut adalah ...",
+      "questionImagePath": "Easy/29",
+      "answers": ["20", "10", "35"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Jika diurutkan berdasarkan nilai terbesar berada di depan, maka yang berdiri paling depan adalah ...",
+      "questionImagePath": "Easy/30",
+      "answers": ["Ady", "Dian", "Tika"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Jika diurutkan berdasarkan nilai terbesar berada di depan, maka yang berdiri paling belakang adalah ...",
+      "questionImagePath": "Easy/30",
+      "answers": ["Ady", "Dian", "Titin"],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Jika diurutkan berdasarkan nilai terbesar berada di depan, maka yang berdiri di depan Tika adalah ...",
+      "questionImagePath": "Easy/30",
+      "answers": ["Ady", "Wira", "Titin"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Jika diurutkan berdasarkan nilai terbesar berada di depan, maka yang berdiri di belakang Wira adalah ...",
+      "questionImagePath": "Easy/30",
+      "answers": ["Ady", "Wira", "Tika"],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Bilangan yang tepat untuk mengisi titik-titik berikut adalah ...",
+      "questionImagePath": "Easy/35",
+      "answers": ["255", "480", "308"],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Bilangan pada kotak berturut-turut dari kiri ke kanan adalah ...",
+      "questionImagePath": "Easy/36",
+      "answers": ["20 dan 30", "100 dan 50", "65 dan 90"],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Banyak potongan segiempat pada hasil tempelan ini adalah ... buah.",
+      "questionImagePath": "Easy/37",
+      "answers": ["16", "12", "10"],
+      "correctAnswerIndex": 3
+    }, 
+    {
+      "question": "Berdasasarkan gambar di atas, maka bangun segitiga ditunjuk oleh nomor ...",
+      "questionImagePath": "Easy/38",
+      "answers": ["1, 7, 9", "6, 10, 5", "2, 3, 4"],
+      "correctAnswerIndex": 1
+    },
+    {  
+      "question": "Berdasasarkan gambar di atas, maka bangun persegi panjang ditunjuk oleh nomor ...",
+      "questionImagePath": "Easy/38",
+      "answers": ["2", "3", "5"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Berdasasarkan gambar di atas, maka bangun lingkaran ditunjuk oleh nomor ...",
+      "questionImagePath": "Easy/38",
+      "answers": ["1 dan 9", "3 dan 4", "6 dan 10"],
+      "correctAnswerIndex": 3
+    },
+    {  
+      "question": "Benda yang ditunjuk oleh tanda panah pada gambar adalah ...",
+      "questionImagePath": "Easy/40",
+      "answers": ["Balok", "Trapesium", "Kubus"],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Benda yang digunakan siswa dalam kegiatan tersebut adalah ...",
+      "questionImagePath": "Easy/41",
+      "answers": ["Balok", "Trapesium", "Kubus"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Benda yang ditunjuk oleh tanda panah pada gambar adalah ...",
+      "questionImagePath": "Easy/42",
+      "answers": ["Balok", "Trapesium", "Kubus"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Jarak dari Bank Swadaya ke Pasar Gede adalah ... km.",
+      "questionImagePath": "Easy/43",
+      "answers": ["0,25", "2,5", "25"],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Jarak dari SDN Cemara ke Pasar Gede adalah ... m.",
+      "questionImagePath": "Easy/43",
+      "answers": ["10.000", "4.000", "1.000"],
+      "correctAnswerIndex": 1
+    },
+    { 
+      "question": "Jarak dari Bank Swadaya ke SDN Cemara adalah ... m.",
+      "questionImagePath": "Easy/43",
+      "answers": ["10.000", "15.000", "20.000"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Berdasasarkan gambar di atas, maka buah apel adalah ...",
+      "questionImagePath": "Easy/45",
+      "answers": ["Lebih berat dari buah jeruk", "Lebih ringan dari buah jeruk", "Buah yang paling berat"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Berat dari buah apel adalah ... kg.",
+      "questionImagePath": "Easy/45",
+      "answers": ["0,95", "9,5", "9.500"],
+      "correctAnswerIndex": 1
+    },
+    {  
+      "question": "Berat dari buah anggur adalah ... gr.",
+      "questionImagePath": "Easy/45",
+      "answers": ["0,1", "1,1", "1.000"],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Berat dari buah jeruk adalah ... kg.",
+      "questionImagePath": "Easy/45",
+      "answers": ["0,7", "7,7", "7.000"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Berat dari buah semangka adalah ... gr.",
+      "questionImagePath": "Easy/45",
+      "answers": ["0,2", "2,2", "2.000"],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Satuan yang benar untuk mengetahui banyak air di dalam adalah ...",
+      "questionImagePath": "Easy/46",
+      "answers": ["Tabung adalah kilogram", "Gelas adalah centimeter", "Tabung adalah liter"],
+      "correctAnswerIndex": 3
+    }, 
+    {
+      "question": "Jika 15 permen putih akan diberikan, maka jumlah permen merah adalah ...",
+      "questionImagePath": "Easy/48",
+      "answers": ["Sama dengan permen putih", "Sama dengan permen kuning", "Sama dengan permen hijau"],
+      "correctAnswerIndex": 1
+    }, 
+    {
+      "question": "Jika 2 permen merah akan diberikan, maka jumlah permen merah adalah ...",
+      "questionImagePath": "Easy/48",
+      "answers": ["Sama dengan permen putih", "Sama dengan permen kuning", "Sama dengan permen hijau"],
+      "correctAnswerIndex": 3
+    }, 
+    {
+      "question": "Nomor dada perempuan berbaju biru adalah ...",
+      "questionImagePath": "Easy/55",
+      "answers": ["06", "34", "12"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Nomor dada perempuan berbaju pink adalah ...",
+      "questionImagePath": "Easy/55",
+      "answers": ["06", "34", "12"],
+      "correctAnswerIndex": 2
+    }, 
+    {
+      "question": "Nomor dada perempuan berbaju kuning adalah ...",
+      "questionImagePath": "Easy/55",
+      "answers": ["06", "34", "12"],
+      "correctAnswerIndex": 3
+    }, 
+    {
+      "question": "Nomor dada yang memiliki nilai paling besar adalah ...",
+      "questionImagePath": "Easy/55",
+      "answers": ["Perempuan berbaju biru", "Perempuan berbaju pink", "Perempuan berbaju kuning"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Nomor dada yang memiliki nilai paling kecil adalah ...",
+      "questionImagePath": "Easy/55",
+      "answers": ["Perempuan berbaju biru", "Perempuan berbaju pink", "Perempuan berbaju kuning"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Yang duduk di depan Andre adalah ...",
+      "questionImagePath": "Easy/58",
+      "answers": ["Nurul", "Siti", "Putri"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Yang duduk di depan Citra adalah ...",
+      "questionImagePath": "Easy/58",
+      "answers": ["Nurul", "Siti", "Putri"],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Yang duduk di samping kanan Riki adalah ...",
+      "questionImagePath": "Easy/58",
+      "answers": ["Bu Warda", "Bella", "Yusuf"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Yang duduk di samping kanan Yusuf adalah ...",
+      "questionImagePath": "Easy/58",
+      "answers": ["Bu Warda", "Bella", "Yusuf"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Benda yang berbentuk balok adalah ...",
+      "questionImagePath": "Easy/60",
+      "answers": ["Jam A", "Jus", "Susu"],
+      "correctAnswerIndex": 3
+    },
+    {
+      "question": "Benda yang berbentuk kubus adalah ...",
+      "questionImagePath": "Easy/60",
+      "answers": ["Jam A", "Jus", "Susu"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Benda yang berbentuk segitiga adalah ...",
+      "questionImagePath": "Easy/60",
+      "answers": ["Penggaris B", "Penggaris A", "Jam B"],
+      "correctAnswerIndex": 2
+    }, 
+    {
+      "question": "Benda yang berbentuk persegi panjang adalah ...",
+      "questionImagePath": "Easy/60",
+      "answers": ["Penggaris B", "Penggaris A", "Jam B"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Benda yang berbentuk lingkaran adalah ...",
+      "questionImagePath": "Easy/60",
+      "answers": ["Penggaris B", "Penggaris A", "Jam B"],
+      "correctAnswerIndex": 3
+    },
+    {
 } 
   ]
 }

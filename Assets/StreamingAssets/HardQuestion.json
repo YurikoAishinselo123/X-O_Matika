@@ -7,23 +7,334 @@
       "correctAnswerIndex": 0
     },
     {
+      "question": "Model matematika untuk kandungan gula 200 ml Teh Sasa adalah ...",
+      "questionImagePath": "Hard/1",
+      "answers": ["200/180 X 12", "180/200 X 12", "200/12 X 180"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Model matematika untuk kandungan gula 600 ml Teh Ria adalah ...",
+      "questionImagePath": "Hard/1",
+      "answers": ["600/500 X 36", "500/600 X 36", "600/36 X 500"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Model matematika untuk kandungan gula 400 ml Teh Mulia adalah ...",
+      "questionImagePath": "Hard/1",
+      "answers": ["400/300 X 25", "300/400 X 25", "400/25 X 300"],
+      "correctAnswerIndex": 0
+    },
+    {
       "question": "Kandungan gula dari 250 ml Teh Asri adalah ... gr. ",
-      "questionImagePath": "Easy/5",
+      "questionImagePath": "Hard/1",
       "answers": ["25,23", "21,25", "18,85"],
       "correctAnswerIndex": 1
     },
     {
-      "question": "Pempek yang bisa dibeli dengan uang Rp. 50.000 adalah ...",
-      "questionImagePath": "Easy/7",
-      "answers": ["2 kapal selam besar dan 1 lenjer udang", "2 pempek ebi besar dan 1 lenjer ikan ", "1 kapal selam besar dan 5 kapal selam kecil "],
+      "question": "Kandungan gula dari 200 ml Teh Sasa adalah ... gr. ",
+      "questionImagePath": "Hard/1",
+      "answers": ["10,55", "13,33", "20,77"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Kandungan gula dari 600 ml Teh Ria adalah ... gr. ",
+      "questionImagePath": "Hard/1",
+      "answers": ["40,5", "43,2", "50,4"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Kandungan gula dari 400 ml Teh Mulia adalah ... gr. ",
+      "questionImagePath": "Hard/1",
+      "answers": ["30,55", "33,33", "40,77"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Harga dari 3 botol sambal bawang dan 2 sachet sambal teri adalah ...",
+      "questionImagePath": "Hard/8",
+      "answers": ["Rp. 85.000", "Rp. 97.000", "Rp. 101.000"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Harga dari 2 botol sambal terasi dan 3 sachet sambal hijau adalah ...",
+      "questionImagePath": "Hard/8",
+      "answers": ["Rp. 85.000", "Rp. 97.000", "Rp. 101.000"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Harga dari 1 botol sambal hijau dan 4 sachet sambal bawang adalah ...",
+      "questionImagePath": "Hard/8",
+      "answers": ["Rp. 85.000", "Rp. 97.000", "Rp. 63.000"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Jika semua barang akan dibagi rata, maka masing-masing paket berisi ... sabun mandi",
+      "questionImagePath": "Hard/12",
+      "answers": ["3", "4", "5"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Jika semua barang akan dibagi rata, maka masing-masing paket berisi ... mie instan",
+      "questionImagePath": "Hard/12",
+      "answers": ["42", "46", "50"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Jika semua barang akan dibagi rata, maka jumlah paket bantuan yang paling banyak disiapkan adalah ... paket.",
+      "questionImagePath": "Hard/12",
+      "answers": ["23", "32", "36"],
+      "correctAnswerIndex": 2
+    },
+  {
+    "question": "Dalam seminggu, Vitamin A paling banyak dikonsumsi sebanyak ... tablet.",
+    "questionImagePath": "Hard/14",
+    "answers": ["12", "14", "21"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "question": "Dalam seminggu, Vitamin B paling banyak dikonsumsi sebanyak ... tablet.",
+    "questionImagePath": "Hard/14",
+    "answers": ["12", "14", "21"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "question": "Dalam seminggu, Vitamin C paling banyak dikonsumsi sebanyak ... tablet.",
+    "questionImagePath": "Hard/14",
+    "answers": ["12", "14", "21"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "question": "Berat daging yang disiapkan untuk 10 kemasan tahu tuna dan 12 kemasan bakso tuna adalah ... kg.",
+    "questionImagePath": "Hard/15",
+    "answers": ["17,5", "20,5", "18,5"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "question": "Berat daging yang disiapkan untuk 6 kemasan otak-otak tuna adalah ... kg.",
+    "questionImagePath": "Hard/15",
+    "answers": ["2", "3", "4"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "question": "Berat daging yang disiapkan untuk 8 kemasan siomai tuna adalah ... kg.",
+    "questionImagePath": "Hard/15",
+    "answers": ["2", "3", "4"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "question": "Berat daging yang disiapkan untuk 2 kemasan bakso tuna adalah ... kg.",
+    "questionImagePath": "Hard/15",
+    "answers": ["1,5", "2", "2,5"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "question": "Berdasarkan gambar di atas, maka cabai merah adalah ...",
+    "questionImagePath": "Hard/22",
+    "answers": ["Sama dengan berat tomat", "Sayur yang paling berat ", "Lebih berat dari tomat"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "question": "Berat dari bawang putih adalah ... gr",
+    "questionImagePath": "Hard/22",
+    "answers": ["50", "500 ", "5.000"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "question": "Berat dari bawang merah adalah ... kg",
+    "questionImagePath": "Hard/22",
+    "answers": ["0,8", "8,8 ", "8.000"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "question": "Berat dari bawang bombai adalah ... kg",
+    "questionImagePath": "Hard/22",
+    "answers": ["0,15", "1,5 ", "1.500"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "question": "Berat dari tomat adalah ... kg",
+    "questionImagePath": "Hard/22",
+    "answers": ["0,1", "1,1 ", "1.100"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "question": "Jika timbangan dari tomat menunjukkan 200 gr, maka yang harus dilakukan adalah ...",
+    "questionImagePath": "Hard/22",
+    "answers": ["Mengurangi 100 gr tomat", "Menambahkan 100 gr tomat", "Tidak melakukan apa-apa"],
+    "correctAnswerIndex": 2
+  },
+  {
+  "question": "Model matematika untuk jumlah susu bubuk yang dikemas adalah ...",
+  "questionImagePath": "Hard/24",
+  "answers": ["10 X 100 gr", "10 X 200 gr", "100 gr X 10"],
+  "correctAnswerIndex": 2
+  },
+  {
+  "question": "Jika temperatur suhu turun 17<sup>o</sup> C dari suhu sekarang yaitu 10<sup>o</sup> C., maka suhu sekarang adalah ... <sup>o</sup>C.",
+  "questionImagePath": "Hard/34",
+  "answers": ["-7", "-10", "-11"],
+  "correctAnswerIndex": 2
+  },
+  {
+  "question": "Jika temperatur suhu turun 17<sup>o</sup> C dari suhu sekarang yaitu 10<sup>o</sup> C., maka penurunan suhunya adalah ... <sup>o</sup>C.",
+  "questionImagePath": "Hard/34",
+  "answers": ["9", "10", "11"],
+  "correctAnswerIndex": 2
+  },
+  {
+  "question": "Jika 1/6 taman akan digunakan untuk kolam dengan luas taman yaitu 60 m<sup>2</sup>, maka luas kolam adalah ... m<sup>2</sup>.",
+  "questionImagePath": "Hard/36",
+  "answers": ["7,25", "16,65", "21,75"],
+  "correctAnswerIndex": 2
+  },
+  {
+  "question": "Jika diurutkan berdasarkan nilai terkecil berada di depan, maka yang berdiri paling depan adalah ...",
+  "questionImagePath": "Hard/39",
+  "answers": ["Titin", "Wira", "Wika"],
+  "correctAnswerIndex": 2
+  },
+  {
+    "question": "Jika diurutkan berdasarkan nilai terkecil berada di depan, maka yang berdiri paling belakang adalah ...",
+    "questionImagePath": "Hard/39",
+    "answers": ["Dian", "Wira", "Aditya"],
+    "correctAnswerIndex": 2
+    },
+    {
+      "question": "Jika diurutkan berdasarkan nilai terkecil berada di depan, maka yang berdiri tepat di depan Aditya adalah ...",
+      "questionImagePath": "Hard/39",
+      "answers": ["Dian", "Tika", "Titin"],
       "correctAnswerIndex": 0
     },
     {
-      "question": "Jika ada yang membeli 3 kapal selam kecil dan 5 lenjer udang, maka model matematika yang sesuai untuk harga keseluruhan adalah ...",
-      "questionImagePath": "Easy/8",
-      "answers": ["(8.000 X 3) + (7.000 X 5)", "(3 X 8.000) + (5 X 7.000)", "(3 X 7.000) + (5 X 8.000)"],
+      "question": "Jika diurutkan berdasarkan nilai terkecil berada di depan, maka yang berdiri tepat di depan Wira adalah ...",
+      "questionImagePath": "Hard/39",
+      "answers": ["Dian", "Tika", "Titin"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Jika diurutkan berdasarkan nilai terkecil berada di depan, maka urutan yang benar adalah ...",
+      "questionImagePath": "Hard/45",
+      "answers": ["Yuda, Budi, Ade, Dinda", "Dinda, Yuda, Budi, Ade ", "Budi, Dinda, Ade, Yuda"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Jika diurutkan berdasarkan nilai terbesar berada di depan, maka yang berdiri di belakang Ade adalah ...",
+      "questionImagePath": "Hard/45",
+      "answers": ["Budi", "Yuda", "Dinda"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Banyak pakaian jadi yang diproduksi di tahun 2024 adalah ... buah.",
+      "questionImagePath": "Hard/47",
+      "answers": ["4.800", "5.000", "5.200"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Banyak pakaian jadi yang diproduksi di tahun 2028 adalah ... buah.",
+      "questionImagePath": "Hard/47",
+      "answers": ["4.800", "6.000", "7.200"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Jumlah uang selama satu tahun adalah ...",
+      "questionImagePath": "Hard/50",
+      "answers": ["3.845", "2.898", "2.222"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Persentase kenaikan keuangan terbesar adalah ... %.",
+      "questionImagePath": "Hard/50",
+      "answers": ["290", "180", "360"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Persentase penurunan keuangan terbesar adalah ... %.",
+      "questionImagePath": "Hard/50",
+      "answers": ["120,5", "137,6", "147,5"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Jika bubur ayam terjual 80 porsi dan botol air mineral terjual 30 botol, maka besar sumbangan yang diberikan adalah ...",
+      "questionImagePath": "Hard/53",
+      "answers": ["Rp. 40.000", "Rp. 52.000", "Rp. 78.000"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Pernyataan yang benar untuk limas segilima adalah ...",
+      "questionImagePath": "Hard/54",
+      "answers": ["(i)", "(ii)", "(iv)"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Volume air yang terbuang saat keran air dinyalakan selama 30 detik adalah ... m<sup>3</sup>.",
+      "questionImagePath": "Hard/55",
+      "answers": ["0,006", "0,003", "0,03"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Air yang terbuang dari keran air yang mengalir adalah … cm<sup>3</sup>/detik.",
+      "questionImagePath": "Hard/55",
+      "answers": ["50", "100", "200"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Suku ke-12 pada pola bilangan di atas adalah ...",
+      "questionImagePath": "Hard/67",
+      "answers": ["24", "12", "20"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Jika jumlah seluruh panen adalah 500 kwintal, maka jumlah panen jagung adalah ... kwintal.",
+      "questionImagePath": "Hard/68",
+      "answers": ["250", "125", "100"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Jika jumlah seluruh panen adalah 500 kwintal, maka jumlah panen padi adalah ... kwintal.",
+      "questionImagePath": "Hard/68",
+      "answers": ["250", "125", "100"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Jumlah siswa yang gemar bulutangkis adalah .... %.",
+      "questionImagePath": "Hard/69",
+      "answers": ["50", "25", "17"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Jumlah siswa yang gemar sepak bola adalah .... %.",
+      "questionImagePath": "Hard/69",
+      "answers": ["50", "25", "17"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Jumlah siswa yang gemar futsal adalah .... %.",
+      "questionImagePath": "Hard/69",
+      "answers": ["50", "25", "17"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Pernyataan yang benar untuk limas segilima adalah ...",
+      "questionImagePath": "Hard/70",
+      "answers": ["(i)", "(ii)", "(iv)"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Volume air yang terbuang saat keran air dinyalakan selama 30 detik adalah ... m<sup>3</sup>.",
+      "questionImagePath": "Hard/55",
+      "answers": ["0,006", "0,003", "0,03"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Air yang terbuang dari keran air yang mengalir adalah … cm<sup>3</sup>/detik.",
+      "questionImagePath": "Hard/55",
+      "answers": ["50", "100", "200"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Air yang terbuang dari keran air yang mengalir adalah … cm<sup>3</sup>/detik.",
+      "questionImagePath": "Hard/55",
+      "answers": ["Yuda, Budi, Ade, Dinda", "100", "200"],
       "correctAnswerIndex": 2
     }
-  
   ]
 }
