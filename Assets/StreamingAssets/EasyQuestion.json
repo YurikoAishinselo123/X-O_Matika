@@ -4,31 +4,31 @@
       "question": "Jika stiker ditempel sampai baris terakhir, maka jumlah stiker bintang adalah ... buah.",
       "questionImagePath": "Easy/5",
       "answers": ["2", "10", "12"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 2
     },
     {
       "question": "Jika poin yang dimiliki bersisa 350, maka benda yang bisa ditukarkan adalah ...",
       "questionImagePath": "Easy/9",
       "answers": ["Penggaris", "Buku Tulis", "Tempat Pensil"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 3
     },
     {
       "question": "Jika poin yang dimiliki bersisa 200, maka benda yang bisa ditukarkan adalah ...",
       "questionImagePath": "Easy/9",
       "answers": ["Penggaris", "Buku Tulis", "Tempat Pensil"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 2
     },
     {
       "question": "Jika poin yang dimiliki bersisa 100, maka benda yang bisa ditukarkan adalah ...",
       "questionImagePath": "Easy/9",
       "answers": ["Penggaris", "Penghapus", "Pensil Warna"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 3
     },
     {
       "question": "Jika poin yang dimiliki bersisa 80, maka benda yang bisa ditukarkan adalah ...",
       "questionImagePath": "Easy/9",
       "answers": ["Penggaris", "Penghapus", "Pensil Warna"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 2
     },
     {
       "question": "Jika poin yang dimiliki bersisa 50, maka benda yang bisa ditukarkan adalah ...",
@@ -37,16 +37,10 @@
       "correctAnswerIndex": 1
     },
     {
-      "question": "Dibawah ini angka yang harus diganti “Dor!“ adalah ...",
-      "questionImagePath": "Easy/12",
-      "answers": ["12, 15, 18", "10, 12, 14", "9, 10, 11"],
-      "correctAnswerIndex": 1
-    },
-    {
       "question": "Jika sekarang giliran Mita, maka yang harus disebutkan adalah ...",
       "questionImagePath": "Easy/12",
       "answers": ["Dor!", "10", "11"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 3
     },
     {
       "question": "Dibawah ini angka yang harus diganti “Dor!“ adalah ...",
@@ -58,7 +52,7 @@
       "question": "Jika 2 balon merah muda dan 1 balon biru meletus, maka jumlah seluruh balon adalah ... balon.",
       "questionImagePath": "Easy/14",
       "answers": ["25", "23", "21"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 3
     },
     {
       "question": "Jika balon kuning akan diberikan kepada 2 orang, maka pembagian balon dalam bentuk pengulangan berulang yang benar adalah ...",
@@ -82,13 +76,13 @@
       "question": "Berdasasarkan gambar di atas, maka les renang adalah ...",
       "questionImagePath": "Easy/18",
       "answers": ["Lebih cepat dari les vokal", "Lebih lama dari les vokal", "Les yang paling lama"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 2
     },
     {
       "question": "Setiap minggu, Putri harus mengikuti les selama ... jam.",
       "questionImagePath": "Easy/18",
       "answers": ["5", "5,5", "6"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 3
     },
     {
       "question": "Lama waktu untuk les renang adalah ... jam.",
@@ -100,13 +94,13 @@
       "question": "Lama waktu untuk les matematika adalah ... jam.",
       "questionImagePath": "Easy/18",
       "answers": ["1,5", "2", "1"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 2
     },
     {
       "question": "Lama waktu untuk les vokal adalah ... jam.",
       "questionImagePath": "Easy/18",
       "answers": ["1,5", "2", "1"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 3
     },
     {
       "question": "Lama waktu untuk les bahasa inggris adalah ... jam.",
@@ -124,19 +118,19 @@
       "question": "Berat total dari buah di atas adalah ... gr.",
       "questionImagePath": "Easy/20",
       "answers": ["2.550", "3.400", "4.400"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 3
     },
     {
       "question": "Berat dari buah apel adalah ... kg.",
       "questionImagePath": "Easy/20",
-      "answers": ["0,5", "5,5", "5.500"],
+      "answers": ["0,55", "5,5", "5.500"],
       "correctAnswerIndex": 1
     },
     {
       "question": "Berat dari buah pisang adalah ... gr.",
       "questionImagePath": "Easy/20",
       "answers": ["0,2", "2,2", "2.000"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 3
     },
         {
       "question": "Berat dari buah anggur adalah ... kg.",
@@ -148,7 +142,7 @@
       "question": "Berat dari buah jeruk adalah ... gr.",
       "questionImagePath": "Easy/20",
       "answers": ["0,1", "1,1", "1.000"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 3
     },
     {
       "question": "Agar timbangan sebelah kanan seimbang, maka mainan kotak warna-warni harus ditambahkan sebanyak ... buah.",
@@ -160,13 +154,13 @@
       "question": "Benda yang berbentuk balok adalah ...",
       "questionImagePath": "Easy/24",
       "answers": ["Tempat Sampah", "Kulkas", "Bola"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 2
     },
     {
       "question": "Benda yang berbentuk bola adalah ...",
       "questionImagePath": "Easy/24",
       "answers": ["Tempat Sampah", "Kulkas", "Bola"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 3
     },
     {
       "question": "Banyak ember yang dibutuhkan untuk memindahkan 18 sekrup tanah adalah ... ember.",
@@ -178,13 +172,13 @@
       "question": "Banyak ember yang dibutuhkan untuk memindahkan 27 sekrup tanah adalah ... ember.",
       "questionImagePath": "Easy/25",
       "answers": ["2", "3", "4"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 2
     }, 
     {
       "question": "Banyak ember yang dibutuhkan untuk memindahkan 36 sekrup tanah adalah ... ember.",
       "questionImagePath": "Easy/25",
       "answers": ["2", "3", "4"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 3
     }, 
     {
       "question": "Jika ingin mengisi penuh 3 ember, maka ember yang dihitung dari banyak sekrup dapat ditulis sebagai ...",
@@ -208,7 +202,7 @@
     "question": "Bilangan yang tepat untuk diisikan pada kotak tersebut adalah ...",
     "questionImagePath": "Easy/29",
     "answers": ["20", "10", "35"],
-    "correctAnswerIndex": 1
+    "correctAnswerIndex": 2
   },
   {
     "question": "Jika diurutkan berdasarkan nilai terbesar berada di depan, maka yang berdiri paling depan adalah ...",
@@ -220,31 +214,31 @@
     "question": "Jika diurutkan berdasarkan nilai terbesar berada di depan, maka yang berdiri paling belakang adalah ...",
     "questionImagePath": "Easy/30",
     "answers": ["Ady", "Dian", "Titin"],
-    "correctAnswerIndex": 1
+    "correctAnswerIndex": 3
   },
   {
     "question": "Jika diurutkan berdasarkan nilai terbesar berada di depan, maka yang berdiri di depan Tika adalah ...",
     "questionImagePath": "Easy/30",
     "answers": ["Ady", "Wira", "Titin"],
-    "correctAnswerIndex": 1
+    "correctAnswerIndex": 2
   },
   {
     "question": "Bilangan yang tepat untuk mengisi titik-titik berikut adalah ...",
     "questionImagePath": "Easy/35",
     "answers": ["255", "480", "308"],
-    "correctAnswerIndex": 1
+    "correctAnswerIndex": 3
   },
   {
     "question": "Bilangan pada kotak berturut-turut dari kiri ke kanan adalah ...",
     "questionImagePath": "Easy/36",
     "answers": ["20 dan 30", "100 dan 50", "65 dan 90"],
-    "correctAnswerIndex": 1
+    "correctAnswerIndex": 3
   },
   {
     "question": "Banyak potongan segiempat pada hasil tempelan ini adalah ... buah.",
     "questionImagePath": "Easy/37",
     "answers": ["16", "12", "10"],
-    "correctAnswerIndex": 1
+    "correctAnswerIndex": 3
   }, 
   {
     "question": "Berdasasarkan gambar di atas, maka bangun segitiga ditunjuk oleh nomor ...",
@@ -262,13 +256,13 @@
     "question": "Berdasasarkan gambar di atas, maka bangun lingkaran ditunjuk oleh nomor ...",
     "questionImagePath": "Easy/38",
     "answers": ["1 dan 9", "3 dan 4", "6 dan 10"],
-    "correctAnswerIndex": 1
+    "correctAnswerIndex": 3
   },
   {
     "question": "Benda yang ditunjuk oleh tanda panah pada gambar adalah ...",
     "questionImagePath": "Easy/40",
     "answers": ["Balok", "Trapesium", "Kubus"],
-    "correctAnswerIndex": 1
+    "correctAnswerIndex": 3
   },
   {
     "question": "Benda yang digunakan siswa dalam kegiatan tersebut adalah ...",
@@ -286,7 +280,7 @@
     "question": "Jarak dari Bank Swadaya ke Pasar Gede adalah ... km.",
     "questionImagePath": "Easy/43",
     "answers": ["0,25", "2,5", "25"],
-    "correctAnswerIndex": 1
+    "correctAnswerIndex": 3
   },
   {
     "question": "Jarak dari SDN Cemara ke Pasar Gede adalah ... m.",
@@ -298,12 +292,12 @@
     "question": "Jarak dari Bank Swadaya ke SDN Cemara adalah ... m.",
     "questionImagePath": "Easy/43",
     "answers": ["10.000", "15.000", "20.000"],
-    "correctAnswerIndex": 1
+    "correctAnswerIndex": 2
   },
   {
     "question": "Berdasasarkan gambar di atas, maka buah apel adalah ...",
     "questionImagePath": "Easy/45",
-    "answers": ["Lebih berat dari buah jeruk", "Lebih ringan dari buah anggur", "Buah yang paling berat"],
+    "answers": ["Lebih berat dari buah jeruk", "Lebih ringan dari buah jeruk", "Buah yang paling berat"],
     "correctAnswerIndex": 1
   },
   {
@@ -316,7 +310,7 @@
     "question": "Berat dari buah anggur adalah ... gr.",
     "questionImagePath": "Easy/45",
     "answers": ["0,1", "1,1", "1.000"],
-    "correctAnswerIndex": 1
+    "correctAnswerIndex": 3
   },
 {
   "question": "Berat dari buah jeruk adalah ... kg.",
@@ -328,13 +322,13 @@
   "question": "Berat dari buah semangka adalah ... gr.",
   "questionImagePath": "Easy/45",
   "answers": ["0,2", "2,2", "2.000"],
-  "correctAnswerIndex": 1
+  "correctAnswerIndex": 3
 },
   {
     "question": "Satuan yang benar untuk mengetahui banyak air di dalam adalah ...",
     "questionImagePath": "Easy/46",
     "answers": ["Tabung adalah kilogram", "Gelas adalah centimeter", "Tabung adalah liter "],
-    "correctAnswerIndex": 1
+    "correctAnswerIndex": 3
   }, 
   {
     "question": "Jika 15 permen putih akan diberikan, maka jumlah permen merah adalah ...",
@@ -346,7 +340,7 @@
   "question": "Jika 2 permen merah akan diberikan, maka jumlah permen merah adalah ...",
   "questionImagePath": "Easy/48",
   "answers": ["Sama dengan permen putih", "Sama dengan permen kuning", "Sama dengan permen hijau"],
-  "correctAnswerIndex": 1
+  "correctAnswerIndex": 3
 }, 
 {
   "question": "Nomor dada perempuan berbaju biru adalah ...",
@@ -358,19 +352,19 @@
   "question": "Nomor dada perempuan berbaju pink adalah ...",
   "questionImagePath": "Easy/55",
   "answers": ["06", "34", "12"],
-  "correctAnswerIndex": 1
+  "correctAnswerIndex": 2
 }, 
 {
   "question": "Nomor dada perempuan berbaju kuning adalah ...",
   "questionImagePath": "Easy/55",
   "answers": ["06", "34", "12"],
-  "correctAnswerIndex": 1
+  "correctAnswerIndex": 3
 }, 
 {
   "question": "Nomor dada yang memiliki nilai paling besar adalah ...",
   "questionImagePath": "Easy/55",
   "answers": ["Perempuan berbaju biru", "Perempuan berbaju pink", "Perempuan berbaju kuning"],
-  "correctAnswerIndex": 1
+  "correctAnswerIndex": 2
 },
 {
   "question": "Nomor dada yang memiliki nilai paling kecil adalah ...",
@@ -388,13 +382,13 @@
   "question": "Yang duduk di depan Citra adalah ...",
   "questionImagePath": "Easy/58",
   "answers": ["Nurul", "Siti", "Putri"],
-  "correctAnswerIndex": 1
+  "correctAnswerIndex": 3
   },
 {
 "question": "Yang duduk di samping kanan Riki adalah ...",
 "questionImagePath": "Easy/58",
 "answers": ["Bu Warda", "Bella", "Yusuf"],
-"correctAnswerIndex": 1
+"correctAnswerIndex": 2
 },
 {
   "question": "Yang duduk di samping kanan Yusuf adalah ...",
@@ -406,19 +400,19 @@
 "question": "Benda yang berbentuk balok adalah ...",
 "questionImagePath": "Easy/60",
 "answers": ["Jam A", "Jus", "Susu"],
-"correctAnswerIndex": 1
+"correctAnswerIndex": 3
 },
 {
 "question": "Benda yang berbentuk kubus adalah ...",
 "questionImagePath": "Easy/60",
 "answers": ["Jam A", "Jus", "Susu"],
-"correctAnswerIndex": 1
+"correctAnswerIndex": 2
 },
 {
 "question": "Benda yang berbentuk segitiga adalah ...",
 "questionImagePath": "Easy/60",
 "answers": ["Penggaris B", "Penggaris A", "Jam B"],
-"correctAnswerIndex": 1
+"correctAnswerIndex": 2
 }, 
 {
 "question": "Benda yang berbentuk persegi panjang adalah ...",
@@ -430,7 +424,7 @@
 "question": "Benda yang berbentuk lingkaran adalah ...",
 "questionImagePath": "Easy/60",
 "answers": ["Penggaris B", "Penggaris A", "Jam B"],
-"correctAnswerIndex": 1
+"correctAnswerIndex": 3
 },
 {
 } 

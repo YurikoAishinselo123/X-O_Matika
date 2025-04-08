@@ -4235,6 +4235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xSprite: {fileID: 21300000, guid: 14d73386bed584c3086d3e3e11d7f64e, type: 3}
   oSprite: {fileID: 21300000, guid: e6d8da58451f54f5582205e1dcda485b, type: 3}
+  turnTimer: 20
 --- !u!4 &1662148855
 Transform:
   m_ObjectHideFlags: 0
@@ -4275,7 +4276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameplayUI: {fileID: 63927528}
-  maxQuestions: 100
+  maxQuestions: 80
 --- !u!1 &1721532894
 GameObject:
   m_ObjectHideFlags: 0
@@ -5174,7 +5175,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 124, y: -113}
+  m_AnchoredPosition: {x: 124, y: -195}
   m_SizeDelta: {x: 141, y: 141}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1450554663272911986
@@ -6170,9 +6171,9 @@ RectTransform:
   - {fileID: 7281996150363082070}
   m_Father: {fileID: 8819579073384769547}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -532, y: 1654}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 8, y: 694}
   m_SizeDelta: {x: 273, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8454855607204966219
