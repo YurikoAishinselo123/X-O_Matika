@@ -63,7 +63,7 @@
     {
       "question": "Jika 1 lego merah diambil, maka jumlah lego hijau adalah ...",
       "questionImagePath": "Easy/16",
-      "answers": ["2 kali jumlah lego merah", "Sama dengan lego biru", "Lebih banyak dari lego biru"],
+      "answers": ["2 kali jumlah lego merah", "Sama dengan lego biru", "Tidak ada jawaban"],
       "correctAnswerIndex": 1
     },
     {
