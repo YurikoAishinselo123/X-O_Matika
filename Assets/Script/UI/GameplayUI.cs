@@ -9,6 +9,7 @@ public class GameplayUI : MonoBehaviour
     [SerializeField] private Image questionImage;
     [SerializeField] private List<Button> optionButtons;
     [SerializeField] private GameObject QuizCanvas;
+    [SerializeField] private TMP_Text quizTimer;
     private Question currentQuestion;
     private bool answered;
     private QuizManager quizManager;
@@ -77,6 +78,20 @@ public class GameplayUI : MonoBehaviour
         QuizCanvas.SetActive(true);
         currentQuestion = quizManager.GetNextQuestion();
         SetQuestion(currentQuestion);
+    }
+
+    public void UpdateQuizTimer(int timeLeft)
+    {
+        quizTimer.text = timeLeft.ToString();
+
+        if (timeLeft <= 10)
+        {
+            quizTimer.color = Color.red;
+        }
+        else
+        {
+            quizTimer.color = Color.black;
+        }
     }
 
 }
