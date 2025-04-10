@@ -34,6 +34,11 @@ public class QuizManager : MonoBehaviour
     private int score;
     [SerializeField] private int maxQuestions = 20;
     private string selectedDifficulty;
+    private int currentQuizTimer;
+    [SerializeField] private int quizTimer;
+    private bool answered = false;
+    private Coroutine questionTimerCoroutine;
+
 
     void Awake()
     {
@@ -157,6 +162,15 @@ public class QuizManager : MonoBehaviour
             currentQuestion = currentQuestions[questionIndex];
             gameplayUI.SetQuestion(currentQuestion);
             questionIndex++;
+            answered = false;
+            currentQuizTimer = quizTimer;
+
+            if (questionTimerCoroutine != null)
+            {
+                StopCoroutine(questionTimerCoroutine);
+            }
+
+            questionTimerCoroutine = StartCoroutine(QuestionTimer());
         }
         else
         {
@@ -168,9 +182,29 @@ public class QuizManager : MonoBehaviour
     {
         bool isCorrect = selectedAnswer == currentQuestion.answers[currentQuestion.correctAnswerIndex];
         if (isCorrect) score++;
+        answered = true;
         LoadNextQuestion();
         return isCorrect;
     }
+
+    private IEnumerator QuestionTimer()
+    {
+        while (currentQuizTimer > 0)
+        {
+            gameplayUI.UpdateQuizTimer(currentQuizTimer);
+            yield return new WaitForSeconds(1f);
+            currentQuizTimer--;
+        }
+
+        gameplayUI.UpdateQuizTimer(0);
+
+        if (!answered)
+        {
+            answered = true;
+            LoadNextQuestion();
+        }
+    }
+
 
     public Question GetNextQuestion()
     {
