@@ -281,7 +281,8 @@ MonoBehaviour:
   - {fileID: 1926993570}
   - {fileID: 1356913125}
   - {fileID: 1950475291}
-  QuizCanvas: {fileID: 0}
+  QuizCanvas: {fileID: 63927521}
+  quizTimer: {fileID: 1795427981}
 --- !u!1 &88563494
 GameObject:
   m_ObjectHideFlags: 0
@@ -2276,7 +2277,7 @@ GameObject:
   - component: {fileID: 864800003}
   - component: {fileID: 864800002}
   m_Layer: 5
-  m_Name: Pause Button
+  m_Name: Quiz Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4277,6 +4278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameplayUI: {fileID: 63927528}
   maxQuestions: 80
+  quizTimer: 20
 --- !u!1 &1721532894
 GameObject:
   m_ObjectHideFlags: 0
