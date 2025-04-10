@@ -56,8 +56,6 @@ public class QuizManager : MonoBehaviour
 
     public void StartQuiz()
     {
-        selectedDifficulty = ((DifficultyLevel)PlayerPrefs.GetInt("SelectedDifficulty", (int)DifficultyLevel.Easy)).ToString();
-
         if (!allQuestions.ContainsKey(selectedDifficulty))
         {
             Debug.LogError($"Difficulty {selectedDifficulty} not found in question list.");
@@ -78,8 +76,11 @@ public class QuizManager : MonoBehaviour
         LoadNextQuestion();
     }
 
+
     IEnumerator LoadQuestionsFromJson()
     {
+        selectedDifficulty = ((DifficultyLevel)PlayerPrefs.GetInt("SelectedDifficulty", (int)DifficultyLevel.Easy)).ToString();
+
         string fileName = selectedDifficulty + "Question.json";
         string path = Path.Combine(Application.streamingAssetsPath, fileName);
 
@@ -91,6 +92,7 @@ public class QuizManager : MonoBehaviour
                 if (request.result == UnityWebRequest.Result.Success)
                 {
                     ProcessJsonData(request.downloadHandler.text);
+                    StartQuiz(); // <-- Pindah ke sini
                 }
                 else
                 {
@@ -103,6 +105,7 @@ public class QuizManager : MonoBehaviour
             if (File.Exists(path))
             {
                 ProcessJsonData(File.ReadAllText(path));
+                StartQuiz();
             }
             else
             {
@@ -110,6 +113,7 @@ public class QuizManager : MonoBehaviour
             }
         }
     }
+
 
     void ProcessJsonData(string jsonData)
     {

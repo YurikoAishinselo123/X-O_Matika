@@ -13,7 +13,7 @@ public class TicTacToeManager : MonoBehaviour
     private int totalOCount = 0;
     private bool gameOver = false;
     private bool isXTurn = true;
-    private int turnTimer = 2;
+    [SerializeField] private int turnTimer;
     private Coroutine turnTimerCoroutine;
 
     private Sprite[] boardState = new Sprite[9];
