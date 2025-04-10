@@ -34,6 +34,11 @@ public class QuizManager : MonoBehaviour
     private int score;
     [SerializeField] private int maxQuestions = 20;
     private string selectedDifficulty;
+    private int currentQuizTimer;
+    [SerializeField] private int quizTimer;
+    private bool answered = false;
+    private Coroutine questionTimerCoroutine;
+
 
     void Awake()
     {
@@ -56,8 +61,6 @@ public class QuizManager : MonoBehaviour
 
     public void StartQuiz()
     {
-        selectedDifficulty = ((DifficultyLevel)PlayerPrefs.GetInt("SelectedDifficulty", (int)DifficultyLevel.Easy)).ToString();
-
         if (!allQuestions.ContainsKey(selectedDifficulty))
         {
             Debug.LogError($"Difficulty {selectedDifficulty} not found in question list.");
@@ -78,8 +81,11 @@ public class QuizManager : MonoBehaviour
         LoadNextQuestion();
     }
 
+
     IEnumerator LoadQuestionsFromJson()
     {
+        selectedDifficulty = ((DifficultyLevel)PlayerPrefs.GetInt("SelectedDifficulty", (int)DifficultyLevel.Easy)).ToString();
+
         string fileName = selectedDifficulty + "Question.json";
         string path = Path.Combine(Application.streamingAssetsPath, fileName);
 
@@ -91,6 +97,7 @@ public class QuizManager : MonoBehaviour
                 if (request.result == UnityWebRequest.Result.Success)
                 {
                     ProcessJsonData(request.downloadHandler.text);
+                    StartQuiz(); // <-- Pindah ke sini
                 }
                 else
                 {
@@ -103,6 +110,7 @@ public class QuizManager : MonoBehaviour
             if (File.Exists(path))
             {
                 ProcessJsonData(File.ReadAllText(path));
+                StartQuiz();
             }
             else
             {
@@ -110,6 +118,7 @@ public class QuizManager : MonoBehaviour
             }
         }
     }
+
 
     void ProcessJsonData(string jsonData)
     {
@@ -153,6 +162,15 @@ public class QuizManager : MonoBehaviour
             currentQuestion = currentQuestions[questionIndex];
             gameplayUI.SetQuestion(currentQuestion);
             questionIndex++;
+            answered = false;
+            currentQuizTimer = quizTimer;
+
+            if (questionTimerCoroutine != null)
+            {
+                StopCoroutine(questionTimerCoroutine);
+            }
+
+            questionTimerCoroutine = StartCoroutine(QuestionTimer());
         }
         else
         {
@@ -164,9 +182,29 @@ public class QuizManager : MonoBehaviour
     {
         bool isCorrect = selectedAnswer == currentQuestion.answers[currentQuestion.correctAnswerIndex];
         if (isCorrect) score++;
+        answered = true;
         LoadNextQuestion();
         return isCorrect;
     }
+
+    private IEnumerator QuestionTimer()
+    {
+        while (currentQuizTimer > 0)
+        {
+            gameplayUI.UpdateQuizTimer(currentQuizTimer);
+            yield return new WaitForSeconds(1f);
+            currentQuizTimer--;
+        }
+
+        gameplayUI.UpdateQuizTimer(0);
+
+        if (!answered)
+        {
+            answered = true;
+            LoadNextQuestion();
+        }
+    }
+
 
     public Question GetNextQuestion()
     {
