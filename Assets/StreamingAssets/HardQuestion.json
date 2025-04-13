@@ -103,9 +103,27 @@
     "correctAnswerIndex": 2
   },
   {
+    "question": "Martin tidur selama ... menit.",
+    "questionImagePath": "Hard/20",
+    "answers": ["400", "450", "500"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "question": "Rike tidur selama ... menit.",
+    "questionImagePath": "Hard/21",
+    "answers": ["300", "350", "400"],
+    "correctAnswerIndex": 2
+  },
+  {
     "question": "Berat daging yang disiapkan untuk 10 kemasan tahu tuna dan 12 kemasan bakso tuna adalah ... kg.",
     "questionImagePath": "Hard/15",
     "answers": ["17,5", "20,5", "18,5"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "question": "Berat daging yang disiapkan untuk 10 kemasan otak-otak tuna dan 5 kemasan siomai tuna adalah ... kg.",
+    "questionImagePath": "Hard/15",
+    "answers": ["3,5", "5,5", "7,5"],
     "correctAnswerIndex": 2
   },
   {
@@ -205,10 +223,10 @@
       "correctAnswerIndex": 0
     },
     {
-      "question": "Jika diurutkan berdasarkan nilai terkecil berada di depan, maka yang berdiri tepat di depan Wira adalah ...",
+      "question": "Jika diurutkan berdasarkan nilai terkecil berada di depan, maka yang berdiri tepat di belakang Titin adalah ...",
       "questionImagePath": "Hard/39",
       "answers": ["Dian", "Tika", "Titin"],
-      "correctAnswerIndex": 0
+      "correctAnswerIndex": 1
     },
     {
       "question": "Jika diurutkan berdasarkan nilai terkecil berada di depan, maka urutan yang benar adalah ...",
@@ -313,28 +331,46 @@
       "correctAnswerIndex": 0
     },
     {
-      "question": "Pernyataan yang benar untuk limas segilima adalah ...",
-      "questionImagePath": "Hard/70",
-      "answers": ["(i)", "(ii)", "(iv)"],
+      "question": "Jika total keseluruhan ayam adalah 1.100 ekor, maka total ayam cemani dan ayam kate adalah ... ekor.",
+      "questionImagePath": "Hard/77",
+      "answers": ["220", "300", "480"],
       "correctAnswerIndex": 2
     },
     {
-      "question": "Volume air yang terbuang saat keran air dinyalakan selama 30 detik adalah ... m<sup>3</sup>.",
-      "questionImagePath": "Hard/55",
-      "answers": ["0,006", "0,003", "0,03"],
+      "question": "Jika total keseluruhan ayam adalah 1.100 ekor, maka selisih ayam cemani dan ayam kate adalah ... ekor.",
+      "questionImagePath": "Hard/77",
+      "answers": ["14", "18", "22"],
       "correctAnswerIndex": 2
     },
     {
-      "question": "Air yang terbuang dari keran air yang mengalir adalah … cm<sup>3</sup>/detik.",
-      "questionImagePath": "Hard/55",
-      "answers": ["50", "100", "200"],
+      "question": "Total keseluruhan ayam adalah 1.100 ekor. Jika 11 ayam broiler mati, maka sisa ayam broiler adalah ... ekor.",
+      "questionImagePath": "Hard/77",
+      "answers": ["374", "488", "596"],
       "correctAnswerIndex": 2
     },
     {
-      "question": "Air yang terbuang dari keran air yang mengalir adalah … cm<sup>3</sup>/detik.",
-      "questionImagePath": "Hard/55",
-      "answers": ["Yuda, Budi, Ade, Dinda", "100", "200"],
+      "question": "Total keseluruhan ayam adalah 1.100 ekor. Jika 18 ayam afkir mati, maka sisa ayam afkir adalah ... ekor.",
+      "questionImagePath": "Hard/77",
+      "answers": ["150", "279", "396"],
       "correctAnswerIndex": 2
-    }
+    },
+    {
+    "question": "Jika total keseluruhan ayam adalah 1.100 ekor, maka selisih ayam cemani dan ayam kate adalah ... ekor.",
+    "questionImagePath": "Hard/77",
+    "answers": ["14", "18", "22"],
+    "correctAnswerIndex": 2
+    },
+    {
+    "question": "Total keseluruhan ayam adalah 1.100 ekor. Jika 11 ayam broiler mati, maka sisa ayam broiler adalah ... ekor.",
+    "questionImagePath": "Hard/77",
+    "answers": ["374", "488", "596"],
+    "correctAnswerIndex": 2
+    },
+    {
+    "question": "Total keseluruhan ayam adalah 1.100 ekor. Jika 18 ayam afkir mati, maka sisa ayam afkir adalah ... ekor.",
+    "questionImagePath": "Hard/77",
+    "answers": ["150", "279", "396"],
+    "correctAnswerIndex": 2
+  }
   ]
 }
