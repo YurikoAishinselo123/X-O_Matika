@@ -4,79 +4,31 @@
       "question": "Kempyang akan dimainkan kembali pada ketukan ke ...",
       "questionImagePath": "Medium/1",
       "answers": ["15", "17", "19"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 0
     },
     {
       "question": "Kempul akan dimainkan kembali pada ketukan ke ...",
-      "questionImagePath": "Medium/1",
-      "answers": ["16", "18", "20"],
-      "correctAnswerIndex": 1
-    },
-    {
-      "question": "Kethuk akan dimainkan kembali pada ketukan ke ...",
       "questionImagePath": "Medium/1",
       "answers": ["14", "16", "18"],
       "correctAnswerIndex": 1
     },
     {
-      "question": "Rumput sintetis yang dibutuhkan untuk bagian I adalah … cm<sup>2</sup>",
+      "question": "Rumput sintetis yang dibutuhkan untuk bagian I adalah ... cm<sup>2</sup>.",
       "questionImagePath": "Medium/3",
       "answers": ["10.000", "20.000", "30.000"],
-      "correctAnswerIndex": 1
+      "correctAnswerIndex": 0
     },
     {
-      "question": "Rumput sintetis yang dibutuhkan untuk bagian II adalah … cm<sup>2</sup>",
+      "question": "Rumput sintetis yang dibutuhkan untuk bagian II adalah ... cm<sup>2</sup>.",
       "questionImagePath": "Medium/3",
       "answers": ["10.000", "20.000", "30.000"],
-      "correctAnswerIndex": 1
-    },
-    {
-      "question": "Rumput sintetis yang dibutuhkan untuk bagian kolam adalah … cm<sup>2</sup>",
-      "questionImagePath": "Medium/3",
-      "answers": ["40.000", "60.000", "80.000"],
-      "correctAnswerIndex": 1
-    },
-    {
-      "question": "Jika setiap toko sepeda mampu menampung 250 buah, maka sepeda anak yang dapat ditambah di toko Bali adalah ... buah.",
-      "questionImagePath": "Medium/5",
-      "answers": ["60", "50", "40"],
-      "correctAnswerIndex": 1
-    },
-    {
-      "question": "Jika setiap toko sepeda mampu menampung 250 buah, maka sepeda gunung yang dapat ditambah di toko Bandung adalah ... buah.",
-      "questionImagePath": "Medium/5",
-      "answers": ["25", "30", "35"],
       "correctAnswerIndex": 1
     },
     {
       "question": "Kemungkinan buku yang dibeli dari uang Rp. 170.000 adalah ...",
       "questionImagePath": "Medium/7",
-      "answers": ["Guru Aini dan Sirkus Pohon", "Sirkus Pohon dan Guru Aini", "Sebelas Patriot dan Ayah"],
-      "correctAnswerIndex": 1
-    },
-    {
-      "question": "Buku dengan harga Rp. 92.000 adalah ...",
-      "questionImagePath": "Medium/7",
-      "answers": ["Guru Aini", "Sirkus Pohon", "Sebelas Patriot"],
-      "correctAnswerIndex": 1
-    },
-    {
-      "question": "Buku dengan harga Rp. 87.000 adalah ...",
-      "questionImagePath": "Medium/7",
-      "answers": ["Guru Aini", "Sirkus Pohon", "Sebelas Patriot"],
-      "correctAnswerIndex": 1
-    },
-    {
-      "question": "Buku dengan harga Rp. 89.000 adalah ...",
-      "questionImagePath": "Medium/7",
-      "answers": ["Guru Aini", "Sirkus Pohon", "Sebelas Patriot"],
-      "correctAnswerIndex": 1
-    },
-    {
-      "question": "Buku dengan harga Rp. 74.000 adalah ...",
-      "questionImagePath": "Medium/7",
-      "answers": ["Guru Aini", "Ayah", "Sebelas Patriot"],
-      "correctAnswerIndex": 1
+      "answers": ["Guru Aini dan Sirkus Pohon", "Sirkus Pohon dan Sebelas Patriot", "Sebelas Patriot dan Ayah"],
+      "correctAnswerIndex": 2
     },
     {
       "question": "Buku yang dibeli adalah buku Ayah dan Sirkus Pohon. Jika mendapatkan potongan harga 20%, maka harga kedua buku tersebut adalah ...",
@@ -85,232 +37,406 @@
       "correctAnswerIndex": 1
     },
     {
-      "question": "Buku yang dibeli adalah buku Ayah dan Sebelas Patriot. Jika mendapatkan potongan harga 20%, maka harga kedua buku tersebut adalah ...",
+      "question": "Buku yang dibeli adalah buku Sebelas Patriot dan Sirkus Pohon. Jika mendapatkan potongan harga 30%, maka harga kedua buku tersebut adalah ...",
       "questionImagePath": "Medium/7",
-      "answers": ["Rp. 120.800", "Rp. 127.400", "Rp. 130.400"],
+      "answers": ["Rp. 123.200", "Rp. 130.800", "Rp. 135.400"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Harga 3 sukulen hijau sama dengan harga ...",
+      "questionImagePath": "Medium/9",
+      "answers": ["3 kaktus bulat", "2 sukulen merah", "2 kaktus panjang"],
       "correctAnswerIndex": 1
     },
     {
-      "question": "Buku yang dibeli adalah buku Ayah dan Guru Aini. Jika mendapatkan potongan harga 20%, maka harga kedua buku tersebut adalah ...",
-      "questionImagePath": "Medium/7",
-      "answers": ["Rp. 132.800", "Rp. 140.000", "Rp. 150.300"],
+      "question": "Harga 2 kaktus panjang sama dengan harga ...",
+      "questionImagePath": "Medium/9",
+      "answers": ["5 sukulen hijau", "6 sukulen merah", "8 kaktus bulat"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Harga untuk 8 penjepit rambut dan 1 bando adalah ...",
+      "questionImagePath": "Medium/11",
+      "answers": ["Rp. 8.000", "Rp. 12.000", "Rp. 15.000"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Harga untuk 10 penjepit rambut dan 3 bando adalah ...",
+      "questionImagePath": "Medium/11",
+      "answers": ["Rp. 15.000", "Rp. 17.000", "Rp. 19.000"],
       "correctAnswerIndex": 1
     },
-  {
-    "question": "Buku yang dibeli adalah buku Sebelas Patriot dan Sirkus Pohon. Jika mendapatkan potongan harga 30%, maka harga kedua buku tersebut adalah ...",
-    "questionImagePath": "Medium/7",
-    "answers": ["Rp. 123.200", "Rp. 130.800", "Rp. 135.400"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Buku yang dibeli adalah buku Sebelas Patriot dan Guru Aini. Jika mendapatkan potongan harga 30%, maka harga kedua buku tersebut adalah ...",
-    "questionImagePath": "Medium/7",
-    "answers": ["Rp. 120.800", "Rp. 126.700", "Rp. 130.400"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Buku yang dibeli adalah buku Sirkus Pohon dan Guru Aini. Jika mendapatkan potongan harga 20%, maka harga kedua buku tersebut adalah ...",
-    "questionImagePath": "Medium/7",
-    "answers": ["Rp. 120.000", "Rp. 125.300", "Rp. 130.800"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Harga 3 sukulen hijau sama dengan harga ...",
-    "questionImagePath": "Medium/9",
-    "answers": ["3 kaktus bulat", "2 sukulen merah ", "2 sukulen hijau "],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Harga 6 sukulen merah sama dengan harga ...",
-    "questionImagePath": "Medium/9",
-    "answers": ["4 sukulen hijau", "6 kaktus panjang", "8 kaktus bulat"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Harga 2 kaktus panjang sama dengan harga ...",
-    "questionImagePath": "Medium/9",
-    "answers": ["4 sukulen hijau", "6 kaktus panjang", "8 kaktus bulat"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Harga dari 3 kaktus bulat dan 2 sukulen hijau adalah ...",
-    "questionImagePath": "Medium/9",
-    "answers": ["Rp. 60.000", "Rp. 56.000", "Rp. 65.000"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Harga dari 2 kaktus panjang dan 1 sukulen merah adalah ...",
-    "questionImagePath": "Medium/9",
-    "answers": ["Rp. 60.000", "Rp. 56.000", "Rp. 65.000"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Harga dari 2 sukulen merah dan 3 sukulen hijau adalah ...",
-    "questionImagePath": "Medium/9",
-    "answers": ["Rp. 60.000", "Rp. 56.000", "Rp. 65.000"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Harga dari 10 penjepit rambut adalah ...",
-    "questionImagePath": "Medium/11",
-    "answers": ["Rp. 5.000", "Rp. 10.000", "Rp. 15.000"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Harga dari 4 ikat rambut adalah ...",
-    "questionImagePath": "Medium/11",
-    "answers": ["Rp. 8.000", "Rp. 12.000", "Rp. 16.000"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Harga dari 9 bando adalah ...",
-    "questionImagePath": "Medium/11",
-    "answers": ["Rp. 32.000", "Rp. 36.000", "Rp. 40.000"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Harga untuk 8 penjepit rambut dan 1 bando adalah ...",
-    "questionImagePath": "Medium/11",
-    "answers": ["Rp. 8.000", "Rp. 12.000", "Rp. 15.000"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Harga untuk 4 ikat rambut dan 6 bando adalah ...",
-    "questionImagePath": "Medium/11",
-    "answers": ["Rp. 32.000", "Rp. 36.000", "Rp. 40.000"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Harga untuk 10 penjepit rambut dan 3 bando adalah ...",
-    "questionImagePath": "Medium/11",
-    "answers": ["Rp. 15.000", "Rp. 17.000", "Rp. 19.000"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Harga dari 1 roll plester dan 2 botol obat merah adalah ...",
-    "questionImagePath": "Medium/13",
-    "answers": ["Rp. 48.000", "Rp. 50.000", "Rp. 56.000"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Harga dari 2 roll plester dan 1 kotak kapas steril adalah ...",
-    "questionImagePath": "Medium/13",
-    "answers": ["Rp. 48.000", "Rp. 54.000", "Rp. 60.000"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Harga dari 2 roll plester dan 1 kotak sarung tangan adalah ...",
-    "questionImagePath": "Medium/13",
-    "answers": ["Rp. 53.000", "Rp. 57.000", "Rp. 61.000"],
-    "correctAnswerIndex": 1
-  },
-  {
-    "question": "Harga dari 2 roll plester dan 2 botol obat tetes mata adalah ...",
-    "questionImagePath": "Medium/13",
-    "answers": ["Rp. 53.000", "Rp. 57.000", "Rp. 61.000"],
-    "correctAnswerIndex": 1
-  },
-{
-  "question": "Harga dari 1 kotak kapas steril dan 1 kotak sarung tangan adalah ...",
-  "questionImagePath": "Medium/13",
-  "answers": ["Rp. 69.000", "Rp. 68.000", "Rp. 67.000"],
-  "correctAnswerIndex": 1
-},
-{
-  "question": "Harga dari 1 kotak kapas steril dan 1 botol obat merah adalah ...",
-  "questionImagePath": "Medium/13",
-  "answers": ["Rp. 69.000", "Rp. 68.000", "Rp. 67.000"],
-  "correctAnswerIndex": 1
-},
-{
-  "question": "Harga dari 1 kotak kapas steril dan 2 botol obat tetes mata adalah ...",
-  "questionImagePath": "Medium/13",
-  "answers": ["Rp. 58.000", "Rp. 59.000", "Rp. 60.000"],
-  "correctAnswerIndex": 1
-},
-{
-  "question": "Harga dari 1 kotak sarung tangan dan 1 botol obat merah adalah ...",
-  "questionImagePath": "Medium/13",
-  "answers": ["Rp. 48.000", "Rp. 50.000", "Rp. 56.000"],
-  "correctAnswerIndex": 1
-},
-{
-"question": "Harga dari 1 kotak sarung tangan dan 2 botol obat tetes mata ...",
-"questionImagePath": "Medium/13",
-"answers": ["Rp. 66.000", "Rp. 67.000", "Rp. 68.000"],
-"correctAnswerIndex": 1
-},
-{
-"question": "Harga dari 2 botol obat merah dan 2 botol obat tetes mata adalah ...",
-"questionImagePath": "Medium/13",
-"answers": ["Rp. 66.000", "Rp. 67.000", "Rp. 68.000"],
-"correctAnswerIndex": 1
-},
-{
-"question": "Jika 28 soal pilihan ganda, 19 soal uraian singkat, dan 5 esai berhasil dijawab, maka hasil nilai ujian kira-kira adalah ...",
-"questionImagePath": "Medium/15",
-"answers": ["98", "96", "92"],
-"correctAnswerIndex": 1
-},
-{
-  "question": "Jika 28 soal pilihan ganda, 20 soal uraian singkat, dan 4 esai berhasil dijawab, maka hasil nilai ujian kira-kira adalah ...",
-  "questionImagePath": "Medium/15",
-  "answers": ["98", "96", "92"],
-  "correctAnswerIndex": 1
-  },
-{
-  "question": "Waktu paling lama untuk merebus wortel dan bayam adalah ... menit.",
-  "questionImagePath": "Medium/18",
-  "answers": ["4", "5", "6"],
-  "correctAnswerIndex": 1
-},
-{
-  "question": "Sayuran yang memiliki waktu merebus paling lama adalah ...",
-  "questionImagePath": "Medium/18",
-  "answers": ["Wortel", "Brokoli", "Jagung"],
-  "correctAnswerIndex": 1
-},
-{
-  "question": "Durasi yang dibutuhkan untuk merebus wortel dan brokoli di wadah yang sama adalah ... menit.",
-  "questionImagePath": "Medium/18",
-  "answers": ["4", "5", "6"],
-  "correctAnswerIndex": 1
-},
-{
-  "question": "Durasi yang dibutuhkan untuk merebus bayam dan brokoli di wadah yang sama adalah ... menit.",
-  "questionImagePath": "Medium/18",
-  "answers": ["4", "5", "6"],
-  "correctAnswerIndex": 1
-},
-{
-  "question": "Durasi yang dibutuhkan untuk merebus jagung dan brokoli di wadah yang sama adalah ... menit.",
-  "questionImagePath": "Medium/18",
-  "answers": ["4", "5", "6"],
-  "correctAnswerIndex": 1
-},
-{
-"question": "Harga dari 1 kotak sarung tangan dan 2 botol obat tetes mata ...",
-"questionImagePath": "Medium/13",
-"answers": ["Rp. 66.000", "Rp. 67.000", "Rp. 68.000"],
-"correctAnswerIndex": 1
-},
-{
-"question": "Harga dari 2 botol obat merah dan 2 botol obat tetes mata adalah ...",
-"questionImagePath": "Medium/13",
-"answers": ["Rp. 66.000", "Rp. 67.000", "Rp. 68.000"],
-"correctAnswerIndex": 1
-},
-{
-"question": "Jika 28 soal pilihan ganda, 19 soal uraian singkat, dan 5 esai berhasil dijawab, maka hasil nilai ujian kira-kira adalah ...",
-"questionImagePath": "Medium/15",
-"answers": ["98", "96", "92"],
-"correctAnswerIndex": 1
-},
-{
-"question": "Jika 28 soal pilihan ganda, 20 soal uraian singkat, dan 4 esai berhasil dijawab, maka hasil nilai ujian kira-kira adalah ...",
-"questionImagePath": "Medium/15",
-"answers": ["98", "Rp. 96", "Rp. 92"],
-"correctAnswerIndex": 1
+    {
+      "question": "Harga dari 1 roll plester dan 2 botol obat merah adalah ...",
+      "questionImagePath": "Medium/13",
+      "answers": ["Rp. 48.000", "Rp. 50.000", "Rp. 56.000"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Harga dari 2 botol obat merah dan 2 botol obat tetes mata adalah ...",
+      "questionImagePath": "Medium/13",
+      "answers": ["Rp. 66.000", "Rp. 67.000", "Rp. 68.000"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Jika 28 soal pilihan ganda, 19 soal uraian singkat, dan 5 esai berhasil dijawab, maka hasil nilai ujian kira-kira adalah ...",
+      "questionImagePath": "Medium/15",
+      "answers": ["98", "96", "92"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Jika 28 soal pilihan ganda, 20 soal uraian singkat, dan 4 esai berhasil dijawab, maka hasil nilai ujian kira-kira adalah ...",
+      "questionImagePath": "Medium/15",
+      "answers": ["98", "96", "92"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Waktu paling lama untuk merebus wortel dan bayam adalah ... menit.",
+      "questionImagePath": "Medium/18",
+      "answers": ["4", "5", "6"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Sayuran yang memiliki waktu merebus paling lama adalah ...",
+      "questionImagePath": "Medium/18",
+      "answers": ["Wortel", "Brokoli", "Jagung"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Waktu yang dibutuhkan untuk merebus wortel dan brokoli di wadah yang sama adalah ... menit.",
+      "questionImagePath": "Medium/18",
+      "answers": ["4", "5", "6"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Waktu yang dibutuhkan untuk merebus bayam dan brokoli di wadah yang sama adalah ... menit.",
+      "questionImagePath": "Medium/18",
+      "answers": ["4", "5", "6"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Jika diurutkan berdasarkan nilai terkecil berada di depan, maka Catur berada pada urutan ke ... dari depan.",
+      "questionImagePath": "Medium/19",
+      "answers": ["2", "3", "4"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Jika diurutkan berdasarkan nilai terbesar berada di depan, maka yang berdiri tepat di belakang Disa adalah ...",
+      "questionImagePath": "Medium/19",
+      "answers": ["Arinda", "Bintang", "Catur"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Jika diurutkan berdasarkan nilai terbesar berada di depan, maka yang berdiri paling belakang adalah ...",
+      "questionImagePath": "Medium/19",
+      "answers": ["Arinda", "Bintang", "Catur"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Jika diurutkan berdasarkan nilai terbesar berada di depan, maka yang berdiri di antara Disa dan Bintang adalah ...",
+      "questionImagePath": "Medium/19",
+      "answers": ["Arinda", "Bintang", "Catur"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Jika botol plastik ada 750 botol, maka kemungkinan kombinasi yang bisa dibuat adalah ...",
+      "questionImagePath": "Medium/23",
+      "answers": ["7 lampu dan 25 bunga", "9 lampu dan 20 bunga", "12 lampu dan 8 bunga"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Jika botol plastik ada 500 botol, maka jumlah lampu yang bisa dibuat adalah ... botol.",
+      "questionImagePath": "Medium/23",
+      "answers": ["8", "10", "12"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Lagu yang memiliki durasi paling lama adalah ...",
+      "questionImagePath": "Medium/25",
+      "answers": ["Sajojo", "Manuk Dadali", "Rasa Sayange"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Lagu yang memiliki durasi paling singkat adalah ...",
+      "questionImagePath": "Medium/25",
+      "answers": ["Rasa Sayange", "Ampar-Ampar Pisang", "Manuk Dadali"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Durasi untuk tarian gabungan Rasa Sayange dan Sajojo adalah ... menit.",
+      "questionImagePath": "Medium/25",
+      "answers": ["6,18", "6,38", "6,78"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Durasi untuk tarian gabungan Butet dan Manuk Dadali adalah ... menit.",
+      "questionImagePath": "Medium/25",
+      "answers": ["6,18", "6,38", "6,78"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Tim yang memenangkan lomba adalah ...",
+      "questionImagePath": "Medium/27",
+      "answers": ["II", "III", "I"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Tim yang menyelesaikan lomba paling lama adalah ...",
+      "questionImagePath": "Medium/27",
+      "answers": ["II", "III", "I"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Tim I mampu menyelesaikan seluruh perlombaan dalam waktu ... menit.",
+      "questionImagePath": "Medium/27",
+      "answers": ["22", "23", "24"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Tim II mampu menyelesaikan seluruh perlombaan dalam waktu ... menit.",
+      "questionImagePath": "Medium/27",
+      "answers": ["22", "23", "24"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Tim III mampu menyelesaikan seluruh perlombaan dalam waktu ... menit.",
+      "questionImagePath": "Medium/27",
+      "answers": ["22", "23", "24"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Kandungan vitamin C untuk 1 kg leci adalah ... mg.",
+      "questionImagePath": "Medium/31",
+      "answers": ["590", "625", "730"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Kandungan vitamin C untuk 2000 gr pepaya adalah ... mg.",
+      "questionImagePath": "Medium/31",
+      "answers": ["1240", "1320", "1450"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Model matematika untuk kandungan vitamin C pada 200 gram kelengkeng adalah ...",
+      "questionImagePath": "Medium/31",
+      "answers": ["200/500 X 420", "200/5 X 420", "5/200 X 420"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Model matematika untuk kandungan vitamin C pada 1 kg leci adalah ...",
+      "questionImagePath": "Medium/31",
+      "answers": ["1000/200 X 118", "200/1000 X 118", "1000/118 X 200"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Model matematika untuk kandungan vitamin C pada 2000 gr pepaya adalah ...",
+      "questionImagePath": "Medium/31",
+      "answers": ["2000/1000 X 620", "1000/2000 X 620", "2000/620 X 1000"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Jumlah penggaris adalah ... buah.",
+      "questionImagePath": "Medium/33",
+      "answers": ["40", "60", "80"],
+      "correctAnswerIndex": 2 
+    },
+    {
+      "question": "Jumlah rautan adalah ... buah.",
+      "questionImagePath": "Medium/33",
+      "answers": ["25", "35", "45"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Jika rautan terjual 13 buah, maka model matematika untuk sisa stok rautan adalah ...",
+      "questionImagePath": "Medium/33",
+      "answers": ["(9/4 X 12) – 13", "(15/4 X 12) – 13", "(3 3/4 X 144) – 13"],
+      "correctAnswerIndex": 1 
+    }, 
+    {
+      "question": "Banyak stiker yang berbentuk segi delapan adalah ... bagian.",
+      "questionImagePath": "Medium/36",
+      "answers": ["2/3", "1/3", "4/3"],
+      "correctAnswerIndex": 1 
+    },
+    {
+      "question": "Stiker yang paling banyak adalah ...",
+      "questionImagePath": "Medium/36",
+      "answers": ["Oval", "Persegi", "Segi delapan"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Stiker yang paling sedikit adalah ...",
+      "questionImagePath": "Medium/36",
+      "answers": ["Lingkaran", "Segi delapan", "Bintang"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Buku ensiklopedia mendapatkan ... bagian.",
+      "questionImagePath": "Medium/39",
+      "answers": ["7/12", "9/20", "1/3"],
+      "correctAnswerIndex": 1 
+    },
+    {
+      "question": "Yang mendapatkan bagian lebih banyak adalah ...",
+      "questionImagePath": "Medium/42",
+      "answers": ["Andi", "Susi", "Tidak ada"],
+      "correctAnswerIndex": 1 
+    },
+    {
+      "question": "Yang mendapatkan bagian lebih sedikit adalah ...",
+      "questionImagePath": "Medium/42",
+      "answers": ["Andi", "Susi", "Tidak ada"],
+      "correctAnswerIndex": 0
+    }, 
+    {
+      "question": "Nilai dari X, Y, dan Z pada garis bilangan tersebut adalah ...",
+      "questionImagePath": "Medium/44",
+      "answers": ["1/1, 2/1, dan 4/1", "2/4, 3/4, dan 7/4", "3/4, 7/4, dan 9/4"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Jika di dalam lift sudah ada muatan 380 kg, maka dua orang yang dapat masuk secara bersamaan adalah ...",
+      "questionImagePath": "Medium/45",
+      "answers": ["Andi dan Joni", "Joni dan Rosa", "Rosa dan Andi"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Jika mereka datang di hari Minggu, 1 Maret 2020, maka mereka akan datang bersamaan lagi pada tanggal ...",
+      "questionImagePath": "Medium/47",
+      "answers": ["15 Maret 2020", "25 Maret 2020", "31 Maret 2020"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Banyak rusuk pada prisma segilima adalah ... buah.",
+      "questionImagePath": "Medium/48",
+      "answers": ["6", "10", "15"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Volume bongkahan logam tersebut adalah ... ml.",
+      "questionImagePath": "Medium/49",
+      "answers": ["50", "100", "150"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Isi dari 1 gayung dan 1 gelas sama dengan isi ... gelas.",
+      "questionImagePath": "Medium/50",
+      "answers": ["4", "1", "5"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Isi dari 1 gayung sama dengan isi ... gelas.",
+      "questionImagePath": "Medium/50",
+      "answers": ["4", "1", "5"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Isi dari 2 gayung dan 3 gelas sama dengan isi ... gelas.",
+      "questionImagePath": "Medium/50",
+      "answers": ["9", "11", "13"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Bentuk perkalian dari permen jelly warna orange adalah ...",
+      "questionImagePath": "Medium/52",
+      "answers": ["3 X 5", "4 X 3", "5 X 3"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Selisih banyak permen jelly warna merah dan warna orange adalah ... buah.",
+      "questionImagePath": "Medium/52",
+      "answers": ["(7 – 4) X 3", "(7 – 5) X 3", "(5 – 4) X 3"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Harga dari 1 buah permen jeruk adalah ...",
+      "questionImagePath": "Medium/56",
+      "answers": ["Rp. 600", "Rp. 800", "Rp. 1.000"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Harga dari 5 buah permen lolipop adalah ...",
+      "questionImagePath": "Medium/56",
+      "answers": ["Rp. 6.000", "Rp. 9.000", "Rp. 15.000"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Banyaknya telur pada lapisan paling bawah adalah ... butir.",
+      "questionImagePath": "Medium/59",
+      "answers": ["15", "36", "57"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Jika ada 14 butir telur yang tersedia, maka banyak lapisan telur yang dapat disusun adalah ... lapis.",
+      "questionImagePath": "Medium/59",
+      "answers": ["5", "4", "3"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Jumlah seluruh telur pada gambar di atas adalah ... butir.",
+      "questionImagePath": "Medium/59",
+      "answers": ["80", "91", "105"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Selisih telur pada lapisan paling bawah dan paling atas adalah ... butir.",
+      "questionImagePath": "Medium/59",
+      "answers": ["12", "10", "11"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Banyak siswa yang mendapatkan nilai kurang dari 75 adalah ... orang.",
+      "questionImagePath": "Medium/64",
+      "answers": ["17", "9", "8"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Banyak siswa yang mendapatkan nilai kurang dari 70 adalah ... orang.",
+      "questionImagePath": "Medium/64",
+      "answers": ["17", "9", "8"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Jika total pasien adalah 100 orang, maka banyak pasien pada hari kamis adalah ... orang.",
+      "questionImagePath": "Medium/65",
+      "answers": ["43", "47", "57"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Banyak pasien pada hari Selasa adalah ... orang.",
+      "questionImagePath": "Medium/65",
+      "answers": ["17", "9", "8"],
+      "correctAnswerIndex": 1
+    }, 
+    {
+      "question": "Banyak pasien pada hari Sabtu adalah ... orang.",
+      "questionImagePath": "Medium/65",
+      "answers": ["17", "9", "8"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Banyak siswa pada data tersebut adalah ... orang.",
+      "questionImagePath": "Medium/66",
+      "answers": ["36", "37", "48"],
+      "correctAnswerIndex": 2
+    },
+    { 
+      "question": "Banyak siswa dengan berat badan 34 kg adalah ... orang.",
+      "questionImagePath": "Medium/66",
+      "answers": ["12", "13", "14"],
+      "correctAnswerIndex": 2
+    },
+    {
+      "question": "Banyak siswa dengan berat badan 38 kg adalah ... orang.",
+      "questionImagePath": "Medium/66",
+      "answers": ["12", "13", "14"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Jika papan diputar, maka warna yang mungkin ditunjuk jarum saat berhenti adalah ...",
+      "questionImagePath": "Medium/67",
+      "answers": ["Hijau", "Biru", "Merah"],
+      "correctAnswerIndex": 2
 }
   ]
 }
