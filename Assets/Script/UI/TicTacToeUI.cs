@@ -60,6 +60,7 @@ public class TicTacToeUI : MonoBehaviour
     {
         ticTacToeCanvas.SetActive(false);
         pauseCanvas.SetActive(true);
+        TicTacToeManager.Instance.PauseTimer();
     }
 
     public void ResumeGame()
@@ -67,6 +68,7 @@ public class TicTacToeUI : MonoBehaviour
         ticTacToeCanvas.SetActive(true);
         pauseCanvas.SetActive(false);
         winnerCanvas.SetActive(false);
+        TicTacToeManager.Instance.ResumeTimer();
     }
 
     private void RestartGame()
