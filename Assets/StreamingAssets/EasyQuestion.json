@@ -132,7 +132,7 @@
       "answers": ["0,2", "2,2", "2.000"],
       "correctAnswerIndex": 2
     },
-        {
+    {
       "question": "Berat dari buah anggur adalah ... kg.",
       "questionImagePath": "Easy/20",
       "answers": ["0,85", "8,5", "8.500"],
@@ -431,8 +431,6 @@
       "questionImagePath": "Easy/60",
       "answers": ["Penggaris B", "Penggaris A", "Jam B"],
       "correctAnswerIndex": 2
-    },
-    {
-} 
+    }
   ]
 }
