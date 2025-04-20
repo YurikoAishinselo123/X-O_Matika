@@ -116,10 +116,10 @@ TextureImporter:
       name: 14_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 513
-        height: 203
+        x: 29
+        y: 168
+        width: 723
+        height: 287
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      14_0: -6270953770400647376
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
