@@ -16,6 +16,7 @@ public class GameplayUI : MonoBehaviour
 
     void Start()
     {
+        AudioManager.Instance.StopBacksound();
         quizManager = QuizManager.Instance;
         if (quizManager == null)
         {

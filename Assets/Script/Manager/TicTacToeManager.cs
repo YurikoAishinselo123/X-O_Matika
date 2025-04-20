@@ -15,6 +15,7 @@ public class TicTacToeManager : MonoBehaviour
     private bool isXTurn = true;
     [SerializeField] private int turnTimer;
     private Coroutine turnTimerCoroutine;
+    private bool isTimerPaused = false;
 
     private Sprite[] boardState = new Sprite[9];
 
@@ -110,7 +111,12 @@ public class TicTacToeManager : MonoBehaviour
 
     public void PauseTimer()
     {
+        isTimerPaused = true;
+    }
 
+    public void ResumeTimer()
+    {
+        isTimerPaused = false;
     }
 
     private void StopTurnTimer()
@@ -126,8 +132,13 @@ public class TicTacToeManager : MonoBehaviour
         int timer = turnTimer;
         while (timer >= 0)
         {
+            while (isTimerPaused)
+            {
+                yield return null; // just wait for next frame until unpaused
+            }
+
             TicTacToeUI.Instance.UpdateTimer(timer);
-            AudioManager.Instance.PlayTimerSFX();
+            // AudioManager.Instance.PlayTimerSFX();
             yield return new WaitForSeconds(1);
             timer--;
         }
