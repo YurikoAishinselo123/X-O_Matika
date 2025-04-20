@@ -45,7 +45,7 @@ public class QuizManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(this.gameObject);
+            // DontDestroyOnLoad(this.gameObject);
         }
         else
         {
@@ -97,7 +97,7 @@ public class QuizManager : MonoBehaviour
                 if (request.result == UnityWebRequest.Result.Success)
                 {
                     ProcessJsonData(request.downloadHandler.text);
-                    StartQuiz(); // <-- Pindah ke sini
+                    StartQuiz();
                 }
                 else
                 {
@@ -192,7 +192,7 @@ public class QuizManager : MonoBehaviour
         while (currentQuizTimer > 0)
         {
             gameplayUI.UpdateQuizTimer(currentQuizTimer);
-            AudioManager.Instance.PlayTimerSFX();
+            // AudioManager.Instance.PlayTimerSFX();
             yield return new WaitForSeconds(1f);
             currentQuizTimer--;
         }

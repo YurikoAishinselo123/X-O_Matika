@@ -73,6 +73,7 @@ public class TicTacToeUI : MonoBehaviour
 
     private void RestartGame()
     {
+        Debug.Log("Restart");
         SceneLoader.Instance.LoadGameplay();
     }
 
