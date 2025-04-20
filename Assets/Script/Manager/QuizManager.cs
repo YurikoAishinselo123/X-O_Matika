@@ -192,6 +192,7 @@ public class QuizManager : MonoBehaviour
         while (currentQuizTimer > 0)
         {
             gameplayUI.UpdateQuizTimer(currentQuizTimer);
+            AudioManager.Instance.PlayTimerSFX();
             yield return new WaitForSeconds(1f);
             currentQuizTimer--;
         }

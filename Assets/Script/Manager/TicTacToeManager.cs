@@ -108,6 +108,11 @@ public class TicTacToeManager : MonoBehaviour
         TicTacToeUI.Instance.UpdateTimer(turnTimer);
     }
 
+    public void PauseTimer()
+    {
+
+    }
+
     private void StopTurnTimer()
     {
         if (turnTimerCoroutine != null)
@@ -122,6 +127,7 @@ public class TicTacToeManager : MonoBehaviour
         while (timer >= 0)
         {
             TicTacToeUI.Instance.UpdateTimer(timer);
+            AudioManager.Instance.PlayTimerSFX();
             yield return new WaitForSeconds(1);
             timer--;
         }

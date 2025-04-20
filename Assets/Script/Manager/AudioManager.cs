@@ -29,10 +29,9 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
     void Start()
     {
-        PlayTommyHappy();
+        PlayMainThemeBacksound();
     }
 
     public void PlayBacksound(string name)
@@ -46,6 +45,14 @@ public class AudioManager : MonoBehaviour
         {
             backsoundSource.clip = sound.clip;
             backsoundSource.Play();
+        }
+    }
+
+    public void StopBacksound()
+    {
+        if (backsoundSource.isPlaying)
+        {
+            backsoundSource.Stop();
         }
     }
 
@@ -64,9 +71,10 @@ public class AudioManager : MonoBehaviour
 
 
     // Play BackSound
-    public void PlayTommyHappy() => PlayBacksound("Tommy Happy");
+    public void PlayMainThemeBacksound() => PlayBacksound("Tommy Happy");
+
 
 
     // Play SFX
-    // public void PlayClikUI() => PlaySFX("Click UI");
+    public void PlayTimerSFX() => PlaySFX("SFX Timer");
 }
