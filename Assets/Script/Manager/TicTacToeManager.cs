@@ -138,7 +138,7 @@ public class TicTacToeManager : MonoBehaviour
             }
 
             TicTacToeUI.Instance.UpdateTimer(timer);
-            // AudioManager.Instance.PlayTimerSFX();
+            AudioManager.Instance.PlayTimerSFX();
             yield return new WaitForSeconds(1);
             timer--;
         }
