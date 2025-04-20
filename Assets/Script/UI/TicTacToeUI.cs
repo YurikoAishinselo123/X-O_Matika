@@ -45,6 +45,7 @@ public class TicTacToeUI : MonoBehaviour
 
     void Start()
     {
+        AudioManager.Instance.StopBacksound();
         TicTacToeManager.Instance.StartTurnTimer();
     }
 
