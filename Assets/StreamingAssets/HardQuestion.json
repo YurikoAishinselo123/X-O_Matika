@@ -79,12 +79,6 @@
       "correctAnswerIndex": 1
     },
     {
-      "question": "Jika semua barang akan dibagi rata, maka jumlah paket bantuan yang paling banyak disiapkan adalah ... paket.",
-      "questionImagePath": "Hard/12",
-      "answers": ["23", "32", "36"],
-      "correctAnswerIndex": 0
-    },
-    {
       "question": "Dalam seminggu, Vitamin A paling banyak dikonsumsi sebanyak ... tablet.",
       "questionImagePath": "Hard/14",
       "answers": ["12", "14", "21"],
@@ -103,31 +97,31 @@
       "correctAnswerIndex": 2
     },
     {
-      "question": "Berat daging yang disiapkan untuk 10 kemasan tahu tuna dan 12 kemasan bakso tuna adalah ... kg.",
+      "question": "Berat daging untuk 10 kemasan tahu tuna dan 12 kemasan bakso tuna adalah ... kg.",
       "questionImagePath": "Hard/15",
       "answers": ["17,5", "20,5", "18,5"],
       "correctAnswerIndex": 0
     },
     {
-      "question": "Berat daging yang disiapkan untuk 10 kemasan otak-otak tuna dan 5 kemasan siomai tuna adalah ... kg.",
+      "question": "Berat daging untuk 10 kemasan otak-otak tuna dan 5 kemasan siomai tuna adalah ... kg.",
       "questionImagePath": "Hard/15",
       "answers": ["3,5", "5,5", "7,5"],
       "correctAnswerIndex": 2
     },
     {
-      "question": "Berat daging yang disiapkan untuk 6 kemasan otak-otak tuna adalah ... kg.",
+      "question": "Berat daging untuk 6 kemasan otak-otak tuna adalah ... kg.",
       "questionImagePath": "Hard/15",
       "answers": ["2", "3", "4"],
       "correctAnswerIndex": 1
     },
     {
-      "question": "Berat daging yang disiapkan untuk 8 kemasan siomai tuna adalah ... kg.",
+      "question": "Berat daging untuk 8 kemasan siomai tuna adalah ... kg.",
       "questionImagePath": "Hard/15",
       "answers": ["2", "3", "4"],
       "correctAnswerIndex": 2
     },
     {
-      "question": "Berat daging yang disiapkan untuk 2 kemasan bakso tuna adalah ... kg.",
+      "question": "Berat daging untuk 2 kemasan bakso tuna adalah ... kg.",
       "questionImagePath": "Hard/15",
       "answers": ["1,5", "2", "2,5"],
       "correctAnswerIndex": 0
@@ -139,9 +133,21 @@
       "correctAnswerIndex": 1
     },
     {
+      "question": "Jeda waktu les sepak bola Martin ke belajar adalah ... jam.",
+      "questionImagePath": "Hard/20",
+      "answers": ["1", "1,5", "2"],
+      "correctAnswerIndex": 0
+    },
+    {
       "question": "Rike tidur selama ... menit.",
       "questionImagePath": "Hard/21",
       "answers": ["400", "420", "450"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "question": "Jeda waktu les renang Rike ke belajar adalah ... jam.",
+      "questionImagePath": "Hard/21",
+      "answers": ["1", "1,5", "2"],
       "correctAnswerIndex": 1
     },
     {
@@ -193,55 +199,49 @@
       "correctAnswerIndex": 1
     },
     {
-      "question": "Jika temperatur suhu turun 17<sup>o</sup>C dari suhu sekarang yaitu 10<sup>o</sup>C, maka suhu sekarang adalah ... <sup>o</sup>C.",
+      "question": "Jika suhu turun 17<sup>o</sup>C dari suhu sekarang yaitu 10<sup>o</sup>C, maka suhu sekarang adalah ... <sup>o</sup>C.",
       "questionImagePath": "Hard/34",
       "answers": ["-7", "-10", "-11"],
       "correctAnswerIndex": 0
     },
     {
-      "question": "Jika temperatur suhu turun 17<sup>o</sup>C dari suhu sekarang yaitu 10<sup>o</sup>C, maka penurunan suhunya adalah ... <sup>o</sup>C.",
+      "question": "Jika suhu turun 17<sup>o</sup>C dari suhu sekarang yaitu 10<sup>o</sup>C, maka penurunan suhunya adalah ... <sup>o</sup>C.",
       "questionImagePath": "Hard/34",
       "answers": ["9", "10", "11"],
       "correctAnswerIndex": 0
     },
     {
-      "question": "Jika 1/6 taman akan digunakan untuk kolam dengan luas taman yaitu 60 m<sup>2</sup>, maka luas kolam adalah ... m<sup>2</sup>.",
-      "questionImagePath": "Hard/36",
-      "answers": ["7,25", "16,65", "21,75"],
-      "correctAnswerIndex": 2
-    },
-    {
-      "question": "Jika diurutkan berdasarkan nilai terkecil berada di depan, maka yang berdiri paling depan adalah ...",
+      "question": "Jika nilai terkecil berdiri di depan, maka yang berdiri paling depan adalah ...",
       "questionImagePath": "Hard/39",
       "answers": ["Titin", "Wira", "Tika"],
       "correctAnswerIndex": 0
     },
     {
-      "question": "Jika diurutkan berdasarkan nilai terkecil berada di depan, maka yang berdiri paling belakang adalah ...",
+      "question": "Jika nilai terkecil berdiri di depan, maka yang berdiri paling belakang adalah ...",
       "questionImagePath": "Hard/39",
       "answers": ["Dian", "Wira", "Aditya"],
       "correctAnswerIndex": 2
     },
     {
-      "question": "Jika diurutkan berdasarkan nilai terkecil berada di depan, maka yang berdiri tepat di depan Wira adalah ...",
+      "question": "Jika nilai terkecil berdiri di depan, maka yang berdiri tepat di depan Wira adalah ...",
       "questionImagePath": "Hard/39",
       "answers": ["Dian", "Tika", "Titin"],
       "correctAnswerIndex": 1
     },
     {
-      "question": "Jika diurutkan berdasarkan nilai terkecil berada di depan, maka yang berdiri tepat di belakang Wira adalah ...",
+      "question": "Jika nilai terkecil berdiri di depan, maka yang berdiri tepat di belakang Wira adalah ...",
       "questionImagePath": "Hard/39",
       "answers": ["Dian", "Tika", "Titin"],
       "correctAnswerIndex": 0
     },
     {
-      "question": "Jika diurutkan berdasarkan nilai terkecil berada di depan, maka urutan yang benar adalah ...",
+      "question": "Jika nilai terkecil berdiri di depan, maka urutan yang benar adalah ...",
       "questionImagePath": "Hard/45",
       "answers": ["Yuda, Budi, Ade, Dinda", "Dinda, Yuda, Budi, Ade", "Budi, Dinda, Ade, Yuda"],
       "correctAnswerIndex": 0
     },
     {
-      "question": "Jika diurutkan berdasarkan nilai terbesar berada di depan, maka yang berdiri di belakang Ade adalah ...",
+      "question": "Jika nilai terbesar berdiri di depan, maka yang berdiri di belakang Ade adalah ...",
       "questionImagePath": "Hard/45",
       "answers": ["Budi", "Yuda", "Dinda"],
       "correctAnswerIndex": 0
@@ -277,7 +277,7 @@
       "correctAnswerIndex": 1
     },
     {
-      "question": "Jika bubur ayam terjual 80 porsi dan botol air mineral terjual 30 botol, maka besar sumbangan yang diberikan adalah ...",
+      "question": "Sumbangan yang diberikan jika bubur ayam laku 80 porsi dan air mineral laku 30 botol adalah ...",
       "questionImagePath": "Hard/53",
       "answers": ["Rp. 40.000", "Rp. 52.000", "Rp. 78.000"],
       "correctAnswerIndex": 1
@@ -301,39 +301,39 @@
       "correctAnswerIndex": 1
     },
     {
-      "question": "Jika sebuah motor diparkir selama 1 jam 30 menit, maka biaya parkir yang dibayar adalah ...",
+      "question": "Jika 1 motor parkir selama 1 jam dan 30 menit, maka biaya parkir yang dibayar adalah ...",
       "questionImagePath": "Hard/63",
       "answers": ["Rp. 1.000", "Rp. 2.000", "Rp. 3.000"],
       "correctAnswerIndex": 2
     },
     {
-      "question": "Jika sebuah motor diparkir selama 1 jam, maka biaya parkir yang dibayar adalah ...",
+      "question": "Jika 1 motor parkir selama 1 jam, maka biaya parkir yang dibayar adalah ...",
       "questionImagePath": "Hard/63",
       "answers": ["Rp. 1.000", "Rp. 2.000", "Rp. 3.000"],
       "correctAnswerIndex": 1
     },
     {
-      "question": "Jika sebuah mobil diparkir selama 10 jam, maka biaya parkir yang dibayar adalah ...",
+      "question": "Jika 1 mobil parkir selama 10 jam, maka biaya parkir yang dibayar adalah ...",
       "questionImagePath": "Hard/63",
       "answers": ["Rp. 19.000", "Rp. 23.000", "Rp. 25.000"],
       "correctAnswerIndex": 1
     },
     {
-      "question": "Jika sebuah mobil diparkir selama 8 jam, maka biaya parkir yang dibayar adalah ...",
+      "question": "Jika 1 mobil parkir selama 8 jam, maka biaya parkir yang dibayar adalah ...",
       "questionImagePath": "Hard/63",
       "answers": ["Rp. 19.000", "Rp. 23.000", "Rp. 25.000"],
       "correctAnswerIndex": 0
     },
     {
-      "question": "Jika seseorang membayar sebesar Rp. 9.000, maka pernyataan berikut yang benar adalah ...",
+      "question": "Jika ada yang membayar Rp. 9.000, maka lama waktu motor diparkir adalah ... jam.",
       "questionImagePath": "Hard/63",
-      "answers": ["Memarkir motor selama 8 jam", "Memarkir motor selama 9 jam", "Memarkir motor lebih dari 9 jam"],
+      "answers": ["8", "9", "10"],
       "correctAnswerIndex": 0
     },
     {
-      "question": "Jika seseorang membayar sebesar Rp. 15.000, maka pernyataan berikut yang benar adalah ...",
+      "question": "Jika ada yang membayar Rp. 15.000, maka lama waktu mobil diparkir adalah ... jam.",
       "questionImagePath": "Hard/63",
-      "answers": ["Memarkir mobil selama 5 jam", "Memarkir mobil selama 6 jam", "Memarkir mobil lebih dari 6 jam"],
+      "answers": ["5", "6", "7"],
       "correctAnswerIndex": 1
     },
     {
@@ -343,13 +343,13 @@
       "correctAnswerIndex": 0
     },
     {
-      "question": "Jika jumlah seluruh panen adalah 500 kwintal, maka jumlah panen jagung adalah ... kwintal.",
+      "question": "Jika jumlah panen adalah 500 kwintal, maka jumlah panen jagung adalah ... kwintal.",
       "questionImagePath": "Hard/68",
       "answers": ["250", "125", "100"],
       "correctAnswerIndex": 1
     },
     {
-      "question": "Jika jumlah seluruh panen adalah 500 kwintal, maka jumlah panen padi adalah ... kwintal.",
+      "question": "Jika jumlah panen adalah 500 kwintal, maka jumlah panen padi adalah ... kwintal.",
       "questionImagePath": "Hard/68",
       "answers": ["250", "125", "100"],
       "correctAnswerIndex": 0
@@ -373,31 +373,43 @@
       "correctAnswerIndex": 1
     },
     {
-      "question": "Jika total keseluruhan ayam adalah 1.100 ekor, maka total ayam cemani dan ayam kate adalah ... ekor.",
+      "question": "Pembuatan jam dinding 1 membutuhkan papan kayu seluas ... cm<sup>2</sup>.",
+      "questionImagePath": "Hard/75",
+      "answers": ["900", "1200", "1500"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Pembuatan jam dinding 2 membutuhkan papan kayu seluas ... cm<sup>2</sup>.",
+      "questionImagePath": "Hard/75",
+      "answers": ["900", "1200", "1500"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "question": "Total ayam cemani dan ayam kate dari total 1.100 ekor adalah ... ekor.",
       "questionImagePath": "Hard/77",
       "answers": ["220", "300", "480"],
       "correctAnswerIndex": 0
     },
     {
-      "question": "Jika total keseluruhan ayam adalah 1.100 ekor, maka selisih ayam cemani dan ayam kate adalah ... ekor.",
+      "question": "Selisih ayam cemani dan ayam kate dari total 1.100 ekor adalah ... ekor.",
       "questionImagePath": "Hard/77",
       "answers": ["14", "18", "22"],
       "correctAnswerIndex": 2
     },
     {
-      "question": "Total keseluruhan ayam adalah 1.100 ekor. Jika 14 ayam kalkun mati, maka sisa ayam kalkun adalah ... ekor.",
+      "question": "Jika 14 ayam kalkun mati dari total 1.100 ekor, maka sisa ayam kalkun adalah ... ekor.",
       "questionImagePath": "Hard/77",
       "answers": ["184", "248", "320"],
       "correctAnswerIndex": 0
     },
     {
-      "question": "Total keseluruhan ayam adalah 1.100 ekor. Jika 11 ayam broiler mati, maka sisa ayam broiler adalah ... ekor.",
+      "question": "Jika 11 ayam broiler mati dari total 1.100 ekor, maka sisa ayam broiler adalah ... ekor.",
       "questionImagePath": "Hard/77",
       "answers": ["374", "488", "596"],
       "correctAnswerIndex": 0
     },
     {
-      "question": "Total keseluruhan ayam adalah 1.100 ekor. Jika 18 ayam afkir mati, maka sisa ayam afkir adalah ... ekor.",
+      "question": "Jika 18 ayam afkir mati dari total 1.100 ekor, maka sisa ayam afkir adalah ... ekor.",
       "questionImagePath": "Hard/77",
       "answers": ["150", "279", "396"],
       "correctAnswerIndex": 1
