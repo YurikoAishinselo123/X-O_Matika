@@ -55,7 +55,7 @@
       "correctAnswerIndex": 2
     },
     {
-      "question": "Jika balon kuning akan diberikan kepada 2 orang, maka pembagian balon dalam bentuk pengulangan berulang yang benar adalah ...",
+      "question": "Pengulangan berulang untuk balon kuning yang akan diberikan kepada 2 orang adalah ...",
       "questionImagePath": "Easy/14",
       "answers": ["6 – 2 – 2 – 2 = 0", "6 – 3 – 3 = 0", "6 – 1 – 1 – 1 – 1 – 1 – 1 = 0"],
       "correctAnswerIndex": 0
@@ -145,12 +145,6 @@
       "correctAnswerIndex": 2
     },
     {
-      "question": "Agar timbangan sebelah kanan seimbang, maka mainan kotak warna-warni harus ditambahkan sebanyak ... buah.",
-      "questionImagePath": "Easy/22",
-      "answers": ["1", "2", "3"],
-      "correctAnswerIndex": 0
-    },
-    {
       "question": "Benda yang berbentuk balok adalah ...",
       "questionImagePath": "Easy/24",
       "answers": ["Tempat Sampah", "Kulkas", "Bola"],
@@ -181,19 +175,19 @@
       "correctAnswerIndex": 2
     }, 
     {
-      "question": "Jika ingin mengisi penuh 3 ember, maka ember yang dihitung dari banyak sekrup dapat ditulis sebagai ...",
+      "question": "Model perkalian untuk mengisi 3 ember dari banyak sekrup adalah ...",
       "questionImagePath": "Easy/25",
       "answers": ["3 X 9", "9 X 3", "3 X 8"],
       "correctAnswerIndex": 0
     },
     {
-      "question": "Jika ingin mengisi penuh 2 ember, maka ember yang dihitung dari banyak sekrup dapat ditulis sebagai ...",
+      "question": "Model perkalian untuk mengisi 2 ember dari banyak sekrup adalah ...",
       "questionImagePath": "Easy/25",
       "answers": ["2 X 9", "9 X 2", "2 X 8"],
       "correctAnswerIndex": 0
     },  
     {
-      "question": "Jika ingin mengisi penuh 1 ember, maka ember yang dihitung dari banyak sekrup dapat ditulis sebagai ...",
+      "question": "Model perkalian untuk mengisi 1 ember dari banyak sekrup adalah ...",
       "questionImagePath": "Easy/25",
       "answers": ["1 X 9", "9 X 1", "1 X 8"],
       "correctAnswerIndex": 0
@@ -205,25 +199,25 @@
       "correctAnswerIndex": 1
     },
     {
-      "question": "Jika diurutkan berdasarkan nilai terbesar berada di depan, maka yang berdiri paling depan adalah ...",
+      "question": "Jika nilai terbesar berdiri di depan, maka yang berdiri paling depan adalah ...",
       "questionImagePath": "Easy/30",
       "answers": ["Ady", "Dian", "Tika"],
       "correctAnswerIndex": 0
     },
     {
-      "question": "Jika diurutkan berdasarkan nilai terbesar berada di depan, maka yang berdiri paling belakang adalah ...",
+      "question": "Jika nilai terbesar berdiri di depan, maka yang berdiri paling belakang adalah ...",
       "questionImagePath": "Easy/30",
       "answers": ["Ady", "Dian", "Titin"],
       "correctAnswerIndex": 2
     },
     {
-      "question": "Jika diurutkan berdasarkan nilai terbesar berada di depan, maka yang berdiri di depan Tika adalah ...",
+      "question": "Jika nilai terbesar berdiri di depan, maka yang berdiri di depan Tika adalah ...",
       "questionImagePath": "Easy/30",
       "answers": ["Ady", "Wira", "Titin"],
       "correctAnswerIndex": 1
     },
     {
-      "question": "Jika diurutkan berdasarkan nilai terbesar berada di depan, maka yang berdiri di belakang Wira adalah ...",
+      "question": "Jika nilai terbesar berdiri di depan, maka yang berdiri di belakang Wira adalah ...",
       "questionImagePath": "Easy/30",
       "answers": ["Ady", "Wira", "Tika"],
       "correctAnswerIndex": 2
