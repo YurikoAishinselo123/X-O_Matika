@@ -11,7 +11,6 @@ public class QuizUI : MonoBehaviour
     [SerializeField] private List<Button> optionButtons;
     [SerializeField] private GameObject QuizCanvas;
     [SerializeField] private TMP_Text quizTimer;
-    [SerializeField] private TicTacToeUI ticTacToeUI;
     private Question currentQuestion;
     private bool answered;
 

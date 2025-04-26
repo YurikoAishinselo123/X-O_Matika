@@ -9,7 +9,6 @@ public class TicTacToeUI : MonoBehaviour
     [SerializeField] private TMP_Text timerText;
     [SerializeField] private TextMeshProUGUI turnText;
     [SerializeField] private Button[] buttons;
-    [SerializeField] private QuizUI gameplayUI;
 
     [Header("Pause System")]
     [SerializeField] private GameObject ticTacToeCanvas;
