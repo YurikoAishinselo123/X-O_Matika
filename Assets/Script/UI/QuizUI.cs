@@ -14,7 +14,6 @@ public class QuizUI : MonoBehaviour
     [SerializeField] private TicTacToeUI ticTacToeUI;
     private Question currentQuestion;
     private bool answered;
-    private QuizManager quizManager;
 
     void Awake()
     {
@@ -29,15 +28,6 @@ public class QuizUI : MonoBehaviour
         }
     }
 
-    void Start()
-    {
-        // AudioManager.Instance.StopBacksound();
-        quizManager = QuizManager.Instance;
-        if (quizManager == null)
-        {
-            Debug.LogError("QuizManager instance not found!");
-        }
-    }
 
     public void SetQuestion(Question question)
     {
@@ -85,7 +75,7 @@ public class QuizUI : MonoBehaviour
         {
             HideQuiz();
             answered = true;
-            bool isCorrect = quizManager.Answer(selectedAnswer);
+            bool isCorrect = QuizManager.Instance.Answer(selectedAnswer);
             Debug.Log("answer : " + isCorrect);
         }
     }
@@ -93,7 +83,7 @@ public class QuizUI : MonoBehaviour
     public void ShowQuestion()
     {
         QuizCanvas.SetActive(true);
-        currentQuestion = quizManager.GetNextQuestion();
+        currentQuestion = QuizManager.Instance.GetNextQuestion();
         SetQuestion(currentQuestion);
     }
 
@@ -120,13 +110,5 @@ public class QuizUI : MonoBehaviour
     {
         QuizCanvas.SetActive(false);
     }
-
-
-    // public void StartTicTacToe()
-    // {
-    //     HideQuizCanvas();
-    //     ticTacToeUI.ResumeGame();
-    // }
-
 
 }
