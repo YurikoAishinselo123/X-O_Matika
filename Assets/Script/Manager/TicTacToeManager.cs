@@ -33,14 +33,24 @@ public class TicTacToeManager : MonoBehaviour
 
     void Start()
     {
-        StartTurnTimer();
+        // StartTurnTimer();
     }
 
     public void SetButtonSprite(int index)
     {
         if (gameOver || boardState[index] != null) return;
-
+        TicTacToeUI.Instance.ShowTicTacToe();
+        StartTurnTimer();
         StartCoroutine(DelayedSetSprite(index));
+    }
+
+
+    public void SetButtonSpriteIndex(int index)
+    {
+        if (gameOver || boardState[index] != null) return;
+        GameplayManager.Instance.SaveSelectedIndex(index);
+        TicTacToeUI.Instance.HideTicTacToe();
+        StopTurnTimer();
     }
 
     private IEnumerator DelayedSetSprite(int index)
@@ -105,6 +115,7 @@ public class TicTacToeManager : MonoBehaviour
     public void StartTurnTimer()
     {
         StopTurnTimer();
+        Debug.Log("tes");
         turnTimerCoroutine = StartCoroutine(TurnTimerRoutine());
         TicTacToeUI.Instance.UpdateTimer(turnTimer);
     }
@@ -134,7 +145,7 @@ public class TicTacToeManager : MonoBehaviour
         {
             while (isTimerPaused)
             {
-                yield return null; // just wait for next frame until unpaused
+                yield return null;
             }
 
             TicTacToeUI.Instance.UpdateTimer(timer);
@@ -143,9 +154,16 @@ public class TicTacToeManager : MonoBehaviour
             timer--;
         }
 
-        isXTurn = !isXTurn;
+        SwitchTurn();
         TicTacToeUI.Instance.UpdateTurn(isXTurn);
+    }
+
+
+    public void SwitchTurn()
+    {
+        TicTacToeUI.Instance.ShowTicTacToe();
         StartTurnTimer();
+        isXTurn = !isXTurn;
     }
 
     private void DetermineWinnerByCount()
