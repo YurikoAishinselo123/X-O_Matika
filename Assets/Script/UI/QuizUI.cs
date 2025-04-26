@@ -3,33 +3,38 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 
-public class GameplayUI : MonoBehaviour
+public class QuizUI : MonoBehaviour
 {
+    public static QuizUI Instance;
     [SerializeField] private TMP_Text questionText;
     [SerializeField] private Image questionImage;
     [SerializeField] private List<Button> optionButtons;
     [SerializeField] private GameObject QuizCanvas;
     [SerializeField] private TMP_Text quizTimer;
+    [SerializeField] private TicTacToeUI ticTacToeUI;
     private Question currentQuestion;
     private bool answered;
-    private QuizManager quizManager;
 
-    void Start()
+    void Awake()
     {
-        AudioManager.Instance.StopBacksound();
-        quizManager = QuizManager.Instance;
-        if (quizManager == null)
+        if (Instance == null)
         {
-            Debug.LogError("QuizManager instance not found!");
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
+
 
     public void SetQuestion(Question question)
     {
         currentQuestion = question;
         answered = false;
-        Debug.Log($"Setting Question: {question.question}");
-        Debug.Log($"Options: {string.Join(", ", question.answers)}");
+        // Debug.Log($"Setting Question: {question.question}");
+        // Debug.Log($"Options: {string.Join(", ", question.answers)}");
 
         questionText.text = question.question;
         if (question.questionImage != null)
@@ -68,16 +73,17 @@ public class GameplayUI : MonoBehaviour
     {
         if (!answered)
         {
+            HideQuiz();
             answered = true;
-            bool isCorrect = quizManager.Answer(selectedAnswer);
-            Debug.Log("Answer is " + (isCorrect ? "Correct!" : "Wrong!"));
+            bool isCorrect = QuizManager.Instance.Answer(selectedAnswer);
+            Debug.Log("answer : " + isCorrect);
         }
     }
 
     public void ShowQuestion()
     {
         QuizCanvas.SetActive(true);
-        currentQuestion = quizManager.GetNextQuestion();
+        currentQuestion = QuizManager.Instance.GetNextQuestion();
         SetQuestion(currentQuestion);
     }
 
@@ -93,6 +99,16 @@ public class GameplayUI : MonoBehaviour
         {
             quizTimer.color = Color.black;
         }
+    }
+
+    public void ShowQuiz()
+    {
+        QuizCanvas.SetActive(true);
+    }
+
+    private void HideQuiz()
+    {
+        QuizCanvas.SetActive(false);
     }
 
 }

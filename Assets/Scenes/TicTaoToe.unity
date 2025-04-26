@@ -133,14 +133,13 @@ GameObject:
   - component: {fileID: 63927524}
   - component: {fileID: 63927523}
   - component: {fileID: 63927522}
-  - component: {fileID: 63927528}
   m_Layer: 5
   m_Name: Quiz Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &63927522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,26 +262,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &63927528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 63927521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6fc6fc869090413ba54d84574a0519b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questionText: {fileID: 404232676}
-  questionImage: {fileID: 1387339980}
-  optionButtons:
-  - {fileID: 1926993570}
-  - {fileID: 1356913125}
-  - {fileID: 1950475291}
-  QuizCanvas: {fileID: 63927521}
-  quizTimer: {fileID: 1795427981}
 --- !u!1 &88563494
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,10 +538,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 180486537}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 132, y: -461.5}
-  m_SizeDelta: {x: 150, y: 175}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &175729225
 MonoBehaviour:
@@ -788,10 +767,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 180486537}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 399, y: -461.5}
-  m_SizeDelta: {x: 150, y: 175}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &183800091
 MonoBehaviour:
@@ -1053,10 +1032,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 180486537}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 399, y: -761.5}
-  m_SizeDelta: {x: 150, y: 175}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &309481465
 MonoBehaviour:
@@ -1312,7 +1291,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 390.7251, y: -0}
-  m_SizeDelta: {x: 769.47, y: 0}
+  m_SizeDelta: {x: 769.47, y: 72.47}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &404232676
 MonoBehaviour:
@@ -1563,6 +1542,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470727981}
   m_CullTransparentMesh: 1
+--- !u!1 &488332305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 488332307}
+  - component: {fileID: 488332306}
+  m_Layer: 0
+  m_Name: Tic Tac Toe UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &488332306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488332305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31094d1be0ccf4c0cb06edf719f12e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 6534818578223331529}
+  turnText: {fileID: 4513196948909899618}
+  buttons:
+  - {fileID: 1093940489}
+  - {fileID: 2009738907}
+  - {fileID: 944772058}
+  - {fileID: 175729225}
+  - {fileID: 183800091}
+  - {fileID: 1885386502}
+  - {fileID: 1209449222}
+  - {fileID: 309481465}
+  - {fileID: 957906649}
+  gameplayUI: {fileID: 0}
+  ticTacToeCanvas: {fileID: 5631891332303612240}
+  pauseCanvas: {fileID: 239618500}
+  pauseButton: {fileID: 7024667655396470141}
+  resumeButton: {fileID: 3081807663016138743}
+  quitButton: {fileID: 841964412}
+  winnerCanvas: {fileID: 590030808}
+  restartButton: {fileID: 1008002708}
+  winnerText: {fileID: 1416002511}
+--- !u!4 &488332307
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488332305}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 164.5824, y: 376.0195, z: 0.3569804}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &589362062
 GameObject:
   m_ObjectHideFlags: 0
@@ -2215,7 +2259,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8819579073384769548}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TicTacToeUI, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -2298,9 +2342,9 @@ RectTransform:
   - {fileID: 1795427980}
   m_Father: {fileID: 88563495}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 471.41946, y: -141.5}
   m_SizeDelta: {x: 183, y: 183}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &864800002
@@ -2341,6 +2385,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 864800000}
   m_CullTransparentMesh: 1
+--- !u!1 &900049327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 900049329}
+  - component: {fileID: 900049328}
+  m_Layer: 0
+  m_Name: Quiz UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &900049328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900049327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6fc6fc869090413ba54d84574a0519b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionText: {fileID: 404232676}
+  questionImage: {fileID: 1387339980}
+  optionButtons:
+  - {fileID: 1926993570}
+  - {fileID: 1356913125}
+  - {fileID: 1950475291}
+  QuizCanvas: {fileID: 63927521}
+  quizTimer: {fileID: 1795427981}
+  ticTacToeUI: {fileID: 0}
+--- !u!4 &900049329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900049327}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 164.5824, y: 376.0195, z: 0.3569804}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &944772057
 GameObject:
   m_ObjectHideFlags: 0
@@ -2456,10 +2553,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 180486537}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 666, y: -161.5}
-  m_SizeDelta: {x: 150, y: 175}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &957492244
 GameObject:
@@ -2630,10 +2727,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 180486537}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 666, y: -761.5}
-  m_SizeDelta: {x: 150, y: 175}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &957906649
 MonoBehaviour:
@@ -2883,10 +2980,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 180486537}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 132, y: -161.5}
-  m_SizeDelta: {x: 150, y: 175}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1093940487
 MonoBehaviour:
@@ -3139,10 +3236,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 180486537}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 132, y: -761.5}
-  m_SizeDelta: {x: 150, y: 175}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1209449222
 MonoBehaviour:
@@ -3261,9 +3358,9 @@ RectTransform:
   - {fileID: 1387339979}
   m_Father: {fileID: 88563495}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 471.41946, y: -666.81226}
   m_SizeDelta: {x: 781.45, y: 734.608}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1215877808
@@ -3606,7 +3703,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8819579073384769548}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TicTacToeUI, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -3826,9 +3923,9 @@ RectTransform:
   - {fileID: 1327871320}
   m_Father: {fileID: 88563495}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 471.41946, y: -1356.1327}
   m_SizeDelta: {x: 761, y: 126}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1356913125
@@ -3945,10 +4042,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1215877807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 390.725, y: -420.5735}
+  m_SizeDelta: {x: 781.45, y: 628.069}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1387339980
 MonoBehaviour:
@@ -4215,6 +4312,7 @@ GameObject:
   - component: {fileID: 1662148854}
   - component: {fileID: 1662148856}
   - component: {fileID: 1662148857}
+  - component: {fileID: 1662148858}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -4229,7 +4327,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662148853}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e24841f178366436b9f4b4aec5f332ec, type: 3}
   m_Name: 
@@ -4276,9 +4374,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915195d5546ab4ec79b11d75d819e844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameplayUI: {fileID: 63927528}
+  isCorrect: 0
   maxQuestions: 80
   quizTimer: 20
+--- !u!114 &1662148858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662148853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a68cc8f85b2704c658fecb1798b784e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1721532894
 GameObject:
   m_ObjectHideFlags: 0
@@ -4584,10 +4694,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 180486537}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 666, y: -461.5}
-  m_SizeDelta: {x: 150, y: 175}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1885386502
 MonoBehaviour:
@@ -4705,9 +4815,9 @@ RectTransform:
   - {fileID: 470727982}
   m_Father: {fileID: 88563495}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 471.41946, y: -1163.6245}
   m_SizeDelta: {x: 761, y: 126}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1926993570
@@ -4826,9 +4936,9 @@ RectTransform:
   - {fileID: 108781612}
   m_Father: {fileID: 88563495}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 471.41946, y: -1548.6409}
   m_SizeDelta: {x: 761, y: 126}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1950475291
@@ -4946,10 +5056,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 180486537}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 399, y: -161.5}
-  m_SizeDelta: {x: 150, y: 175}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2009738905
 MonoBehaviour:
@@ -5749,14 +5859,13 @@ GameObject:
   - component: {fileID: 4597581514611789040}
   - component: {fileID: 2355614076735992004}
   - component: {fileID: 1284182308509019948}
-  - component: {fileID: 8819579073384769548}
   m_Layer: 5
   m_Name: Tic Tac Toe Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &5810728012858745215
 GameObject:
   m_ObjectHideFlags: 0
@@ -6251,38 +6360,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &8819579073384769548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5631891332303612240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31094d1be0ccf4c0cb06edf719f12e42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerText: {fileID: 6534818578223331529}
-  turnText: {fileID: 4513196948909899618}
-  buttons:
-  - {fileID: 1093940489}
-  - {fileID: 2009738907}
-  - {fileID: 944772058}
-  - {fileID: 175729225}
-  - {fileID: 183800091}
-  - {fileID: 1885386502}
-  - {fileID: 1209449222}
-  - {fileID: 309481465}
-  - {fileID: 957906649}
-  ticTacToeCanvas: {fileID: 5631891332303612240}
-  pauseCanvas: {fileID: 239618500}
-  pauseButton: {fileID: 7024667655396470141}
-  resumeButton: {fileID: 3081807663016138743}
-  quitButton: {fileID: 841964412}
-  winnerCanvas: {fileID: 590030808}
-  restartButton: {fileID: 1008002708}
-  winnerText: {fileID: 1416002511}
 --- !u!224 &8822840835628746875
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6322,3 +6399,5 @@ SceneRoots:
   - {fileID: 1662148855}
   - {fileID: 239618506}
   - {fileID: 590030814}
+  - {fileID: 488332307}
+  - {fileID: 900049329}

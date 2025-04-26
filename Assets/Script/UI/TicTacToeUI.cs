@@ -9,6 +9,7 @@ public class TicTacToeUI : MonoBehaviour
     [SerializeField] private TMP_Text timerText;
     [SerializeField] private TextMeshProUGUI turnText;
     [SerializeField] private Button[] buttons;
+    [SerializeField] private QuizUI gameplayUI;
 
     [Header("Pause System")]
     [SerializeField] private GameObject ticTacToeCanvas;
@@ -45,13 +46,19 @@ public class TicTacToeUI : MonoBehaviour
 
     void Start()
     {
-        AudioManager.Instance.StopBacksound();
         TicTacToeManager.Instance.StartTurnTimer();
     }
 
-    public void HideTicTacToeUI()
+    public void HideTicTacToe()
     {
         ticTacToeCanvas.SetActive(false);
+        pauseCanvas.SetActive(false);
+        winnerCanvas.SetActive(false);
+    }
+
+    public void ShowTicTacToe()
+    {
+        ticTacToeCanvas.SetActive(true);
         pauseCanvas.SetActive(false);
         winnerCanvas.SetActive(false);
     }
@@ -87,7 +94,7 @@ public class TicTacToeUI : MonoBehaviour
         for (int i = 0; i < buttons.Length; i++)
         {
             int index = i;
-            buttons[i].onClick.AddListener(() => TicTacToeManager.Instance.SetButtonSprite(index));
+            buttons[i].onClick.AddListener(() => TicTacToeManager.Instance.SetButtonSpriteIndex(index));
         }
     }
 

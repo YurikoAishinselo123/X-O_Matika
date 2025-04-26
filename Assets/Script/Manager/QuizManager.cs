@@ -26,12 +26,12 @@ public class QuizManager : MonoBehaviour
 {
     public static QuizManager Instance;
 
-    [SerializeField] private GameplayUI gameplayUI;
     private Dictionary<string, List<Question>> allQuestions = new Dictionary<string, List<Question>>();
     private List<Question> currentQuestions;
     private Question currentQuestion;
     private int questionIndex;
     private int score;
+    public bool isCorrect = false;
     [SerializeField] private int maxQuestions = 20;
     private string selectedDifficulty;
     private int currentQuizTimer;
@@ -54,10 +54,6 @@ public class QuizManager : MonoBehaviour
         }
     }
 
-    void Start()
-    {
-        StartCoroutine(LoadQuestionsFromJson());
-    }
 
     public void StartQuiz()
     {
@@ -79,6 +75,18 @@ public class QuizManager : MonoBehaviour
         questionIndex = 0;
         score = 0;
         LoadNextQuestion();
+    }
+
+    public void StartQuizFlow()
+    {
+        StartCoroutine(LoadQuestionsAndStartQuiz());
+    }
+
+    private IEnumerator LoadQuestionsAndStartQuiz()
+    {
+        yield return StartCoroutine(LoadQuestionsFromJson());
+        QuizUI.Instance.ShowQuiz();
+        StartQuiz();
     }
 
 
@@ -160,7 +168,7 @@ public class QuizManager : MonoBehaviour
         if (questionIndex < currentQuestions.Count)
         {
             currentQuestion = currentQuestions[questionIndex];
-            gameplayUI.SetQuestion(currentQuestion);
+            QuizUI.Instance.SetQuestion(currentQuestion);
             questionIndex++;
             answered = false;
             currentQuizTimer = quizTimer;
@@ -170,7 +178,7 @@ public class QuizManager : MonoBehaviour
                 StopCoroutine(questionTimerCoroutine);
             }
 
-            questionTimerCoroutine = StartCoroutine(QuestionTimer());
+            StartQuestionTimer();
         }
         else
         {
@@ -178,12 +186,33 @@ public class QuizManager : MonoBehaviour
         }
     }
 
+    private void StartQuestionTimer()
+    {
+        if (questionTimerCoroutine != null)
+        {
+            StopCoroutine(questionTimerCoroutine);
+        }
+        questionTimerCoroutine = StartCoroutine(QuestionTimer());
+    }
+
+    private void StopQuestionTimer()
+    {
+        if (questionTimerCoroutine != null)
+        {
+            StopCoroutine(questionTimerCoroutine);
+            questionTimerCoroutine = null;
+        }
+    }
+
+
     public bool Answer(string selectedAnswer)
     {
-        bool isCorrect = selectedAnswer == currentQuestion.answers[currentQuestion.correctAnswerIndex];
+        isCorrect = selectedAnswer == currentQuestion.answers[currentQuestion.correctAnswerIndex];
+        GameplayManager.Instance.HandleQuizResult(isCorrect);
+        StopQuestionTimer();
         if (isCorrect) score++;
         answered = true;
-        LoadNextQuestion();
+        // LoadNextQuestion();
         return isCorrect;
     }
 
@@ -191,13 +220,13 @@ public class QuizManager : MonoBehaviour
     {
         while (currentQuizTimer > 0)
         {
-            gameplayUI.UpdateQuizTimer(currentQuizTimer);
-            // AudioManager.Instance.PlayTimerSFX();
+            QuizUI.Instance.UpdateQuizTimer(currentQuizTimer);
+            AudioManager.Instance.PlayTimerSFX();
             yield return new WaitForSeconds(1f);
             currentQuizTimer--;
         }
 
-        gameplayUI.UpdateQuizTimer(0);
+        QuizUI.Instance.UpdateQuizTimer(0);
 
         if (!answered)
         {
