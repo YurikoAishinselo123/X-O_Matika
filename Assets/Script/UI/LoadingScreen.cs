@@ -29,6 +29,6 @@ public class LoadingScreen : MonoBehaviour
         }
 
         loadingSlider.value = 1f;
-        SceneLoader.Instance.LoadSelectLevel();
+        SceneLoader.Instance.LoadInformation();
     }
 }

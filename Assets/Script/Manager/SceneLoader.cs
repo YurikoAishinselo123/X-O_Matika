@@ -27,9 +27,10 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadMainMenu() => LoadScene("MainMenu");
     public void LoadLoadingScreen() => LoadScene("LoadingScreen");
+    public void LoadInformation() => LoadScene("Information");
     public void LoadSelectLevel() => LoadScene("SelectLevel");
-    public void LoadHowToPlay() => LoadScene("HowToPlay");
-    // public void LoadGameplay() => LoadScene("Gameplay");
+    public void LoadHowToPlay1() => LoadScene("HowToPlay1");
+    public void LoadHowToPlay2() => LoadScene("HowToPlay2");
     public void LoadGameplay() => LoadScene("TicTaoToe");
 
 

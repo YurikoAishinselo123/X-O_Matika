@@ -9,6 +9,6 @@ public class SelectLevelUI : MonoBehaviour
     private void SetDifficultyAndLoad(DifficultyLevel difficulty)
     {
         DifficultyManager.SetDifficulty(difficulty);
-        SceneLoader.Instance.LoadHowToPlay();
+        SceneLoader.Instance.LoadHowToPlay1();
     }
 }

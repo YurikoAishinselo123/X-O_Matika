@@ -23,14 +23,18 @@ MonoBehaviour:
   - m_enabled: 1
     m_path: Assets/Scenes/Mainmenu.unity
   - m_enabled: 1
+    m_path: Assets/Scenes/Information.unity
+  - m_enabled: 1
     m_path: Assets/Scenes/TicTaoToe.unity
   - m_enabled: 1
-    m_path: Assets/Scenes/HowToPlay.unity
+    m_path: Assets/Scenes/HowToPlay 1.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/HowToPlay2.unity
   - m_enabled: 1
     m_path: Assets/Scenes/LoadingScreen.unity
   - m_enabled: 1
     m_path: Assets/Scenes/SelectLevel.unity
-  - m_enabled: 1
+  - m_enabled: 0
     m_path: Assets/Scenes/Gameplay.unity
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:

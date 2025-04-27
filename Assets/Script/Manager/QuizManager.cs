@@ -89,10 +89,14 @@ public class QuizManager : MonoBehaviour
         StartQuiz();
     }
 
+    public string GetSelectedDifficulty()
+    {
+        selectedDifficulty = ((DifficultyLevel)PlayerPrefs.GetInt("SelectedDifficulty", (int)DifficultyLevel.Easy)).ToString();
+        return selectedDifficulty;
+    }
 
     IEnumerator LoadQuestionsFromJson()
     {
-        selectedDifficulty = ((DifficultyLevel)PlayerPrefs.GetInt("SelectedDifficulty", (int)DifficultyLevel.Easy)).ToString();
 
         string fileName = selectedDifficulty + "Question.json";
         string path = Path.Combine(Application.streamingAssetsPath, fileName);

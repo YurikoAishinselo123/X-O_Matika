@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SelectLevel.unity
     guid: 9bd2be110688f4ce78a453568549938c
   - enabled: 1
-    path: Assets/Scenes/HowToPlay.unity
+    path: Assets/Scenes/HowToPlay2.unity
     guid: ffd7dbb2263ce4967a343b91ea69a104
   - enabled: 1
     path: Assets/Scenes/TicTaoToe.unity

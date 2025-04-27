@@ -14,17 +14,23 @@ public class QuizUI : MonoBehaviour
     private Question currentQuestion;
     private bool answered;
 
+    [Header("Background System")]
+    [SerializeField] private Image BackgroundCanvas;
+
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
         }
+    }
+    void Start()
+    {
+        ChangeBackgroundColor();
     }
 
 
@@ -65,6 +71,29 @@ public class QuizUI : MonoBehaviour
                 optionButtons[i].gameObject.SetActive(false);
             }
         }
+
+    }
+
+    private void ChangeBackgroundColor()
+    {
+        string difficulty = QuizManager.Instance.GetSelectedDifficulty();
+        Color newColor;
+        switch (difficulty)
+        {
+            case "Easy":
+                ColorUtility.TryParseHtmlString("#5BBE0A", out newColor);
+                break;
+            case "Medium":
+                ColorUtility.TryParseHtmlString("#16A1D8", out newColor);
+                break;
+            case "Hard":
+                ColorUtility.TryParseHtmlString("#8716D8", out newColor);
+                break;
+            default:
+                ColorUtility.TryParseHtmlString("#5BBE0A", out newColor);
+                break;
+        }
+        BackgroundCanvas.color = newColor;
 
     }
 

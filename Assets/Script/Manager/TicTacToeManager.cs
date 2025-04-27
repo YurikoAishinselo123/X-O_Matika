@@ -115,7 +115,6 @@ public class TicTacToeManager : MonoBehaviour
     public void StartTurnTimer()
     {
         StopTurnTimer();
-        Debug.Log("tes");
         turnTimerCoroutine = StartCoroutine(TurnTimerRoutine());
         TicTacToeUI.Instance.UpdateTimer(turnTimer);
     }
@@ -162,8 +161,10 @@ public class TicTacToeManager : MonoBehaviour
     public void SwitchTurn()
     {
         TicTacToeUI.Instance.ShowTicTacToe();
-        StartTurnTimer();
         isXTurn = !isXTurn;
+        TicTacToeUI.Instance.UpdateTurn(isXTurn);
+        StartTurnTimer();
+        Debug.Log("Changes : " + isXTurn);
     }
 
     private void DetermineWinnerByCount()

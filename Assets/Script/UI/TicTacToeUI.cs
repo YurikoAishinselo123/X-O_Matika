@@ -86,6 +86,7 @@ public class TicTacToeUI : MonoBehaviour
     public void QuitGame()
     {
         SceneLoader.Instance.LoadMainMenu();
+        AudioManager.Instance.PlayMainThemeBacksound();
     }
 
     private void AssignButtonClickEvents()
