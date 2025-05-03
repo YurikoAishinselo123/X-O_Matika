@@ -110,8 +110,36 @@ public class TicTacToeUI : MonoBehaviour
 
     public void UpdateTurn(bool isXTurn)
     {
-        turnText.text = isXTurn ? "GILIRAN X" : "GILIRAN O";
+        if (isXTurn)
+        {
+            turnText.text = "X";
+            turnText.color = Color.black;
+        }
+        else
+        {
+            string difficulty = QuizManager.Instance.GetSelectedDifficulty();
+            Color newColor;
+            turnText.text = "O";
+
+            switch (difficulty)
+            {
+                case "Easy":
+                    ColorUtility.TryParseHtmlString("#5BBE0A", out newColor); // Green
+                    break;
+                case "Medium":
+                    ColorUtility.TryParseHtmlString("#16A1D8", out newColor); // Blue
+                    break;
+                case "Hard":
+                    ColorUtility.TryParseHtmlString("#8716D8", out newColor); // Purple
+                    break;
+                default:
+                    ColorUtility.TryParseHtmlString("#5BBE0A", out newColor); // Default white
+                    break;
+            }
+            turnText.color = newColor;
+        }
     }
+
 
     public void ResetBoard()
     {

@@ -38,8 +38,6 @@ public class QuizUI : MonoBehaviour
     {
         currentQuestion = question;
         answered = false;
-        // Debug.Log($"Setting Question: {question.question}");
-        // Debug.Log($"Options: {string.Join(", ", question.answers)}");
 
         questionText.text = question.question;
         if (question.questionImage != null)
@@ -59,7 +57,11 @@ public class QuizUI : MonoBehaviour
             {
                 Button btn = optionButtons[i];
                 btn.gameObject.SetActive(true);
-                btn.GetComponentInChildren<TMP_Text>().text = question.answers[i];
+
+                TMP_Text buttonText = btn.GetComponentInChildren<TMP_Text>();
+                buttonText.text = question.answers[i];
+                buttonText.color = Color.black; // ✅ Set text color to black
+
                 btn.name = question.answers[i];
 
                 // Add listener with both answer and button reference
@@ -68,7 +70,7 @@ public class QuizUI : MonoBehaviour
                 Button clickedButton = btn;              // Capture button reference
                 btn.onClick.AddListener(() => SelectAnswer(answerText, clickedButton));
 
-                // Reset button color (optional)
+                // Reset button background color
                 btn.image.color = Color.white;
             }
             else
@@ -116,6 +118,8 @@ public class QuizUI : MonoBehaviour
                 ColorUtility.TryParseHtmlString("#E91515", out color); // Red
 
             clickedButton.image.color = color;
+            TMP_Text buttonText = clickedButton.GetComponentInChildren<TMP_Text>();
+            buttonText.color = Color.white;
 
             foreach (var button in optionButtons)
             {
