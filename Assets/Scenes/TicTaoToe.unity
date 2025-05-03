@@ -852,7 +852,6 @@ GameObject:
   - component: {fileID: 239618504}
   - component: {fileID: 239618503}
   - component: {fileID: 239618502}
-  - component: {fileID: 239618501}
   m_Layer: 5
   m_Name: Pause Canvas
   m_TagString: Untagged
@@ -860,36 +859,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &239618501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239618500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0679f9d10056d43fbad186d37ce7e43e, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &239618502
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1170,7 +1139,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1650,6 +1619,7 @@ MonoBehaviour:
   quitButton: {fileID: 841964412}
   winnerCanvas: {fileID: 590030808}
   restartButton: {fileID: 1008002708}
+  quitWinnerButton: {fileID: 1272240564}
   winnerText: {fileID: 1416002511}
 --- !u!4 &488332307
 Transform:
@@ -1761,7 +1731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &590030809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4091,7 +4061,7 @@ GameObject:
   - component: {fileID: 1272240565}
   - component: {fileID: 1272240564}
   m_Layer: 5
-  m_Name: Quit Button
+  m_Name: Quit Winner Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4793,7 +4763,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -6402,7 +6372,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -6611,11 +6581,11 @@ SceneRoots:
   - {fileID: 722984893}
   - {fileID: 8819579073384769547}
   - {fileID: 686256880}
+  - {fileID: 239618506}
   - {fileID: 63927527}
   - {fileID: 1743397741876525182}
   - {fileID: 1526170190}
   - {fileID: 1662148855}
-  - {fileID: 239618506}
   - {fileID: 590030814}
   - {fileID: 488332307}
   - {fileID: 900049329}

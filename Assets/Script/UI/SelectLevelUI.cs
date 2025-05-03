@@ -9,6 +9,7 @@ public class SelectLevelUI : MonoBehaviour
     private void SetDifficultyAndLoad(DifficultyLevel difficulty)
     {
         DifficultyManager.SetDifficulty(difficulty);
+        // AudioManager.Instance.PlayClickButtonSFX();
         SceneLoader.Instance.LoadHowToPlay1();
     }
 }

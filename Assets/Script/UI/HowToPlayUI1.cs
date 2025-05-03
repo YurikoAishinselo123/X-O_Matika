@@ -13,6 +13,7 @@ public class HowToPlayUI1 : MonoBehaviour
 
     public void Continue()
     {
+        // AudioManager.Instance.PlayClickButtonSFX();
         SceneLoader.Instance.LoadHowToPlay2();
     }
 }
