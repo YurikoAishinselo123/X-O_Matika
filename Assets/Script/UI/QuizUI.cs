@@ -57,21 +57,25 @@ public class QuizUI : MonoBehaviour
         {
             if (i < question.answers.Count)
             {
-                optionButtons[i].gameObject.SetActive(true);
-                optionButtons[i].GetComponentInChildren<TMP_Text>().text = question.answers[i];
-                optionButtons[i].name = question.answers[i];
+                Button btn = optionButtons[i];
+                btn.gameObject.SetActive(true);
+                btn.GetComponentInChildren<TMP_Text>().text = question.answers[i];
+                btn.name = question.answers[i];
 
-                // Add listener for answer selection
-                optionButtons[i].onClick.RemoveAllListeners();
-                string answerText = question.answers[i]; // Avoids captured variable issue
-                optionButtons[i].onClick.AddListener(() => SelectAnswer(answerText));
+                // Add listener with both answer and button reference
+                btn.onClick.RemoveAllListeners();
+                string answerText = question.answers[i]; // Capture correctly
+                Button clickedButton = btn;              // Capture button reference
+                btn.onClick.AddListener(() => SelectAnswer(answerText, clickedButton));
+
+                // Reset button color (optional)
+                btn.image.color = Color.white;
             }
             else
             {
                 optionButtons[i].gameObject.SetActive(false);
             }
         }
-
     }
 
     private void ChangeBackgroundColor()
@@ -94,33 +98,29 @@ public class QuizUI : MonoBehaviour
                 break;
         }
         BackgroundCanvas.color = newColor;
-
     }
 
-    void SelectAnswer(string selectedAnswer)
+    void SelectAnswer(string selectedAnswer, Button clickedButton)
     {
         if (!answered)
         {
+            answered = true;
+
             bool isCorrect = QuizManager.Instance.Answer(selectedAnswer);
             Debug.Log("answer : " + isCorrect);
 
-            // Change color based on correctness
-            foreach (Button btn in optionButtons)
+            Color color;
+            if (isCorrect)
+                ColorUtility.TryParseHtmlString("#66D70B", out color); // Green
+            else
+                ColorUtility.TryParseHtmlString("#E91515", out color); // Red
+
+            clickedButton.image.color = color;
+
+            foreach (var button in optionButtons)
             {
-                string btnText = btn.GetComponentInChildren<TMPro.TMP_Text>().text;
-                Color color;
-
-                if (btnText == selectedAnswer)
-                {
-                    if (isCorrect)
-                        ColorUtility.TryParseHtmlString("#66D70B", out color); // Green
-                    else
-                        ColorUtility.TryParseHtmlString("#E91515", out color); // Red
-
-                    btn.image.color = color;
-                }
+                button.onClick.RemoveAllListeners();
             }
-            answered = true;
         }
     }
 
