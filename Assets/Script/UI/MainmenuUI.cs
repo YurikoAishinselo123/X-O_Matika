@@ -13,6 +13,12 @@ public class MainmenuUI : MonoBehaviour
         quitButton.onClick.AddListener(QuitGame);
     }
 
+    void Start()
+    {
+        AudioManager.Instance.StopBacksound();
+        AudioManager.Instance.PlayMainThemeBacksound();
+    }
+
     private void PlayGame()
     {
         // AudioManager.Instance.PlayClickButtonSFX();

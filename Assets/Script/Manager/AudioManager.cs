@@ -29,10 +29,10 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    void Start()
-    {
-        PlayMainThemeBacksound();
-    }
+    // void Start()
+    // {
+    //     PlayMainThemeBacksound();
+    // }
 
     public void PlayBacksound(string name)
     {
@@ -72,7 +72,7 @@ public class AudioManager : MonoBehaviour
 
     // Play BackSound
     public void PlayMainThemeBacksound() => PlayBacksound("Main Theme");
-
+    public void PlayWinBacksound() => PlayBacksound("Main Theme");
 
 
     // Play SFX
