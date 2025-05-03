@@ -101,10 +101,26 @@ public class QuizUI : MonoBehaviour
     {
         if (!answered)
         {
-            HideQuiz();
-            answered = true;
             bool isCorrect = QuizManager.Instance.Answer(selectedAnswer);
             Debug.Log("answer : " + isCorrect);
+
+            // Change color based on correctness
+            foreach (Button btn in optionButtons)
+            {
+                string btnText = btn.GetComponentInChildren<TMPro.TMP_Text>().text;
+                Color color;
+
+                if (btnText == selectedAnswer)
+                {
+                    if (isCorrect)
+                        ColorUtility.TryParseHtmlString("#66D70B", out color); // Green
+                    else
+                        ColorUtility.TryParseHtmlString("#E91515", out color); // Red
+
+                    btn.image.color = color;
+                }
+            }
+            answered = true;
         }
     }
 
@@ -134,7 +150,7 @@ public class QuizUI : MonoBehaviour
         QuizCanvas.SetActive(true);
     }
 
-    private void HideQuiz()
+    public void HideQuiz()
     {
         QuizCanvas.SetActive(false);
     }

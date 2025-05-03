@@ -38,6 +38,7 @@ public class QuizManager : MonoBehaviour
     [SerializeField] private int quizTimer;
     private bool answered = false;
     private Coroutine questionTimerCoroutine;
+    [SerializeField] int transitionDelay;
 
 
     void Awake()
@@ -97,7 +98,6 @@ public class QuizManager : MonoBehaviour
 
     IEnumerator LoadQuestionsFromJson()
     {
-
         string fileName = selectedDifficulty + "Question.json";
         string path = Path.Combine(Application.streamingAssetsPath, fileName);
 
@@ -208,17 +208,24 @@ public class QuizManager : MonoBehaviour
         }
     }
 
+    private IEnumerator DelayedHandleResult(bool result)
+    {
+        yield return new WaitForSeconds(transitionDelay);
+        QuizUI.Instance.HideQuiz();
+        GameplayManager.Instance.HandleQuizResult(result);
+    }
 
     public bool Answer(string selectedAnswer)
     {
         isCorrect = selectedAnswer == currentQuestion.answers[currentQuestion.correctAnswerIndex];
-        GameplayManager.Instance.HandleQuizResult(isCorrect);
         StopQuestionTimer();
         if (isCorrect) score++;
         answered = true;
-        // LoadNextQuestion();
+
+        StartCoroutine(DelayedHandleResult(isCorrect));
         return isCorrect;
     }
+
 
     private IEnumerator QuestionTimer()
     {
