@@ -13,6 +13,7 @@ public class HowToPlayUI2 : MonoBehaviour
 
     public void StartGamePlay()
     {
+        // AudioManager.Instance.PlayClickButtonSFX();
         SceneLoader.Instance.LoadGameplay();
     }
 }

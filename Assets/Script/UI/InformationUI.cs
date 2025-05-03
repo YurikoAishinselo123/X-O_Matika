@@ -13,6 +13,7 @@ public class InformationUI : MonoBehaviour
 
     public void Continue()
     {
+        // AudioManager.Instance.PlayClickButtonSFX();
         SceneLoader.Instance.LoadSelectLevel();
     }
 }

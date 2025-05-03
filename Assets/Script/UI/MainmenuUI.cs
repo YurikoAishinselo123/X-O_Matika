@@ -15,11 +15,13 @@ public class MainmenuUI : MonoBehaviour
 
     private void PlayGame()
     {
+        // AudioManager.Instance.PlayClickButtonSFX();
         SceneLoader.Instance.LoadLoadingScreen();
     }
 
     private void QuitGame()
     {
+        // AudioManager.Instance.PlayClickButtonSFX();
         SceneLoader.Instance.QuitGame();
     }
 }

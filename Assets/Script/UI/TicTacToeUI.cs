@@ -64,6 +64,7 @@ public class TicTacToeUI : MonoBehaviour
 
     private void PauseGame()
     {
+        // AudioManager.Instance.PlayClickButtonSFX();
         ticTacToeCanvas.SetActive(false);
         pauseCanvas.SetActive(true);
         TicTacToeManager.Instance.PauseTimer();
@@ -71,6 +72,7 @@ public class TicTacToeUI : MonoBehaviour
 
     public void ResumeGame()
     {
+        // AudioManager.Instance.PlayClickButtonSFX();
         ticTacToeCanvas.SetActive(true);
         pauseCanvas.SetActive(false);
         winnerCanvas.SetActive(false);
@@ -79,6 +81,7 @@ public class TicTacToeUI : MonoBehaviour
 
     private void RestartGame()
     {
+        // AudioManager.Instance.PlayClickButtonSFX();
         Debug.Log("Restart");
         SceneLoader.Instance.LoadGameplay();
     }
@@ -86,7 +89,7 @@ public class TicTacToeUI : MonoBehaviour
     public void QuitGame()
     {
         SceneLoader.Instance.LoadMainMenu();
-        AudioManager.Instance.PlayMainThemeBacksound();
+        // AudioManager.Instance.PlayMainThemeBacksound();
     }
 
     private void AssignButtonClickEvents()
