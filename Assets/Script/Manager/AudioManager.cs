@@ -77,4 +77,5 @@ public class AudioManager : MonoBehaviour
 
     // Play SFX
     public void PlayTimerSFX() => PlaySFX("SFX Timer");
+    public void PlayClickButtonSFX() => PlaySFX("Click Button");
 }
