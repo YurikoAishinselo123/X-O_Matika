@@ -51,6 +51,4 @@ public class GameplayManager : MonoBehaviour
             TicTacToeManager.Instance.SwitchTurn();
         }
     }
-
-
 }
