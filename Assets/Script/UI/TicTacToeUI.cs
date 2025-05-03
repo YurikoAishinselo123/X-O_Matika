@@ -20,6 +20,7 @@ public class TicTacToeUI : MonoBehaviour
     [Header("Winner System")]
     [SerializeField] private GameObject winnerCanvas;
     [SerializeField] private Button restartButton;
+    [SerializeField] private Button quitWinnerButton;
     [SerializeField] private TMP_Text winnerText;
 
     private void Awake()
@@ -37,6 +38,7 @@ public class TicTacToeUI : MonoBehaviour
         pauseButton.onClick.AddListener(PauseGame);
         resumeButton.onClick.AddListener(ResumeGame);
         restartButton.onClick.AddListener(RestartGame);
+        quitWinnerButton.onClick.AddListener(QuitGame);
         quitButton.onClick.AddListener(QuitGame);
         ticTacToeCanvas.SetActive(true);
         pauseCanvas.SetActive(false);
@@ -138,7 +140,8 @@ public class TicTacToeUI : MonoBehaviour
         ticTacToeCanvas.SetActive(false);
         pauseCanvas.SetActive(false);
         winnerCanvas.SetActive(true);
-
+        TicTacToeManager.Instance.PauseTimer();
+        AudioManager.Instance.PlayWinBacksound();
         if (winner == "X")
             winnerText.text = "SIMBOL X";
         else if (winner == "O")
