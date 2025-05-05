@@ -113,9 +113,15 @@ public class QuizUI : MonoBehaviour
 
             Color color;
             if (isCorrect)
-                ColorUtility.TryParseHtmlString("#66D70B", out color); // Green
+            {
+                ColorUtility.TryParseHtmlString("#66D70B", out color);
+                AudioManager.Instance.PlayCorrectSFX();
+            }
             else
+            {
                 ColorUtility.TryParseHtmlString("#E91515", out color); // Red
+                AudioManager.Instance.PlayUnCorrectSFX();
+            }
 
             clickedButton.image.color = color;
             TMP_Text buttonText = clickedButton.GetComponentInChildren<TMP_Text>();

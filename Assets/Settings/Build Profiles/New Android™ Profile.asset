@@ -23,11 +23,11 @@ MonoBehaviour:
   - m_enabled: 1
     m_path: Assets/Scenes/Mainmenu.unity
   - m_enabled: 1
-    m_path: Assets/Scenes/Information.unity
-  - m_enabled: 1
     m_path: Assets/Scenes/TicTaoToe.unity
   - m_enabled: 1
     m_path: Assets/Scenes/HowToPlay1.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Information.unity
   - m_enabled: 1
     m_path: Assets/Scenes/HowToPlay2.unity
   - m_enabled: 1
