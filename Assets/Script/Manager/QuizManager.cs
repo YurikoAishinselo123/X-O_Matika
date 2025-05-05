@@ -233,7 +233,11 @@ public class QuizManager : MonoBehaviour
         if (!answered)
         {
             answered = true;
+            isCorrect = false;
+            QuizUI.Instance.HideQuiz();
+            GameplayManager.Instance.HandleQuizResult(isCorrect);
             LoadNextQuestion();
+            // Change to tic tac toe
         }
     }
 
