@@ -78,4 +78,8 @@ public class AudioManager : MonoBehaviour
     // Play SFX
     public void PlayTimerSFX() => PlaySFX("SFX Timer");
     public void PlayClickButtonSFX() => PlaySFX("Click Button");
+    public void PlayUnCorrectSFX() => PlaySFX("SFX UnCorrect");
+    public void PlayCorrectSFX() => PlaySFX("SFX Correct");
+
+
 }
