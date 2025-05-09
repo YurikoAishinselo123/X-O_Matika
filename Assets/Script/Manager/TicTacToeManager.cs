@@ -155,7 +155,7 @@ public class TicTacToeManager : MonoBehaviour
             if (timer <= 10)
             {
                 AudioManager.Instance.PlayTimerSFXPanic();
-                AudioManager.Instance.StopBacksound();
+                // AudioManager.Instance.StopBacksound();
             }
             yield return new WaitForSeconds(1);
             timer--;

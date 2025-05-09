@@ -236,7 +236,7 @@ public class QuizManager : MonoBehaviour
             if (currentQuizTimer <= 10)
             {
                 AudioManager.Instance.PlayTimerSFXPanic();
-                AudioManager.Instance.StopBacksound();
+                // AudioManager.Instance.StopBacksound();
             }
 
             yield return new WaitForSeconds(1f);
