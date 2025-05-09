@@ -75,7 +75,7 @@ public class AudioManager : MonoBehaviour
     // Play BackSound
     public void PlayMainThemeBacksound() => PlayBacksound("Main Theme");
     public void PlayWinBacksound() => PlayBacksound("Main Theme");
-    public void PlayTimerBacksoundHard() => PlayBacksound("Backsound Easy");
+    public void PlayTimerBacksoundHard() => PlayBacksound("Backsound Hard");
     public void PlayTimerBacksoundMedium() => PlayBacksound("Backsound Medium");
     public void PlayTimerBacksoundEasy() => PlayBacksound("Backsound Easy");
 
