@@ -26,7 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TicTaoToe.unity
     guid: 52ed140221fc74a2ca1e3222ed7466d7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Gameplay.unity
     guid: 1190191f900234081a4d3c62496339f9
   m_configObjects:

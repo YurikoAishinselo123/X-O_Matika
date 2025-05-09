@@ -16,6 +16,7 @@ public class TicTacToeManager : MonoBehaviour
     [SerializeField] private int turnTimer;
     private Coroutine turnTimerCoroutine;
     private bool isTimerPaused = false;
+    public int timer;
 
     private Sprite[] boardState = new Sprite[9];
 
@@ -34,6 +35,9 @@ public class TicTacToeManager : MonoBehaviour
     void Start()
     {
         // StartTurnTimer();
+        // CheckTimerCondition();
+        AudioManager.Instance.PlayMainThemeBacksound();
+        timer = turnTimer;
     }
 
     public void SetButtonSprite(int index)
@@ -139,7 +143,7 @@ public class TicTacToeManager : MonoBehaviour
 
     private IEnumerator TurnTimerRoutine()
     {
-        int timer = turnTimer;
+        timer = turnTimer;
         while (timer >= 0)
         {
             while (isTimerPaused)
@@ -148,7 +152,11 @@ public class TicTacToeManager : MonoBehaviour
             }
 
             TicTacToeUI.Instance.UpdateTimer(timer);
-            AudioManager.Instance.PlayTimerSFX();
+            if (timer <= 10)
+            {
+                AudioManager.Instance.PlayTimerSFXPanic();
+                AudioManager.Instance.StopBacksound();
+            }
             yield return new WaitForSeconds(1);
             timer--;
         }
@@ -164,7 +172,9 @@ public class TicTacToeManager : MonoBehaviour
         isXTurn = !isXTurn;
         TicTacToeUI.Instance.UpdateTurn(isXTurn);
         StartTurnTimer();
+        GameplayManager.Instance.CheckTimerCondition();
         Debug.Log("Changes : " + isXTurn);
+
     }
 
     private void DetermineWinnerByCount()

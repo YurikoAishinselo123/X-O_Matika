@@ -55,6 +55,15 @@ public class QuizManager : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        currentQuizTimer = quizTimer;
+    }
+
+    void Update()
+    {
+        // CheckTimerCondition();
+    }
 
     public void StartQuiz()
     {
@@ -87,6 +96,7 @@ public class QuizManager : MonoBehaviour
     {
         yield return StartCoroutine(LoadQuestionsFromJson());
         QuizUI.Instance.ShowQuiz();
+        GameplayManager.Instance.CheckTimerCondition();
         StartQuiz();
     }
 
@@ -223,7 +233,12 @@ public class QuizManager : MonoBehaviour
         while (currentQuizTimer > 0)
         {
             QuizUI.Instance.UpdateQuizTimer(currentQuizTimer);
-            AudioManager.Instance.PlayTimerSFX();
+            if (currentQuizTimer <= 10)
+            {
+                AudioManager.Instance.PlayTimerSFXPanic();
+                AudioManager.Instance.StopBacksound();
+            }
+
             yield return new WaitForSeconds(1f);
             currentQuizTimer--;
         }

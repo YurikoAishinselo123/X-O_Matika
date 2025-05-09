@@ -13,6 +13,7 @@ public class QuizUI : MonoBehaviour
     [SerializeField] private TMP_Text quizTimer;
     private Question currentQuestion;
     private bool answered;
+    public string difficulty;
 
     [Header("Background System")]
     [SerializeField] private Image BackgroundCanvas;
@@ -82,7 +83,7 @@ public class QuizUI : MonoBehaviour
 
     private void ChangeBackgroundColor()
     {
-        string difficulty = QuizManager.Instance.GetSelectedDifficulty();
+        difficulty = QuizManager.Instance.GetSelectedDifficulty();
         Color newColor;
         switch (difficulty)
         {

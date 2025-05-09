@@ -16,4 +16,18 @@ public class HowToPlayUI1 : MonoBehaviour
         // AudioManager.Instance.PlayClickButtonSFX();
         SceneLoader.Instance.LoadHowToPlay2();
     }
+
+    //Temp
+    void Update()
+    {
+        skipScene();
+    }
+
+    private void skipScene()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneLoader.Instance.LoadGameplay();
+        }
+    }
 }

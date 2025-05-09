@@ -8,6 +8,9 @@ public class GameplayManager : MonoBehaviour
 
     private int currentTicTacToeIndex;
     private bool isXTurn = true;
+    private bool backsoundIsPlaying = true;
+    private string difficulty;
+
 
     void Awake()
     {
@@ -25,6 +28,7 @@ public class GameplayManager : MonoBehaviour
     {
         StartNewTurn();
         AudioManager.Instance.StopBacksound();
+        CheckTimerCondition();
     }
 
     public void StartNewTurn()
@@ -34,12 +38,14 @@ public class GameplayManager : MonoBehaviour
 
     public void SaveSelectedIndex(int index)
     {
+        AudioManager.Instance.StopBacksound();
         currentTicTacToeIndex = index;
         QuizManager.Instance.StartQuizFlow();
     }
 
     public void HandleQuizResult(bool isCorrect)
     {
+        CheckTimerCondition();
         if (isCorrect)
         {
             Debug.Log("Correct Answer! Proceed to place sprite.");
@@ -51,4 +57,27 @@ public class GameplayManager : MonoBehaviour
             TicTacToeManager.Instance.SwitchTurn();
         }
     }
+
+    public void CheckTimerCondition()
+    {
+        difficulty = difficulty = QuizManager.Instance.GetSelectedDifficulty();
+        switch (difficulty)
+        {
+            case "Easy":
+                AudioManager.Instance.PlayTimerBacksoundEasy();
+                break;
+            case "Medium":
+                AudioManager.Instance.PlayTimerBacksoundMedium();
+                break;
+            case "Hard":
+                AudioManager.Instance.PlayTimerBacksoundHard();
+                break;
+            default:
+                AudioManager.Instance.PlayTimerBacksoundEasy();
+                break;
+        }
+    }
+
 }
+
+
