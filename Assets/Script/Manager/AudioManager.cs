@@ -29,10 +29,11 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    // void Start()
-    // {
-    //     PlayMainThemeBacksound();
-    // }
+
+    void Start()
+    {
+        PlayMainThemeBacksound();
+    }
 
     public void PlayBacksound(string name)
     {
