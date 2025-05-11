@@ -18,7 +18,9 @@ public class TicTacToeManager : MonoBehaviour
     private bool isTimerPaused = false;
     public int timer;
 
-    private Sprite[] boardState = new Sprite[9];
+    // private Sprite[] boardState = new Sprite[9];
+    private string[] boardState = new string[9];
+
 
     private void Awake()
     {
@@ -57,17 +59,25 @@ public class TicTacToeManager : MonoBehaviour
         StopTurnTimer();
     }
 
+
+
+
     private IEnumerator DelayedSetSprite(int index)
     {
-        Sprite currentSprite = isXTurn ? xSprite : oSprite;
-        boardState[index] = currentSprite;
+        // Sprite currentSprite = isXTurn ? xSprite : oSprite;
+        // boardState[index] = currentSprite;
+
+        string currentSymbol = isXTurn ? "X" : "O";
+        boardState[index] = currentSymbol;
 
         if (isXTurn)
             totalXCount++;
         else
             totalOCount++;
 
-        TicTacToeUI.Instance.UpdateBoard(index, currentSprite);
+        // TicTacToeUI.Instance.UpdateBoard(index, currentSprite);
+        TicTacToeUI.Instance.UpdateBoard(index, currentSymbol);
+
 
         if (CheckWin())
         {

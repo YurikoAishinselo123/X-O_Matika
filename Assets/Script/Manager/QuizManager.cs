@@ -258,8 +258,10 @@ public class QuizManager : MonoBehaviour
 
     private IEnumerator TransitionDelay()
     {
+        AudioManager.Instance.StopBacksound();
         yield return new WaitForSeconds(transitionDelay);
         QuizUI.Instance.HideQuiz();
+        GameplayManager.Instance.CheckTimerCondition();
         GameplayManager.Instance.HandleQuizResult(isCorrect);
     }
 

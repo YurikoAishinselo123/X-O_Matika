@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class TicTacToeUI : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class TicTacToeUI : MonoBehaviour
     [SerializeField] private TMP_Text timerText;
     [SerializeField] private TextMeshProUGUI turnText;
     [SerializeField] private Button[] buttons;
+    [SerializeField] private TMP_Text[] buttonTexts;
+    [SerializeField] private Image[] ImageGrid;
+
 
     [Header("Pause System")]
     [SerializeField] private GameObject ticTacToeCanvas;
@@ -67,6 +71,7 @@ public class TicTacToeUI : MonoBehaviour
     private void PauseGame()
     {
         // AudioManager.Instance.PlayClickButtonSFX();
+        AudioManager.Instance.StopBacksound();
         ticTacToeCanvas.SetActive(false);
         pauseCanvas.SetActive(true);
         TicTacToeManager.Instance.PauseTimer();
@@ -75,6 +80,7 @@ public class TicTacToeUI : MonoBehaviour
     public void ResumeGame()
     {
         // AudioManager.Instance.PlayClickButtonSFX();
+        GameplayManager.Instance.CheckTimerCondition();
         ticTacToeCanvas.SetActive(true);
         pauseCanvas.SetActive(false);
         winnerCanvas.SetActive(false);
@@ -105,9 +111,23 @@ public class TicTacToeUI : MonoBehaviour
         }
     }
 
-    public void UpdateBoard(int index, Sprite sprite)
+    // public void UpdateBoard(int index, Sprite sprite)
+    // {
+    //     buttons[index].image.sprite = sprite;
+    // }
+
+    public void UpdateBoard(int index, string symbol)
     {
-        buttons[index].image.sprite = sprite;
+        buttonTexts[index].text = symbol;
+        if (symbol == "O")
+        {
+            buttonTexts[index].color = Color.white;
+            ImageGrid[index].color = GetColorByDifficulty();
+        }
+        else
+        {
+            buttonTexts[index].color = Color.black;
+        }
     }
 
     public void UpdateTurn(bool isXTurn)
@@ -119,30 +139,34 @@ public class TicTacToeUI : MonoBehaviour
         }
         else
         {
-            string difficulty = QuizManager.Instance.GetSelectedDifficulty();
-            Color newColor;
             turnText.text = "O";
-
-            switch (difficulty)
-            {
-                case "Easy":
-                    ColorUtility.TryParseHtmlString("#5BBE0A", out newColor); // Green
-                    break;
-                case "Medium":
-                    ColorUtility.TryParseHtmlString("#16A1D8", out newColor); // Blue
-                    break;
-                case "Hard":
-                    ColorUtility.TryParseHtmlString("#8716D8", out newColor); // Purple
-                    break;
-                default:
-                    ColorUtility.TryParseHtmlString("#5BBE0A", out newColor); // Default white
-                    break;
-            }
-            turnText.color = newColor;
+            turnText.color = GetColorByDifficulty();
         }
     }
 
+    private Color GetColorByDifficulty()
+    {
+        string difficulty = QuizManager.Instance.GetSelectedDifficulty();
+        Color color;
 
+        switch (difficulty)
+        {
+            case "Easy":
+                ColorUtility.TryParseHtmlString("#5BBE0A", out color);
+                break;
+            case "Medium":
+                ColorUtility.TryParseHtmlString("#16A1D8", out color);
+                break;
+            case "Hard":
+                ColorUtility.TryParseHtmlString("#8716D8", out color);
+                break;
+            default:
+                ColorUtility.TryParseHtmlString("#5BBE0A", out color);
+                break;
+        }
+
+        return color;
+    }
     public void ResetBoard()
     {
         foreach (var button in buttons)
@@ -171,6 +195,7 @@ public class TicTacToeUI : MonoBehaviour
         pauseCanvas.SetActive(false);
         winnerCanvas.SetActive(true);
         TicTacToeManager.Instance.PauseTimer();
+        AudioManager.Instance.StopBacksound();
         AudioManager.Instance.PlayWinBacksound();
         if (winner == "X")
             winnerText.text = "SIMBOL X";

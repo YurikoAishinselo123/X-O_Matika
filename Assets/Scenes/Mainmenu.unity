@@ -1457,9 +1457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backsounds:
   - name: Main Theme
-    clip: {fileID: 8300000, guid: f72ee88eb3a41422fb43169808c714c1, type: 3}
-  - name: Win Theme
-    clip: {fileID: 8300000, guid: f72ee88eb3a41422fb43169808c714c1, type: 3}
+    clip: {fileID: 8300000, guid: 74638911e29af48b8b1b0195526b52a6, type: 3}
   - name: Backsound Easy
     clip: {fileID: 8300000, guid: 3004a60a6c3684413b11b765b0e0af99, type: 3}
   - name: Backsound Medium
@@ -1470,11 +1468,13 @@ MonoBehaviour:
   - name: Click Button
     clip: {fileID: 8300000, guid: f331ff55e6d2947dab04b2713d698de7, type: 3}
   - name: SFX UnCorrect
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 40b242a8aea2f4d17a6ba5e4c194d774, type: 3}
   - name: SFX Correct
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 072f4a23d645843b2b4bd7b521f0a699, type: 3}
   - name: SFX Panic
-    clip: {fileID: 8300000, guid: 25b2603a5fdf74d4a9fc8c27334529f8, type: 3}
+    clip: {fileID: 8300000, guid: 5c16831f674064b69a77e1244d5850d2, type: 3}
+  - name: Win Theme
+    clip: {fileID: 8300000, guid: f72ee88eb3a41422fb43169808c714c1, type: 3}
   backsoundSource: {fileID: 9014122140717058693}
   sfxSource: {fileID: 524142600745213052}
 --- !u!1 &5759466031184845226

@@ -71,11 +71,8 @@ public class AudioManager : MonoBehaviour
     }
 
 
-
-
     // Play BackSound
     public void PlayMainThemeBacksound() => PlayBacksound("Main Theme");
-    public void PlayWinBacksound() => PlayBacksound("Main Theme");
     public void PlayTimerBacksoundHard() => PlayBacksound("Backsound Hard");
     public void PlayTimerBacksoundMedium() => PlayBacksound("Backsound Medium");
     public void PlayTimerBacksoundEasy() => PlayBacksound("Backsound Easy");
@@ -83,6 +80,7 @@ public class AudioManager : MonoBehaviour
 
     // Play SFX
     public void PlayTimerSFXPanic() => PlaySFX("SFX Panic");
+    public void PlayWinBacksound() => PlaySFX("Win Theme");
     public void PlayClickButtonSFX() => PlaySFX("Click Button");
     public void PlayUnCorrectSFX() => PlaySFX("SFX UnCorrect");
     public void PlayCorrectSFX() => PlaySFX("SFX Correct");
