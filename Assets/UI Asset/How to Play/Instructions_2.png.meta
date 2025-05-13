@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ae18ca682e3304b9f82c42b035cc6c36
+guid: 6583c7d8ed55ddd45895cfb9a95c0584
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1653621076203374777
-    second: How to Play2_0
+      213: -3350399224528217328
+    second: Instructions_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,24 +109,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: How to Play2_0
+      name: Instructions_2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7477cc774682d09e0800000000000000
-      internalID: -1653621076203374777
+      spriteID: 01b504e08adf081d0800000000000000
+      internalID: -3350399224528217328
       vertices: []
       indices: 
       edges: []
@@ -160,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      How to Play2_0: -1653621076203374777
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
