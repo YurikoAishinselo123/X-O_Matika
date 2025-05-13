@@ -5397,6 +5397,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
+      propertyPath: sfxSounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 40b242a8aea2f4d17a6ba5e4c194d774, type: 3}
+    - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
+      propertyPath: sfxSounds.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 072f4a23d645843b2b4bd7b521f0a699, type: 3}
+    - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
+      propertyPath: sfxSounds.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5c16831f674064b69a77e1244d5850d2, type: 3}
+    - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
+      propertyPath: backsounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 74638911e29af48b8b1b0195526b52a6, type: 3}
+    - target: {fileID: 3941794180518770703, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5903682714461298099, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 281.48032
@@ -6279,7 +6299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xSprite: {fileID: 21300000, guid: 14d73386bed584c3086d3e3e11d7f64e, type: 3}
   oSprite: {fileID: 21300000, guid: e6d8da58451f54f5582205e1dcda485b, type: 3}
-  turnTimer: 15
+  turnTimer: 20
   timer: 0
 --- !u!4 &1662148855
 Transform:
@@ -6321,8 +6341,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCorrect: 0
-  maxQuestions: 80
-  quizTimer: 15
+  maxQuestions: 100
+  quizTimer: 20
   transitionDelay: 2
 --- !u!114 &1662148858
 MonoBehaviour:
