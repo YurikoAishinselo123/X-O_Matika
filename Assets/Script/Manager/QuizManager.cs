@@ -230,7 +230,7 @@ public class QuizManager : MonoBehaviour
 
     private IEnumerator QuestionTimer()
     {
-        while (currentQuizTimer > 0)
+        while (currentQuizTimer >= 0)
         {
             QuizUI.Instance.UpdateQuizTimer(currentQuizTimer);
             if (currentQuizTimer <= 10)
