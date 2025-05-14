@@ -79,7 +79,6 @@ public class AudioManager : MonoBehaviour
 
 
     // Play SFX
-    public void PlayTimerSFXPanic() => PlaySFX("SFX Panic");
     public void PlayWinBacksound() => PlaySFX("Win Theme");
     public void PlayClickButtonSFX() => PlaySFX("Click Button");
     public void PlayUnCorrectSFX() => PlaySFX("SFX UnCorrect");

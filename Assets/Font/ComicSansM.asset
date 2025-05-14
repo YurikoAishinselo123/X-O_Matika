@@ -96,7 +96,7 @@ MonoBehaviour:
     atlasHeight: 512
     characterSetSelectionMode: 0
     characterSequence: 32 - 126, 160, 8203, 8230, 9633
-    referencedFontAssetGUID: 
+    referencedFontAssetGUID: 4e6d3b376123c4307914fa369f10a0bc
     referencedTextAssetGUID: 
     fontStyle: 0
     fontStyleModifier: 0

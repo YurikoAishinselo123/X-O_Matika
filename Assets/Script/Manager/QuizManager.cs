@@ -233,11 +233,6 @@ public class QuizManager : MonoBehaviour
         while (currentQuizTimer >= 0)
         {
             QuizUI.Instance.UpdateQuizTimer(currentQuizTimer);
-            if (currentQuizTimer <= 10)
-            {
-                AudioManager.Instance.PlayTimerSFXPanic();
-                // AudioManager.Instance.StopBacksound();
-            }
 
             yield return new WaitForSeconds(1f);
             currentQuizTimer--;
