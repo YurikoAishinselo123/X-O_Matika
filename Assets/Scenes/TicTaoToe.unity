@@ -5429,6 +5429,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
+      propertyPath: sfxSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
       propertyPath: sfxSounds.Array.data[1].clip
       value: 
       objectReference: {fileID: 8300000, guid: 40b242a8aea2f4d17a6ba5e4c194d774, type: 3}
