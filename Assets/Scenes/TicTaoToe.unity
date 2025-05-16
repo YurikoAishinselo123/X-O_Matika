@@ -5507,7 +5507,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
       propertyPath: sfxSounds.Array.size
-      value: 3
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
+      propertyPath: backsounds.Array.size
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
       propertyPath: sfxSounds.Array.data[1].clip
@@ -5520,11 +5524,47 @@ PrefabInstance:
     - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
       propertyPath: sfxSounds.Array.data[3].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 5c16831f674064b69a77e1244d5850d2, type: 3}
+      objectReference: {fileID: 8300000, guid: 8d0f86b4bc1c1fa4b93255383a2852ce, type: 3}
+    - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
+      propertyPath: sfxSounds.Array.data[3].name
+      value: SFX Panic
+      objectReference: {fileID: 0}
+    - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
+      propertyPath: sfxSounds.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: f72ee88eb3a41422fb43169808c714c1, type: 3}
+    - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
+      propertyPath: sfxSounds.Array.data[4].name
+      value: Win Theme
+      objectReference: {fileID: 0}
     - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
       propertyPath: backsounds.Array.data[0].clip
       value: 
       objectReference: {fileID: 8300000, guid: 74638911e29af48b8b1b0195526b52a6, type: 3}
+    - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
+      propertyPath: backsounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3004a60a6c3684413b11b765b0e0af99, type: 3}
+    - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
+      propertyPath: backsounds.Array.data[1].name
+      value: Backsound Easy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
+      propertyPath: backsounds.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 901678730a9c943248cf634e5909af51, type: 3}
+    - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
+      propertyPath: backsounds.Array.data[2].name
+      value: Backsound Medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
+      propertyPath: backsounds.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5d120e5cfa1864dc28a66b577185abe9, type: 3}
+    - target: {fileID: 4033769848562658, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
+      propertyPath: backsounds.Array.data[3].name
+      value: Backsound Hard
+      objectReference: {fileID: 0}
     - target: {fileID: 3941794180518770703, guid: e461f5bcf32a749fb9e32b5991fbfe2f, type: 3}
       propertyPath: m_Volume
       value: 1
@@ -6452,7 +6492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   maxQuestions: 100
-  quizTimer: 20
+  quizTimer: 60
   transitionDelay: 2
 --- !u!114 &1662148858
 MonoBehaviour:
