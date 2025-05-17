@@ -385,7 +385,7 @@
       "correctAnswerIndex": 2
     },
     {
-      "question": "Jika total pasien adalah 100 orang, maka banyak pasien pada hari kamis adalah ... orang.",
+      "question": "Jika total pasien adalah 100 orang, maka banyak pasien pada hari Kamis adalah ... orang.",
       "questionImagePath": "Medium/65",
       "answers": ["43", "47", "57"],
       "correctAnswerIndex": 2

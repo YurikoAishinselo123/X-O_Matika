@@ -73,7 +73,7 @@
       "correctAnswerIndex": 0
     }, 
     {
-      "question": "Berdasasarkan gambar di atas, maka les renang adalah ...",
+      "question": "Berdasarkan gambar di atas, maka les renang adalah ...",
       "questionImagePath": "Easy/18",
       "answers": ["Lebih cepat dari les vokal", "Lebih lama dari les vokal", "Tidak ada jawaban"],
       "correctAnswerIndex": 1
@@ -241,19 +241,19 @@
       "correctAnswerIndex": 2
     }, 
     {
-      "question": "Berdasasarkan gambar di atas, maka bangun segitiga ditunjuk oleh nomor ...",
+      "question": "Berdasarkan gambar di atas, maka bangun segitiga ditunjuk oleh nomor ...",
       "questionImagePath": "Easy/38",
       "answers": ["1, 7, 9", "6, 10, 5", "2, 3, 4"],
       "correctAnswerIndex": 0
     },
     {  
-      "question": "Berdasasarkan gambar di atas, maka bangun persegi panjang ditunjuk oleh nomor ...",
+      "question": "Berdasarkan gambar di atas, maka bangun persegi panjang ditunjuk oleh nomor ...",
       "questionImagePath": "Easy/38",
       "answers": ["2", "3", "5"],
       "correctAnswerIndex": 0
     },
     {
-      "question": "Berdasasarkan gambar di atas, maka bangun lingkaran ditunjuk oleh nomor ...",
+      "question": "Berdasarkan gambar di atas, maka bangun lingkaran ditunjuk oleh nomor ...",
       "questionImagePath": "Easy/38",
       "answers": ["1 dan 9", "3 dan 4", "6 dan 10"],
       "correctAnswerIndex": 2
@@ -295,7 +295,7 @@
       "correctAnswerIndex": 1
     },
     {
-      "question": "Berdasasarkan gambar di atas, maka buah apel adalah ...",
+      "question": "Berdasarkan gambar di atas, maka buah apel adalah ...",
       "questionImagePath": "Easy/45",
       "answers": ["Lebih berat dari buah jeruk", "Lebih ringan dari buah jeruk", "Buah yang paling berat"],
       "correctAnswerIndex": 0
