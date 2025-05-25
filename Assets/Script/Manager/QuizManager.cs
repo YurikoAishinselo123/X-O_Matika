@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine.Networking;
-using System.Linq;
 
 [System.Serializable]
 public class QuestionList
@@ -79,17 +78,7 @@ public class QuizManager : MonoBehaviour
             Debug.LogError($"No questions available for {selectedDifficulty}.");
             return;
         }
-
-        var questions = allQuestions[selectedDifficulty];
-
-        // Hapus soal duplikat berdasarkan teks soalnya
-        var uniqueQuestions = questions
-            .GroupBy(q => q.question)
-            .Select(g => g.First())
-            .ToList();
-
-        // Acak dan ambil jumlah maksimal
-        currentQuestions = ShuffleList.ShuffleListItems(uniqueQuestions);
+        currentQuestions = ShuffleList.ShuffleListItems(new List<Question>(allQuestions[selectedDifficulty]));
         currentQuestions = currentQuestions.GetRange(0, Mathf.Min(maxQuestions, currentQuestions.Count));
 
         questionIndex = 0;
