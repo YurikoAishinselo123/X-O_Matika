@@ -6491,7 +6491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCorrect: 0
-  maxQuestions: 100
+  maxQuestions: 69
   quizTimer: 60
   transitionDelay: 2
 --- !u!114 &1662148858
